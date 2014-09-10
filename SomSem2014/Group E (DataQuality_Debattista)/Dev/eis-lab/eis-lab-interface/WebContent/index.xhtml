@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+<body>
+	<ui:composition template="templates/template.xhtml">
+		<ui:define name="title">
+			<h:outputText value="TITULO" />
+		</ui:define>
+		<ui:define name="body">
+			<a4j:keepAlive beanName="qualityBean" />
+			<h:form>
+				<rich:panel>
+					<f:verbatim>
+						<h1>Quality Assessment on Enterprise Linked Data</h1>
+					</f:verbatim>
+					<rich:tabPanel switchType="ajax">
+						<rich:tab label="Quality Assesment">
+							<ui:include src="/tabs/tab1.xhtml" />
+						</rich:tab>
+						<rich:tab label="Second">
+				            Test tab
+				        </rich:tab>
+					</rich:tabPanel>
+				</rich:panel>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

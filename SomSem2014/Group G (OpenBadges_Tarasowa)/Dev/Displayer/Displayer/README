@@ -1,0 +1,13 @@
+This very basic, lightweight displayer is completely hacked together - but it works. 
+
+The UI is not very sexy, but I figure that's ok since you only have to use it once. 
+
+After you walk through the wizard you receive some Javascript you can embed in your blog or elsewhere (see mine at http://opencontent.org/blog/ for an example). 
+The widget currently:
+
+- shows up to the first four badges in the group you selected,
+- badge images link to the hosted assertion, and 
+- badge names linking to the badge descriptions.
+
+I'm sure you'll manage to break it, and I would love any feedback or ideas for improvements!
+

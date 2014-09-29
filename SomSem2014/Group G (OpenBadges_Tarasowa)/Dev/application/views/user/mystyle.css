@@ -1,0 +1,63 @@
+@CHARSET "ISO-8859-1";
+
+#first {
+	width: 380px;
+	height: 240px;
+	box-shadow: 2px 2px 7px #888888;
+	float: left;
+}
+
+#seccond {
+	width: 380px;
+	height: 240px;
+	box-shadow: 2px 2px 7px #888888;
+	float: right;
+	
+}
+
+#inner {
+	background-color: #3b5998;
+	width: 380px;
+	height: 30px;
+	font-family: "verdana";
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	box-shadow: 2px 2px 7px #888888;
+}
+
+#wrap {
+	width: 800px;
+	margin: 0 auto;
+	padding-bottom: 200px;
+	padding-top: 80px;
+	padding-left: 80px;
+}
+
+#description {
+	font-family: "verdana";
+	font-size: 12px;
+	padding-top: 30px;
+	padding-left: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#detail {
+	width: 250px;
+	height: 90px;
+	padding-top: 30px;
+	float: left;
+	font-family: "verdana"; font-size : 14px;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	font-size: 14px;
+}
+
+#text {
+	width: 420px;
+	height: 600px;
+	float: left;
+}

@@ -1,0 +1,22 @@
+# notification jobs
+@hourly wget -O /dev/null "localhost/cronjobs/notify_hourly.php"; 2> /dev/null
+@daily wget -O /dev/null "localhost/cronjobs/notify_daily.php"; 2> /dev/null
+@weekly wget -O /dev/null "localhost/cronjobs/notify_weekly.php"; 2> /dev/null
+
+# popularity calculation
+0,10,20,30,40,50 * * * * wget -O /dev/null "localhost/cronjobs/calculate_popularity$
+
+#translation cronjob
+0,10,20,30,40,50 * * * * wget -O /dev/null "localhost/cronjobs/translation.php$
+
+# updating system time
+@daily ntpdate ntp.ubuntu.com
+
+# backup of the DATABASE
+@daily /root/scripts/database_backup.sh
+
+#rdf dump
+@weekly /usr/local/sparqlmap/bin/dump.sh
+
+
+

@@ -1,0 +1,107 @@
+/* 
+    Document   : first
+    Created on : Apr 16, 2014, 4:54:38 PM
+    Author     : darya
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+root {
+
+    display: block;
+}
+
+
+
+html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat !important;    
+    background-color: #cccccc !important;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: #eeeeee; 
+    background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); 
+    background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); 
+    background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); 
+    background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); 
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+}
+
+.carousel{   
+    left: 50%; 
+    width: 1200px;
+    position: absolute; 
+    margin-left: -600px; 
+}
+
+.carousel-caption{
+    background: rgba(52, 82, 112, 0.65);
+}
+
+.carousel-caption h1{
+    color: #fff;
+    margin: 0;
+}
+
+
+.bodyGradient {
+    width:100%;
+    background: -moz-linear-gradient(top, blue, white);
+}
+div.row{ 
+    background: #345270;
+    min-height: 800px;
+    width:1200px;
+    left:50%;
+    position: absolute; 
+    margin-left: -600px;
+    position:absolute;
+    padding:0;
+}
+
+
+h3{
+    color: #557382;
+    text-align: center;
+    
+}
+
+h2{
+    color: #ffffff;
+}
+
+.white{
+    background-color: #ffffff;
+}
+
+.blue{
+    background-color: #345270;
+}
+
+.header{
+    min-height:90px;
+}
+
+.image_space{
+    padding:5px;    
+}
+
+#loginform{
+    float:right;
+    padding:10px;
+}

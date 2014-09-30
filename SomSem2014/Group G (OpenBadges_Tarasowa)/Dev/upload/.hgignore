@@ -1,0 +1,12 @@
+application/config/config.php
+upload/.htaccess
+upload/
+
+syntax: glob
+*.swp
+nbproject/private/private.properties
+nbproject/project.properties
+nbproject/project.xml
+application/config
+.hgignore
+.hgignore.orig

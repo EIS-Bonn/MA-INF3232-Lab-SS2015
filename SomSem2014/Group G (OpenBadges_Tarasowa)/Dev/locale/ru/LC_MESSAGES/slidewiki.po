@@ -1,0 +1,768 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: slidewiki_ru\n"
+"POT-Creation-Date: 2014-04-01 13:32+0100\n"
+"PO-Revision-Date: 2014-04-01 13:36+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\wamp\\www\\slidewiki\n"
+
+#: C:\wamp\www\slidewiki/application/views/brand/create.php:6
+msgid "Create a new Brand"
+msgstr "Создать новый Брэнд"
+
+#: C:\wamp\www\slidewiki/application/views/brand/create.php:13
+msgid "Text"
+msgstr "Текст"
+
+#: C:\wamp\www\slidewiki/application/views/brand/create.php:19
+msgid "Image"
+msgstr "Изображение"
+
+#: C:\wamp\www\slidewiki/application/views/brand/create.php:26
+msgid "URL"
+msgstr "URL"
+
+#: C:\wamp\www\slidewiki/application/views/brand/create.php:33
+msgid "Deck ID"
+msgstr "Идентификатор презентации"
+
+#: C:\wamp\www\slidewiki/application/views/brand/create.php:46
+msgid ""
+"<strong>Please <a href=\"#login-register-modal\" data-controls-modal=\"login-"
+"register-modal\" data-backdrop=\"true\" data-keyboard=\"true\"><b>Login</b></"
+"a> or <a href=\"#login-register-modal\" data-controls-modal=\"login-register-"
+"modal\" data-backdrop=\"true\" data-keyboard=\"true\"><b>Register as a new "
+"user</b></a>.</strong>\n"
+"\t\t\tYou need to be authenticated in SlideWiki before you can create new "
+"presentation decks."
+msgstr ""
+"<strong>Пожалуйста, <a href=\"#login-register-modal\" data-controls-modal="
+"\"login-register-modal\" data-backdrop=\"true\" data-keyboard=\"true"
+"\"><b>Войдите</b></a> или <a href=\"#login-register-modal\" data-controls-"
+"modal=\"login-register-modal\" data-backdrop=\"true\" data-keyboard=\"true"
+"\"><b>зарегистрируйтесь</b></a>.</strong>\n"
+"\t\t\tВы должны быть авторизованы чтобы создавать новые презентации в "
+"SlideWiki."
+
+#: C:\wamp\www\slidewiki/application/views/brand/create.php:54
+msgid "Permission denied!"
+msgstr "Доступ запрещен!"
+
+#: C:\wamp\www\slidewiki/application/views/browse/usage.php:277
+msgid "back"
+msgstr "назад"
+
+#: C:\wamp\www\slidewiki/application/views/compare/compareDecks.php:161
+#: C:\wamp\www\slidewiki/application/views/compare/compareParentTranslations.php:114
+msgid "New item or revision added."
+msgstr "Добавлен новый элемент или новая версия."
+
+#: C:\wamp\www\slidewiki/application/views/compare/compareDecks.php:162
+#: C:\wamp\www\slidewiki/application/views/compare/compareParentTranslations.php:115
+msgid "Item deleted."
+msgstr "Элемент удален."
+
+#: C:\wamp\www\slidewiki/application/views/compare/compareDecks.php:163
+#: C:\wamp\www\slidewiki/application/views/compare/compareParentTranslations.php:116
+msgid "Position of the item changed!"
+msgstr "Позиция слайда изменена!"
+
+#: C:\wamp\www\slidewiki/application/views/compare/compareDecks.php:170
+msgid "Old Deck:"
+msgstr "Предыдущая версия:"
+
+#: C:\wamp\www\slidewiki/application/views/compare/compareDecks.php:175
+msgid "New Deck:"
+msgstr "Новая версия:"
+
+#: C:\wamp\www\slidewiki/application/views/compare/compareDecks.php:182
+#: C:\wamp\www\slidewiki/application/views/compare/compareParentTranslations.php:136
+msgid "Compare Decks"
+msgstr "Сравнить презентации"
+
+#: C:\wamp\www\slidewiki/application/views/compare/compareDecks.php:183
+#: C:\wamp\www\slidewiki/application/views/compare/compareParentTranslations.php:137
+msgid "Compare Selected Slides"
+msgstr "Сравнить выбранные слайды"
+
+#: C:\wamp\www\slidewiki/application/views/compare/compareParentTranslations.php:123
+msgid "The deck was translated from this revision:"
+msgstr "Презентация была переведена используя данную версию:"
+
+#: C:\wamp\www\slidewiki/application/views/compare/compareParentTranslations.php:128
+msgid "There is the last revision of source deck:"
+msgstr "Последняя версия презентации-источника:"
+
+#: C:\wamp\www\slidewiki/application/views/compare/compareParentTranslations.php:138
+msgid "Update deck"
+msgstr "Обновить презентацию"
+
+#: C:\wamp\www\slidewiki/application/views/compare/reportSlideChanges.php:4
+msgid "Slide <?php echo $slide_id;?> diff with previous revision"
+msgstr "Различия слайда <?php echo $slide_id;?> и его предыдущей версии"
+
+#: C:\wamp\www\slidewiki/application/views/compare/reportSlideChanges.php:36
+msgid "Old Slide"
+msgstr "Предыдущая версия"
+
+#: C:\wamp\www\slidewiki/application/views/compare/reportSlideChanges.php:37
+msgid "New Slide"
+msgstr "Новая версия слайда"
+
+#: C:\wamp\www\slidewiki/application/views/compare/reportSlideChanges.php:48
+msgid "Old Slide:"
+msgstr "Предыдущая версия:"
+
+#: C:\wamp\www\slidewiki/application/views/compare/reportSlideChanges.php:51
+msgid "New Slide:"
+msgstr "Новый слайд:"
+
+#: C:\wamp\www\slidewiki/application/views/compare/reportSlideChanges.php:55
+msgid "Auto Compare"
+msgstr "Авто Сравнение"
+
+#: C:\wamp\www\slidewiki/application/views/compare/reportSlideChanges.php:56
+msgid "Side by Side"
+msgstr "Параллельно"
+
+#: C:\wamp\www\slidewiki/application/views/compare/reportSlideChanges.php:58
+msgid "Inline"
+msgstr "Построчно"
+
+#: C:\wamp\www\slidewiki/application/views/error/show.php:4
+msgid "Error!"
+msgstr "Ошибка!"
+
+#: C:\wamp\www\slidewiki/application/views/facebook/login.php:5
+msgid "Choose a password:"
+msgstr "Выберите пароль:"
+
+#: C:\wamp\www\slidewiki/application/views/facebook/login.php:11
+msgid "Username:"
+msgstr "Имя пользователя"
+
+#: C:\wamp\www\slidewiki/application/views/facebook/login.php:17
+msgid "Email:"
+msgstr "E-mail:"
+
+#: C:\wamp\www\slidewiki/application/views/facebook/login.php:24
+msgid "Choose a SlideWiki password:"
+msgstr "Выберите пароль для SlideWiki:"
+
+#: C:\wamp\www\slidewiki/application/views/facebook/login.php:30
+msgid "Confirm the password"
+msgstr "подтвердите пароль"
+
+#: C:\wamp\www\slidewiki/application/views/facebook/login.php:37
+msgid "Submit"
+msgstr "ОК"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:8
+msgid "This material is Open Knowledge"
+msgstr "Материал представляет собой открытые знания"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:11
+msgid ""
+"SlideWiki is developed by <a href=\"http://aksw.org\"> AKSW research group</"
+"a>"
+msgstr ""
+"SlideWiki разработана <a href=\"http://aksw.org\">исследовательской группой "
+"AKSW</a>"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:12
+#: C:\wamp\www\slidewiki/application/views/info/imprint.php:4
+msgid "Imprint"
+msgstr "Контакты"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:13
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:4
+msgid "Terms of Use"
+msgstr "Условия использования"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:14
+#: C:\wamp\www\slidewiki/application/views/header.php:169
+msgid "Mailing list"
+msgstr "E-mail рассылка"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:15
+#: C:\wamp\www\slidewiki/application/views/header.php:167
+msgid "Documentation"
+msgstr "Справка"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:25
+#: C:\wamp\www\slidewiki/application/views/header.php:205
+msgid "Login or Register"
+msgstr "Войти или зарегистрироваться"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:25
+msgid "Login via Facebook"
+msgstr "Войти с помощью Facebook"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:32
+#: C:\wamp\www\slidewiki/application/views/footer.php:43
+#: C:\wamp\www\slidewiki/application/views/footer.php:59
+msgid "Login"
+msgstr "Войти"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:35
+#: C:\wamp\www\slidewiki/application/views/footer.php:66
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:45
+msgid "Email"
+msgstr "E-mail"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:51
+msgid "Password"
+msgstr "Пароль"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:54
+msgid "Can't access my account"
+msgstr "Не могу зайти"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:68
+msgid "Choose Username"
+msgstr "Выберите имя пользователя"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:75
+msgid "Your Email"
+msgstr "E-mail"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:82
+msgid "Confirm Your Email"
+msgstr "Подтвердите E-mail"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:89
+msgid "Choose Password"
+msgstr "Выберите пароль"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:96
+msgid "Verify Password"
+msgstr "Подтвердите пароль"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:103
+msgid "Insert Captcha from picture below"
+msgstr "Введите цифры изображенные на картинке"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:112
+msgid ""
+"I accept that all my contributions will be under <a href=\"http://"
+"creativecommons.org/licenses/by-sa/2.0/\" target=\"_blank\">CC BY SA</a> "
+"license."
+msgstr ""
+"Я подтверждаю согласие на публикацию всех внесенных мной изменений в "
+"соответствии с  <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\" "
+"target=\"_blank\">CC BY SA</a> лицензией."
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:116
+msgid "Register now!"
+msgstr "Зарегистрироваться!"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:130
+#: C:\wamp\www\slidewiki/application/views/footer.php:165
+msgid "Password recovery"
+msgstr "Восстановление пароля"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:135
+msgid "E-mail"
+msgstr "E-mail"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:138
+msgid "Enter the registration e-mail"
+msgstr "Введите e-mail использованный при регистрации"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:142
+#: C:\wamp\www\slidewiki/application/views/footer.php:177
+msgid "Send"
+msgstr "Выслать"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:143
+msgid "Recover by username"
+msgstr "Восстановить по имени пользователя"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:151
+msgid "Choose a SlideWiki user:"
+msgstr "Выберите пользователя:"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:170
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: C:\wamp\www\slidewiki/application/views/footer.php:173
+msgid "Enter the username"
+msgstr "Введите имя пользователя"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:161
+msgid "Search"
+msgstr "Поиск"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:165
+msgid "About"
+msgstr "О проекте"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:168
+msgid "News"
+msgstr "Новости"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:170
+#: C:\wamp\www\slidewiki/application/views/index/view.php:21
+msgid "Get involved"
+msgstr "Оказать содействие"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:171
+msgid "Cite SlideWiki"
+msgstr "Цитировать SlideWiki"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:172
+msgid "Youtube channel"
+msgstr "Канал Youtube"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:173
+msgid "Issue tracker"
+msgstr "Указать на ошибку"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:174
+msgid "Supporting organizations"
+msgstr "Поддерживающие оранизации"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:181
+msgid "Learning"
+msgstr "Обучение"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:183
+msgid "View your scores"
+msgstr "Посмотреть мои оценки"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:184
+msgid "Manage your tests"
+msgstr "Управление моими тестами"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:189
+msgid "Add Deck"
+msgstr "Добавить презентацию"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:191
+msgid "Upload slides (,pptx)"
+msgstr "Загрузить слайды (.pptx)"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:192
+msgid "Upload slides (deck.js, .html)"
+msgstr "Загрузить слайды (deck.js, .html)"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:194
+msgid "Create empty deck"
+msgstr "Создать пустую презентацию"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:197
+msgid "Logged in as"
+msgstr "Вы вошли как"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:199
+msgid "Profile"
+msgstr "Профиль"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:200
+msgid "News Feed"
+msgstr "Новостной канал"
+
+#: C:\wamp\www\slidewiki/application/views/header.php:201
+msgid "Logout"
+msgstr "Выйти"
+
+#: C:\wamp\www\slidewiki/application/views/img/imgmanager.php:64
+msgid "Your media library is empty."
+msgstr "Ваша библеотека изображений пуста."
+
+#: C:\wamp\www\slidewiki/application/views/img/imgmanager.php:127
+msgid "Original size"
+msgstr "исходный размер"
+
+#: C:\wamp\www\slidewiki/application/views/img/imgmanager.php:133
+msgid "Your desired width (in px)"
+msgstr "Желаемая ширина (в пикселях)"
+
+#: C:\wamp\www\slidewiki/application/views/img/imgmanager.php:139
+msgid "Image URL"
+msgstr "URL изображения"
+
+#: C:\wamp\www\slidewiki/application/views/img/imgmanager.php:145
+msgid "Upload Image"
+msgstr "Загрузить изображение"
+
+#: C:\wamp\www\slidewiki/application/views/img/imgmanager.php:151
+msgid "Insert Image"
+msgstr "Вставить изображение"
+
+#: C:\wamp\www\slidewiki/application/views/import/handleLATEXUpload.php:5
+#: C:\wamp\www\slidewiki/application/views/import/handleOOXMLUpload.php:5
+msgid "The file"
+msgstr "Файл"
+
+#: C:\wamp\www\slidewiki/application/views/import/handleLATEXUpload.php:7
+#: C:\wamp\www\slidewiki/application/views/import/handleOOXMLUpload.php:7
+msgid "has been uploaded successfully."
+msgstr "был загружен."
+
+#: C:\wamp\www\slidewiki/application/views/import/handleLATEXUpload.php:10
+#: C:\wamp\www\slidewiki/application/views/import/handleOOXMLUpload.php:10
+msgid "Click link to proceed to the presentation"
+msgstr "Нажмите, чтобы перейти к презентации"
+
+#: C:\wamp\www\slidewiki/application/views/import/handleLATEXUpload.php:11
+#: C:\wamp\www\slidewiki/application/views/import/handleOOXMLUpload.php:11
+msgid "</a></div>"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/import/uploadHTML.php:3
+msgid ""
+"Add new Deck\n"
+"\t\t<small>\n"
+"\t\t\tby uploading slides as .html"
+msgstr ""
+"Добавить новую презентацию\n"
+"\t\t<small>\n"
+"\t\t\tиспользуя слайды .html"
+
+#: C:\wamp\www\slidewiki/application/views/import/uploadHTML.php:27
+#: C:\wamp\www\slidewiki/application/views/import/uploadLATEX.php:27
+#: C:\wamp\www\slidewiki/application/views/import/uploadOOXML.php:45
+msgid ""
+"<strong>Please <a href=\"#login-register-modal\" data-controls-modal=\"login-"
+"register-modal\" data-backdrop=\"true\" data-keyboard=\"true\">Login</a>!</"
+"strong>\n"
+"\t\t\tYou need to be authenticated in SlideWiki before you can create new "
+"presentation decks."
+msgstr ""
+"<strong>Пожалуйста, <a href=\"#login-register-modal\" data-controls-modal="
+"\"login-register-modal\" data-backdrop=\"true\" data-keyboard=\"true"
+"\"><b>Войдите</b></a> или <a href=\"#login-register-modal\" data-controls-"
+"modal=\"login-register-modal\" data-backdrop=\"true\" data-keyboard=\"true"
+"\"><b>зарегистрируйтесь</b></a>.</strong>\n"
+"\t\t\tВы должны быть авторизованы чтобы создавать новые презентации в "
+"SlideWiki."
+
+#: C:\wamp\www\slidewiki/application/views/import/uploadLATEX.php:3
+msgid ""
+"Add new Deck\n"
+"\t\t<small>\n"
+"\t\t\tby uploading slides as .tex\n"
+"\t\t</small>"
+msgstr ""
+"Добавить новую презентацию\n"
+"\t\t<small>\n"
+"\t\t\tиспользуя слайды .tex\n"
+"\t\t</small>"
+
+#: C:\wamp\www\slidewiki/application/views/import/uploadLATEX.php:13
+#: C:\wamp\www\slidewiki/application/views/import/uploadOOXML.php:13
+msgid "Please choose a file:"
+msgstr "Пожалуйста, выберите файл:"
+
+#: C:\wamp\www\slidewiki/application/views/import/uploadOOXML.php:3
+msgid ""
+"Add new Deck\n"
+"\t\t<small>\n"
+"\t\t\tby uploading slides as .pptx\n"
+"\t\t</small>"
+msgstr ""
+"Добавить новую презентацию\n"
+"\t\t<small>\n"
+"\t\t\tиспользуя слайды .pptx\n"
+"\t\t</small>"
+
+#: C:\wamp\www\slidewiki/application/views/import/uploadOOXML.php:30
+msgid "Import with styling"
+msgstr "Импорт с сохранением стиля"
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:18
+msgid ""
+"SlideWiki aims to revolutionize the way how educational material is "
+"authored, shared and used."
+msgstr ""
+"SlideWiki ставит своей целью кардинально изменить процесс создания, "
+"распространения и использования образовательных материалов."
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:21
+msgid "Learn more .."
+msgstr "Узнать больше..."
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:21
+msgid "Create a presentation"
+msgstr "Создать презентацию"
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:47
+#: C:\wamp\www\slidewiki/application/views/index/view.php:80
+#: C:\wamp\www\slidewiki/application/views/index/view.php:92
+msgid "Show more..."
+msgstr "Показать еще..."
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:60
+#: C:\wamp\www\slidewiki/application/views/index/view.php:77
+msgid "Featured presentations"
+msgstr "Избранные презентации"
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:68
+#: C:\wamp\www\slidewiki/application/views/index/view.php:89
+msgid "New presentations"
+msgstr "Новые презентации"
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:95
+msgid "Latest activity"
+msgstr "Последняя активность"
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:97
+msgid "Show all recent changes"
+msgstr "Показать все недавние изменения"
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:102
+msgid "Statistics"
+msgstr "Статистика"
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:113
+msgid "About SlideWiki"
+msgstr "О SlideWiki"
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:117
+msgid ""
+"<p><b>SlideWiki aims to exploit the wisdom, creativity and productivity of "
+"the crowd for the creation of qualitative, rich, engaging educational "
+"content.</b> With SlideWiki users can create and collaborate on slides, "
+"diagrams, assessments and arrange this content in richly-structured course "
+"presentations.</p>\n"
+"\t\t\t<p><b>SlideWiki empowers communities of educators to author, share and "
+"re-use sophisticated educational content in a truly collaborative way.</b> "
+"Existing presentations can be imported and transformed into interactive "
+"courses using HTML and LaTeX. All content in SlideWiki is versioned thereby "
+"allowing users to revise, adapt and re-mix all content. Self-test questions "
+"can be attached to each individual slide and are aggregated on the "
+"presentation level into comprehensive self-assessment tests. Users can "
+"create their own presentation themes. Slidewiki supports the semi-automatic "
+"translation of courses in more than 50 languages.</p>\n"
+"\t\t\t<p><b>With SlideWiki we aim to make educational content dramatically "
+"more accessible, interactive, engaging and qualitative.</b> SlideWiki is "
+"developed and maintained by <a href=\"http://aksw.org\" target=\"_blank"
+"\">AKSW research group</a> at University of Leipzig. More information about "
+"SlideWiki can be found in the <a href=\"documentation/\">documentation</a>.</"
+"p>"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:123
+msgid "WYSIWYG slide authoring"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:124
+msgid "Logical slide and deck representation"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:125
+msgid "LaTeX/MathML integration"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:126
+msgid "Multilingual decks / semi-automatic translation in 50+ languages"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:127
+msgid "PowerPoint/HTML import"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:128
+msgid "Source code highlighting within slides"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:129
+msgid "Dynamic CSS themability and transitions"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:130
+msgid "Support of social networking activities"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:131
+msgid "Full revisioning and branching of slides and decks"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:132
+msgid "E-Learning with self-assessment questionnaires"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/index/view.php:133
+msgid "Remote control of presentations"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/imprint.php:22
+msgid ""
+"University of Leipzig is a public corporation. More information, especially "
+"concerning regulatory authorities can be found in the <a href=\"http://www."
+"uni-leipzig.de/info/impressum.html\" target=\"_blank\" title=\"externer "
+"Verweis (in neuem Fenster)\" class=\"outerlink\"><img src=\"http://bis."
+"informatik.uni-leipzig.de/themes/bis2007/icons/world_link.png\" alt=\"\" "
+"class=\"contexticon\" /> imprint of the University of Leipzig</a>.</p><br /"
+"><a name=\"p27251-5\"></a><p class=\"auto\" id=\"p27251-5\">"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:13
+msgid "This is a human-readable <b>summary</b> of the Terms of Use."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:15
+msgid ""
+"Disclaimer: This summary is not a part of the Terms of Use and is not a "
+"legal document. It is simply a handy reference for understanding the full "
+"terms. Think of it as the user-friendly interface to the legal language of "
+"our Terms of Use."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:17
+msgid "Part of our mission is to"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:19
+msgid ""
+"<b>Empower and Engage</b> people around the world to collect and develop "
+"educational content and either publish it under a free license or dedicate "
+"it to the public domain."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:20
+msgid ""
+"<b>Disseminate</b> this content effectively and globally, free of charge."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:23
+msgid "You are free to"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:25
+msgid "<b>Read and Print</b> our presentations and other media free of charge."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:26
+msgid ""
+"<b>Share and Reuse</b> our presentations and other media under free and open "
+"licenses."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:27
+msgid "<b>Contribute To and Edit</b> our various sites or Projects."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:30
+msgid "Under the following conditions"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:32
+msgid ""
+"<b>Responsibility</b> &#8211; You take responsibility for your edits (since "
+"we only <i>host</i> your content)"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:33
+msgid ""
+"<b>Civility</b> &#8211; You support a civil environment and do not harass "
+"other users."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:34
+msgid ""
+"<b>Lawful Behavior</b> &#8211; You do not violate copyright or other laws."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:35
+msgid "<b>No Harm</b> &#8211; You do not harm our technology infrastructure."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:36
+msgid ""
+"<b>Terms of Use and Policies</b> &#8211; You adhere to the below Terms of "
+"Use and to the applicable community policies when you visit our sites or "
+"participate in our communities."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:39
+msgid "With the understanding that"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:43
+msgid ""
+"This service may contain <b>translations</b> powered by Google. \n"
+"Google disclaims all warranties related to the translations, expressed or "
+"implied, including any warranties of accuracy, reliability, and any implied "
+"warranties of merchantability, fitness for a particular purpose and "
+"noninfringement."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:46
+msgid ""
+"<b>You License Freely Your Contributions</b> &#8211; you generally must "
+"license your contributions and edits to our sites or Projects under a free "
+"and open license (unless your contribution is in the public domain)."
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:47
+msgid ""
+"<b>No Professional Advice</b> &#8211; the content of presentations and other "
+"projects is for informational purposes only and does not constitute "
+"professional advice.</div> </td>"
+msgstr ""
+
+#: C:\wamp\www\slidewiki/application/views/info/termsOfUse.php:53
+msgid ""
+"Text is adopted from <a href=\"http://wikimediafoundation.org/wiki/"
+"Terms_of_Use\">Wikipedia terms of use</a> and is available under the <a href="
+"\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons "
+"Attribution/Share-Alike</a> License."
+msgstr ""
+"Текст адаптирован с <a href=\"http://wikimediafoundation.org/wiki/"
+"Terms_of_Use\">Wikipedia terms of use</a> и доступен в соответствии с <a "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons "
+"Attribution/Share-Alike</a> лицензией."
+
+#, fuzzy
+#~ msgid "<h2>Featured presentations"
+#~ msgstr "Избранные презентации"
+
+#, fuzzy
+#~ msgid "<h2>New presentations"
+#~ msgstr "Новые презентации"
+
+#~ msgid ""
+#~ "<h2>Featured presentations <a target=\"_blank\" href = \"feed/decks/"
+#~ "featured\" title=\"Feed\"><img src=\"static/img/feed.gif\" alt=\"feed\"></"
+#~ "a></h2>"
+#~ msgstr ""
+#~ "<h2>Избранные презентации <a target=\"_blank\" href = \"feed/decks/"
+#~ "featured\" title=\"Feed\"><img src=\"static/img/feed.gif\" alt=\"feed\"></"
+#~ "a></h2>"
+
+#~ msgid ""
+#~ "<h2>New presentations <a target=\"_blank\" href = \"feed/decks/new\" "
+#~ "title=\"Feed\"><img src=\"static/img/feed.gif\" alt=\"feed\"></a></h2>"
+#~ msgstr ""
+#~ "<h2>Новые презентации <a target=\"_blank\" href = \"feed/decks/new\" "
+#~ "title=\"Feed\"><img src=\"static/img/feed.gif\" alt=\"feed\"></a></h2>"
+
+#~ msgid "SlideWiki is developed by"
+#~ msgstr "SlideWiki разработана"
+
+#~ msgid "AKSW research group"
+#~ msgstr "исследовательской группой AKSW"
+
+#~ msgid "I accept that all my contributions will be under"
+#~ msgstr ""
+#~ "Я подтверждаю согласие на публикацию всех моих изменений в соответствии с "
+
+#, fuzzy
+#~ msgid "license."
+#~ msgstr "лицензией"

@@ -1,0 +1,1 @@
+This is a Java Eclipse project. Open with Eclipse IDE.

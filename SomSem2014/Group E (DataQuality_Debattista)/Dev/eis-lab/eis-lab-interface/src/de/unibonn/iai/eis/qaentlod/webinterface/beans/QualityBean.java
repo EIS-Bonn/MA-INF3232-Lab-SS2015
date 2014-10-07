@@ -8,8 +8,7 @@ import javax.annotation.PostConstruct;
 import javax.faces.model.SelectItem;
 import javax.faces.event.ActionEvent;
 
-import org.apache.log4j.Logger;
-
+import de.unibonn.iai.eis.qaentlod.io.utilities.ConfigurationLoader;
 import de.unibonn.iai.eis.qaentlod.util.Dimension;
 import de.unibonn.iai.eis.qaentlod.util.Metrics;
 import de.unibonn.iai.eis.qaentlod.util.ResultDataSet;
@@ -30,13 +29,6 @@ public class QualityBean implements Serializable {
 	private static final long serialVersionUID = 8760794775191152542L;
 
 	// ////////////////////////////////////////////////////////////////////////
-	// Logger
-	// ////////////////////////////////////////////////////////////////////////
-	/** */
-	private static Logger _logger = Logger
-			.getLogger(QualityBean.class);
-
-	// ////////////////////////////////////////////////////////////////////////
 	// Attribute of the backing bean
 	// ////////////////////////////////////////////////////////////////////////
 	private List<SelectItem> availableCategories;
@@ -48,7 +40,7 @@ public class QualityBean implements Serializable {
 	private String currentDataSet;
 	
 
-	private static String fileName = "C:\\Lab\\results.xml";
+	//private static String fileName = "C:\\Lab\\results.xml";
 	private ResultDataSet results;
 	
 	/**
@@ -57,7 +49,9 @@ public class QualityBean implements Serializable {
 	public QualityBean() {
 		super();	
 		try {
-			results = ResultsHelper.read(fileName);
+			ConfigurationLoader conf = new ConfigurationLoader();
+			System.out.println(conf.loadDataBase());
+			results = ResultsHelper.read(conf.loadDataBase());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
@@ -74,14 +68,13 @@ public class QualityBean implements Serializable {
 	public void init() {
 		this.loadDimensions();
 	}
-
+	
 	/**
 	 * This method load all the Dimensions
 	 */
 	private void loadDimensions(){
 		try {
 			this.availableCategories = new ArrayList<SelectItem>();
-			
 			for (Results result : results.getResults()) {
 				for(Dimension dimension: result.getDimensions()){
 					SelectItem aux = new SelectItem(dimension.getName(),dimension.getName());
@@ -91,8 +84,10 @@ public class QualityBean implements Serializable {
 							contained = true;
 						}
 					}
-					if(!contained)
-						this.availableCategories.add(aux);	
+					if(!contained){
+						System.out.println(aux);
+						this.availableCategories.add(aux);
+					}
 				}
 			}			
 		} catch (Exception e) {
@@ -162,8 +157,17 @@ public class QualityBean implements Serializable {
 	private void loadDataSet(){
 		for (Results result: results.getResults()) {
 			SelectItem aux = new SelectItem(result.getUrl(), result.getUrl());
-			if(!this.availableDataSets.contains(aux))
-				this.availableDataSets.add(aux);
+
+			for (Dimension dimension : result.getDimensions()) {
+				for (Metrics metric : dimension.getMetrics()) {
+					if(this.currentMetric.equals(metric.getName())){
+						if(!this.availableDataSets.contains(aux))
+							this.availableDataSets.add(aux);
+					}
+				}
+			}
+		
+			
 		}
 	}
 	
@@ -276,7 +280,7 @@ public class QualityBean implements Serializable {
 		
 		return "";
 	}
-	
+		
 	/**
 	 * This method return the result for the input values for the user
 	 * @return

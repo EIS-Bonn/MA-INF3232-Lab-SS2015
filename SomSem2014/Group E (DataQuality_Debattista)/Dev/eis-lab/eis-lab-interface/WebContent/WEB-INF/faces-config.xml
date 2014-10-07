@@ -7,27 +7,15 @@
 		<managed-bean-class>de.unibonn.iai.eis.qaentlod.webinterface.beans.QualityBean</managed-bean-class>
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>processDataSetBean</managed-bean-name>
+		<managed-bean-class>de.unibonn.iai.eis.qaentlod.webinterface.beans.ProcessDataSetBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
 	<!-- validadores de la aplicacion -->
 	<application>
 		<locale-config>
 			<default-locale>es</default-locale>
 		</locale-config>
-		<message-bundle>messages</message-bundle>
-		<resource-bundle>
-			<base-name>MessageResources</base-name>
-			<var>msg</var>
-		</resource-bundle>
-		<resource-bundle>
-			<base-name>FieldsResources</base-name>
-			<var>fld</var>
-		</resource-bundle>
-		<resource-bundle>
-			<base-name>ErrorResources</base-name>
-			<var>err</var>
-		</resource-bundle>
-		<resource-bundle>
-			<base-name>EventResources</base-name>
-			<var>evt</var>
-		</resource-bundle>
 	</application>
 </faces-config>

@@ -6,8 +6,6 @@ package de.unibonn.iai.eis.qaentlod.util;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.unibonn.iai.eis.qaentlod.io.utilities.DataSetResults;
-
 public class Results {
 	private String url;
 	private List<Dimension> dimensions;

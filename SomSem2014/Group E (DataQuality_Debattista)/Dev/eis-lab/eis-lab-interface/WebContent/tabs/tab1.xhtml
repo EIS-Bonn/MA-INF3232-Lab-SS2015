@@ -8,6 +8,7 @@
 	xmlns:rich="http://richfaces.org/rich">
 <body>
 	<ui:composition>
+		<a4j:keepAlive beanName="qualityBean" />
 		<table border="0.5">
 			<tbody>
 				<tr>
@@ -23,7 +24,7 @@
 								ajaxSingle="true" />
 						</h:selectOneMenu> 
 						<br /> 
-						<a4j:outputPanel id="metric" ajaxRendered="true">
+						<a4j:outputPanel id="metrics" ajaxRendered="true">
 							<h:outputText value="Now choose one of the available Metrics"
 								rendered="#{not empty qualityBean.currentCategory}" />
 							<br />

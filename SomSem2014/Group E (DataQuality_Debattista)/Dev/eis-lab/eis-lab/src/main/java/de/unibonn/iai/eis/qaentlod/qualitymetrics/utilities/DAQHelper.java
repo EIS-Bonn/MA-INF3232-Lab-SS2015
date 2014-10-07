@@ -12,7 +12,6 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 import com.hp.hpl.jena.vocabulary.RDFS;
 
 import de.unibonn.iai.eis.qaentlod.configuration.InternalModelConf;
-import de.unibonn.iai.eis.qaentlod.vocabularies.DQM;
 
 public class DAQHelper {
 

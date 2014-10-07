@@ -9,22 +9,21 @@
 <body>
 	<ui:composition template="templates/template.xhtml">
 		<ui:define name="title">
-			<h:outputText value="TITULO" />
+			<h:outputText value="Quality" />
 		</ui:define>
 		<ui:define name="body">
-			<a4j:keepAlive beanName="qualityBean" />
 			<h:form>
 				<rich:panel>
 					<f:verbatim>
 						<h1>Quality Assessment on Enterprise Linked Data</h1>
 					</f:verbatim>
-					<rich:tabPanel switchType="ajax">
-						<rich:tab label="Quality Assesment">
+					<rich:tabPanel switchType="client" >
+						<rich:tab label="Quality Assesment" ontabchange="location.reload();">
 							<ui:include src="/tabs/tab1.xhtml" />
 						</rich:tab>
-						<rich:tab label="Second">
-				            Test tab
-				        </rich:tab>
+						<rich:tab label="Evaluate Dataset">
+							<ui:include src="/tabs/tab2.xhtml" />
+						</rich:tab>
 					</rich:tabPanel>
 				</rich:panel>
 			</h:form>

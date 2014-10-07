@@ -1,10 +1,6 @@
 package de.unibonn.iai.eis.qaentlod.io.streamprocessor;
 
-import com.hp.hpl.jena.query.QuerySolution;
-
-import de.unibonn.iai.eis.qaentlod.qualitymetrics.freeoferror.FreeOfError;
-import de.unibonn.iai.eis.qaentlod.qualitymetrics.trust.verifiability.AuthenticityDataset;
-import de.unibonn.iai.eis.qaentlod.qualitymetrics.trust.verifiability.DigitalSignatures;
+import com.hp.hpl.jena.query.ResultSet;
 
 /**
  * This class is the one that manage all the Quad and compute all the streaming data
@@ -12,16 +8,14 @@ import de.unibonn.iai.eis.qaentlod.qualitymetrics.trust.verifiability.DigitalSig
  */
 public class StreamManager {
 	private boolean available = false; //This value is use as trafic Light
-	public QuerySolution object; //Object to be pass between elements
-	public DigitalSignatures digMetric = new DigitalSignatures(); //Metrics to be apply
-	public AuthenticityDataset autMetric = new AuthenticityDataset(); //Metrics to be apply
-	public FreeOfError freeMetric = new FreeOfError();
+	public ResultSet object; //Object to be pass between elements
+	private int counter;
 	
 	/**
 	 * This class obtain the values published by the producer
 	 * @return the value published
 	 */
-	public synchronized QuerySolution get() {
+	public synchronized ResultSet get() {
 		while (available == false) {
 			try {
 				wait();
@@ -37,7 +31,8 @@ public class StreamManager {
 	 * Method that is use to publish the information
 	 * @param value
 	 */
-	public synchronized void put(QuerySolution value) {
+	//public synchronized void put(List<QuerySolution> value) {ResultSet
+	public synchronized void put(ResultSet value) {
 		while (available == true) {
 			try {
 				wait();
@@ -48,4 +43,19 @@ public class StreamManager {
 		available = true;
 		notifyAll();
 	}
+
+	/**
+	 * @return the counter
+	 */
+	public int getCounter() {
+		return counter;
+	}
+
+	/**
+	 * @param counter the counter to set
+	 */
+	public void setCounter(int counter) {
+		this.counter = counter;
+	}
+
 }

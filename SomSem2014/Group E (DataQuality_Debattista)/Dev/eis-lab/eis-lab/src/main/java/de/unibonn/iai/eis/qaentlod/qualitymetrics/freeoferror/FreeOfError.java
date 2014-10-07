@@ -1,7 +1,10 @@
 package de.unibonn.iai.eis.qaentlod.qualitymetrics.freeoferror;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.InetAddress;
 import java.net.MalformedURLException;
+import java.net.Socket;
 import java.net.URL;
 import java.net.URLConnection;
 
@@ -27,6 +30,8 @@ public class FreeOfError extends AbstractQualityMetric {
 
 	// counter will increase when free of error quad is checked
 	protected int counter = 0;
+	// number of triples count all triples in data set
+	protected int numberOfTriples = 0;
 
 	/**
 	 * Data set consists of number of quad triples. In each step quad comes to
@@ -35,9 +40,9 @@ public class FreeOfError extends AbstractQualityMetric {
 	 */
 
 	@Override
-	public void compute(Quad quad) {
+	public void compute(Quad quad) {		
 		boolean flag = true;
-
+		numberOfTriples++;
 		Node subject = quad.getSubject();
 		Node predicate = quad.getPredicate();
 		Node object = quad.getObject();
@@ -73,9 +78,10 @@ public class FreeOfError extends AbstractQualityMetric {
 
 	@Override
 	public double metricValue() {
-		// return number of free of error quads
-		return counter;
-	}
+		// return number of free of error quads		
+		return counter * 1.0 / numberOfTriples;
+	} 
+
 
 	@Override
 	public Resource getMetricURI() {
@@ -86,20 +92,14 @@ public class FreeOfError extends AbstractQualityMetric {
 	public ProblemList<?> getQualityProblems() {
 		return null;
 	}
-
+	
 	public boolean isValidURI(Node node) {
 		try {
-			URL url = new URL(node.getURI());
-			URLConnection conn = url.openConnection();
-			conn.connect();
+			java.net.URL url = new URL(node.getURI());
 		} catch (MalformedURLException e) {
-			// the URL is not in a valid form
-			return false;
-		} catch (IOException e) {
-			// the connection couldn't be established
 			return false;
 		}
-		return true;
+		return true;	
 	}
 
 }

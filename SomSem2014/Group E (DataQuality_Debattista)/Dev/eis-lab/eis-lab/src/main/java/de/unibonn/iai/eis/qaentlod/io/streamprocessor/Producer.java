@@ -1,7 +1,8 @@
+package de.unibonn.iai.eis.qaentlod.io.streamprocessor;
+
 /**
  * 
  */
-package de.unibonn.iai.eis.qaentlod.io.streamprocessor;
 
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
@@ -27,7 +28,6 @@ public class Producer extends Thread {
 	private String serviceUrl;
 	
 	private boolean running;
-
 	/**
 	 * Creator of the class
 	 * @param streamManager, this class is the stream Manager to put all the values obtain
@@ -46,37 +46,34 @@ public class Producer extends Thread {
 	public void run() {
 		this.setRunning(true);
 		int iterationNumber = 0;
-		while (true && iterationNumber < 10) {
+		streamManager.setCounter(0);
+		while (true) {
 			System.out.println("*************        ITERATION NUMBER: " + iterationNumber + " TRIPLES: " +  iterationNumber*number + "*******************");
 			
 			//Query to load all the information
 			String query = "SELECT DISTINCT*"
 					+ "{ ?s ?p ?o }"
+					//+ " ORDER BY ?s" //If this order is made, then the SPARQL endpoint take to much time to respond.
 					+ " LIMIT "+ number 
 					+ " OFFSET "+ number*iterationNumber;
 			iterationNumber++;
 			QueryExecution qe = QueryExecutionFactory.sparqlService(this.serviceUrl,query);
 			try {
-				int counter = 0;
 				ResultSet rs = qe.execSelect();
-				while (rs.hasNext()) {
-					counter++; //Increase the value of the counter that is used to finish the cicle
-					streamManager.put(rs.next()); //This instruction put the value to be consume by the consumer
-				}
-				if(counter == 0)//The next result not return any result then it finish
-					break;
-				else
+			
+				if(rs != null && rs.hasNext()){
+					streamManager.put(rs);	//Put all the batch of answer into the streaming manager
+					streamManager.setCounter(streamManager.getCounter()+1); // Announced that the producer publish a result set
 					System.out.println("Process the triples: " + this.number);
+				}
+				else
+					break;
 			} catch (QueryExceptionHTTP e) {
 				System.out.println(this.serviceUrl + " is Not working or is DOWN");
-				this.stop();
 				break; //Close the cicle
-			} finally {
-				qe.close();
-			} // end try/c			
+			} 		
 		}
 		this.setRunning(false);
-		//this.stop();
 	}
 
 	/**

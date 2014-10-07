@@ -88,6 +88,26 @@ public class Menus {
 	}
 	
 	/**
+	 * This method displays the main menu
+	 * @return
+	 */
+	public static String menuMail(){
+		String value = "";
+		scanner = new Scanner(System.in);
+
+		System.out
+				.println("############################################################################################");
+		System.out
+				.println("#########     Please write the mail to send when it finish the process to be evaluated  ####");
+		System.out
+				.println("############################################################################################");
+		value = scanner.next();
+		System.out.println("\n\n\n");
+		return value;
+	}
+	
+	
+	/**
 	 * Message of good bye
 	 */
 	public static void exitMsg() {

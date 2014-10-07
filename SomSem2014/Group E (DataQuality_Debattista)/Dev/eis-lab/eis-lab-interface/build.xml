@@ -14,6 +14,7 @@
 
 	<property name="xml.dir" value="${basedir}/xml" />
 	<property name="dist.dir" value="${basedir}/dist" />
+	<property name="webc.dir" value="${basedir}/WebContent" />
 
 	<property name="app.name" value="EIS_LAB_QAENTLOD" />
 	<property name="war.name" value="${app.name}.war" />
@@ -126,6 +127,9 @@
 		</war>
 	</target>
 	
+	<!-- ==================================== -->
+	<!-- Build the jar into the interface     -->
+	<!-- ==================================== -->
 	<target name="build-eis-lab-jar">
         <jar destfile="${lib.dir}/eis-lab.jar" filesetmanifest="mergewithoutmain">
             <manifest>
@@ -149,6 +153,14 @@
             <zipfileset excludes="META-INF/*.SF" src="${maven.home}/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="${maven.home}/org/slf4j/slf4j-jdk14/1.7.5/slf4j-jdk14-1.7.5.jar"/>
         </jar>
+		<delete file="${dist.dir}/eis-lab.jar" />
+		<copy todir="${dist.dir}" file="${lib.dir}/eis-lab.jar">
+		</copy>
+		
+		<delete file="${webc.dir}/download/eis-lab.jar" />
+		<copy todir="${webc.dir}/download" file="${lib.dir}/eis-lab.jar">
+		</copy>
+				
 	</target>
 	
 	<!-- ==================================== -->

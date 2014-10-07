@@ -4,6 +4,7 @@
 package de.unibonn.iai.eis.qaentlod.io.utilities;
 
 import de.unibonn.iai.eis.qaentlod.qualitymetrics.freeoferror.FreeOfError;
+import de.unibonn.iai.eis.qaentlod.qualitymetrics.measurability.Measurability;
 import de.unibonn.iai.eis.qaentlod.qualitymetrics.trust.verifiability.AuthenticityDataset;
 import de.unibonn.iai.eis.qaentlod.qualitymetrics.trust.verifiability.DigitalSignatures;
 
@@ -19,7 +20,8 @@ public class DataSetResults {
 	private AuthenticityDataset autMetric;
 	//Free of Error
 	private FreeOfError freeMetric;
-	
+	//Measurability
+	private Measurability measurability;
 	/**
 	 * Creation method
 	 * @param url
@@ -27,11 +29,12 @@ public class DataSetResults {
 	 * @param autMetric
 	 * @param freeMetric
 	 */
-	public DataSetResults(String url, DigitalSignatures digMetric, AuthenticityDataset autMetric, FreeOfError freeMetric){
+	public DataSetResults(String url, DigitalSignatures digMetric, AuthenticityDataset autMetric, FreeOfError freeMetric, Measurability measurability){
 		this.url = url;
 		this.digMetric = digMetric;
 		this.autMetric = autMetric;
 		this.freeMetric = freeMetric;
+		this.measurability = measurability;
 	}
 
 	/**
@@ -89,5 +92,17 @@ public class DataSetResults {
 	public void setFreeMetric(FreeOfError freeMetric) {
 		this.freeMetric = freeMetric;
 	}
+	/**
+	 * @return the Measurable metric
+	 */
+	public Measurability getMeasurMetric(){
+		return measurability;
+	}
 	
+	/**
+	 * @param measurability the measurability to set
+	 */
+	public void setMeasurability(Measurability measurability) {
+		this.measurability = measurability;
+	}
 }

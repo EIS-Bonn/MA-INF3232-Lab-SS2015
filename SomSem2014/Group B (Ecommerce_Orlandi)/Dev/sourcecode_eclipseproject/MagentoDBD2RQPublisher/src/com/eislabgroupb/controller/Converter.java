@@ -27,6 +27,7 @@ import com.eislabgroupb.util.Validator;
 import com.eislabgroupb.view.AboutView;
 import com.eislabgroupb.view.Vista;
 
+
 public class Converter implements ActionListener, MenuListener{
 	
 	private String tables;
@@ -60,7 +61,6 @@ public class Converter implements ActionListener, MenuListener{
 		this.tables = "";
 		
 		if (vista.getJcboxProducts().isSelected()) {
-//			this.tables = this.tables + "catalog_product_entity_varchar,catalog_category_entity,catalog_category_entity_datetime,catalog_category_entity_decimal,catalog_category_entity_int,catalog_category_entity_text,catalog_category_entity_varchar,catalog_category_product,catalog_category_product_index,core_url_rewrite,catalog_category_entity,core_store,eav_attribute,catalog_product_entity";
 			this.tables = this.tables + "catalog_category_entity_varchar,catalog_product_entity_varchar";		
 			ban = true;
 		}
@@ -68,7 +68,6 @@ public class Converter implements ActionListener, MenuListener{
 			if (ban) {
 				this.tables = this.tables + ",";
 			}
-//			this.tables = this.tables + "review,review_detail,review_entity,review_entity_summary,review_status,review_store";
 			this.tables = this.tables + ",review_detail,review_status";
 			ban = true;
 		}
@@ -82,7 +81,6 @@ public class Converter implements ActionListener, MenuListener{
 	}
 	
 	public String findAbsoluteLocation(){
-//		return "/home/cristobal/Desktop/testjarjava/lib";
 		File f = new File(System.getProperty("java.class.path"));
 		File dir = f.getAbsoluteFile().getParentFile();
 		return dir.toString()+"/lib";
@@ -156,8 +154,6 @@ public class Converter implements ActionListener, MenuListener{
 				this.buildConexion();
 				this.generateURL();
 				vista.getJlblOutputURL().setText(this.publicURL);
-				//vista.getJlblOutputURL().setText(this.absolutePath);
-				//vista.getJtxt_DBName().setText(this.absolutePath);
 				System.out.println(absolutePath);
 			}else {
 				JOptionPane.showMessageDialog(vista, "Error! Port input not valid!");

@@ -5,10 +5,10 @@ This folder contains the following elements:
    The classes and packages which are contained in the Eclipse Android application are explained here. 
    The content of this archive needs to be extracted in order to grant access without fault.
 
-- Poster.pdf and .docx:
-   Poster about this project in PDF-format and docx-format.
+- Poster.pdf and .pptx:
+   Poster about this project in PDF-format and pptx-format.
 
-- Technical Documentation.pdf and .pptx:
+- Technical Documentation.pdf and .docx:
    PDF-file and docx-file containing the technical documentation. This file contains explanations and information about 
    every part of the development which is not covered by the Javadoc-documentation. 
    It especially gives an overview about the application's structure.

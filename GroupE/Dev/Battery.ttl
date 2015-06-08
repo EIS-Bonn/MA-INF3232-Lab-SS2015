@@ -1,0 +1,44 @@
+@prefix mv: <http://eccenca.com/mobivoc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+mv:Battery
+	a rdfs:Class , owl:Class ;
+	rdfs:comment "Power to produce energy for electric vehicles." ;
+	rdfs:label "battery"@en , "Batterie"@de .
+	
+mv:DieselBatteryHybrid
+	rdfs:subClassOf mv:Battery ;
+	rdfs:comment "" ;
+	rdfs:label "DieselBatteryHybrid"@en , "Diesel..."@de .
+	
+mv:petrolBatteryHybrid
+	rdfs:subClassOf mv:Battery ;
+	rdfs:comment "" ;
+	rdfs:label "PetrolBatteryHybrid"@en , "Petrol..."@de .
+
+
+#Properties 
+	
+mv:Voltage
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the voltage of the power." ; 
+	rdfs:label "Voltage"@en , "Spannung"@de ;
+	rdfs:domain mv:Battery ; 
+	rdfs:range rdfs:Literal .
+	
+mv:PlugType #i think we should put in in the charging station class
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the plug type." ; 
+	rdfs:label "Voltage"@en , "Spannung"@de ;
+	rdfs:domain mv:Battery ; 
+	rdfs:range rdfs:Literal .
+	
+mv:Ampere
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the ampere of the power." ; 
+	rdfs:label "Ampere"@en , "Ampere"@de ;
+	rdfs:domain mv:Battery ; 
+	rdfs:range rdfs:Literal .

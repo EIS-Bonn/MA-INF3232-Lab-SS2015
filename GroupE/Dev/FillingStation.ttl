@@ -1,0 +1,59 @@
+@prefix mv: <http://eccenca.com/mobivoc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+mv:FillingStation
+	a rdfs:Class , owl:Class ;
+	rdfs:comment "Facility for refueling motor vehicles." ;
+	rdfs:label "filling station"@en , "Tankstelle"@de ;
+	skos:altLabel "fuelling station"@en , "gas station"@en-US.
+
+
+# Methods
+
+mv:hasOffer
+	a rdf:Property , owl:ObjectProperty ;
+	rdfs:comment "Indicates the sort of fuel products the filling station offers." ;
+	rdfs:label "has offer"@en , "anbietet"@de ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range mv:Fuel .
+	
+	
+# Properties
+
+mv:fillingStationNumber
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the unique number of the filling station." ;
+	rdfs:label "filling station number"@en , "Tankstellennummer"@de ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+	
+mv:isInLocation
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the location of the filling station." ;
+	rdfs:label "filling station location"@en , "TankstellenOrt"@de ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+	
+mv:openingHours
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the opening hours of the filling station." ;
+	rdfs:label "filling station opening hours"@en , "TankstellenOffnungzeiten"@de ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+	
+mv:availablePaymentType
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the payment types that are available to the customer." ;
+	rdfs:label "filling station payment type"@en , "TankstellenZahlungsart"@de ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+	
+mv:maximumHeight
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the maximum height of the filling station." ;
+	rdfs:label "filling station maximum height"@en , "Tankstellenhöhe"@de ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .

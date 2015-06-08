@@ -1,0 +1,94 @@
+@prefix mv: <http://eccenca.com/mobivoc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+
+mv:Fuel
+	a rdfs:Class , owl:Class ;
+	rdfs:comment "Material to produce energy for motor vehicles." ;
+	rdfs:label "fuel"@en , "Kraftstoff"@de .
+
+mv:DieselFuel
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "Liquid fuel used in diesel engines." ;
+	rdfs:label "diesel fuel"@en , "Diesel"@de ;
+	skos:altLabel "Dieselkraftstoff"@de ;
+	skos:hiddenLabel "Dieselöl"@de . 
+	
+mv:Biodiesel
+	rdfs:subClassOf mv:DieselFuel ;
+	rdfs:comment "Liquid fuel used in standard diesel engines which consists of vegetable oil - or animal fat-based diesel fuel." ;
+	rdfs:label "biodiesel fuel"@en , "Biodiesel"@de ;
+	skos:altLabel "Biodieselkraftstoff"@de ;
+	skos:hiddenLabel "Biodieselöl"@de . 
+
+mv:Ethanol
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "Liquid fuel used as motor fuel, made from biomass." ;
+	rdfs:label "ethanol fuel"@en , "Äthanol"@de .
+
+mv:Hydrogen
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "Liquid or gas zero-emission fuel." ;
+	rdfs:label "hydrogen fuel"@en , "Wasserstoff"@de .
+	
+mv:LiquidGas
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "Gas that has been turned into a liquid by cooling or compressing it." ;
+	rdfs:label "LiquidGas fuel"@en , "Flüssiggas"@de .
+	
+mv:LiquidPetroleumGas
+	rdfs:subClassOf mv:LiquidGas ;
+	rdfs:comment "Mixtures of hydrocarbon gases used as fuel for vehicles." ;
+	rdfs:label "LiquidPetroleumGas fuel"@en , "Petrol Flüssigas"@de ;
+	skos:hiddenLabel "LPG"@en .
+	
+mv:Petrol
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "Transparent, petroleum-derived liquid that is used primarily as a fuel in internal combustion engines." ;
+	rdfs:label "petrol"@en , "Benzin"@de ;
+	skos:altLabel "gasoline"@en-US, "Motorenbenzin"@de .	
+
+mv:Methane
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "Methane stored at high pressure which is used in place of gasoline (petrol)." ;
+	rdfs:label "CompressedNaturalGas fuel"@en , "Erdgas"@de ;
+	skos:hiddenLabel "CNG"@en .
+
+
+
+# Properties
+
+mv:Price
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the price of fuel." ; 
+	rdfs:label "price"@en , "Preis"@de ;
+	rdfs:domain mv:Fuel ; 
+	rdfs:range rdfs:Literal .
+
+mv:octaneNumber
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the octane number of fuel." ; 
+	rdfs:label "octane number"@en , "Oktanzahl"@de ;
+	skos:altLabel "octane rating"@en ;
+	rdfs:domain mv:Petrol ; #aber auch CNG und LPG haben Oktanzahl (und Diesel theoretisch auch?), mehrere Oktanzahlarten
+	rdfs:range rdfs:Literal .
+
+mv:cetaneNumber
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the combustion speed of diesel fuel." ; #It is an inverse of the similar octane rating for petrol.
+	rdfs:label "cetane number"@en , "Cetanzahl"@de ;
+	skos:altLabel "CN"@en , "CZ"@de ;
+	rdfs:domain mv:DieselFuel ;
+	rdfs:range rdfs:Literal .
+
+mv:methaneNumber
+	a rdf:Property , owl:DatatypeProperty ; #Unterschied bei den einzelnen nummern ist der Referenzkraftstoff
+	rdfs:comment "Indicates the methane number of fuel. It uses a reference fuel blend of methane, with a methane number of 100, and hydrogen, with a methane number of 0" ; 
+	rdfs:label "methane number"@en , "Methanzahl"@de ;
+	skos:altLabel "MN"@en , "MZ"@de ;
+	rdfs:domain mv:Fuel ;
+	rdfs:range rdfs:Literal .

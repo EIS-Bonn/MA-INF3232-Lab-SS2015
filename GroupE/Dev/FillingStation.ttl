@@ -6,22 +6,29 @@
 
 mv:FillingStation
 	a rdfs:Class , owl:Class ;
-	rdfs:comment "Facility for refueling motor vehicles." ;
-	rdfs:label "filling station"@en , "Tankstelle"@de ;
-	skos:altLabel "fuelling station"@en , "gas station"@en-US.
+	rdfs:comment "Facility for combustion motor vehicles or electric motor vehicle." ;
+	rdfs:label "filling station"@en .
+	
+mv:FuelStation
+	a rdfs:subClassOf mv:FillingStation ;
+	rdfs:comment "Facility for refueling motor vehicle." ;
+	rdfs:label "fuel station"@en, "Tankstelle"@de ;
+	skos:altLabel "petrol station"@en , "gas station"@en-US. # property is used when synonyms, near-synonyms, or abbrevia- tions need to be represented.
 
+mv:ChargingStation
+	a rdfs:subClassOf mv:FillingStation ; 
+	rdfs:comment "Facility for electric motor vehicle." ;
+	rdfs:label "charging station"@en, ""@de .
+	
 
-# Methods
+# Properties
 
 mv:hasOffer
 	a rdf:Property , owl:ObjectProperty ;
-	rdfs:comment "Indicates the sort of fuel products the filling station offers." ;
-	rdfs:label "has offer"@en , "anbietet"@de ;
+	rdfs:comment "Indicates the sort of fuels product the filling station offers."
+	rdfs:label "has offer"
 	rdfs:domain mv:FillingStation ;
 	rdfs:range mv:Fuel .
-	
-	
-# Properties
 
 mv:fillingStationNumber
 	a rdf:Property , owl:DatatypeProperty ;
@@ -29,31 +36,30 @@ mv:fillingStationNumber
 	rdfs:label "filling station number"@en , "Tankstellennummer"@de ;
 	rdfs:domain mv:FillingStation ;
 	rdfs:range rdfs:Literal .
-	
-mv:isInLocation
+
+mv:fillingStationHeight
 	a rdf:Property , owl:DatatypeProperty ;
-	rdfs:comment "Indicates the location of the filling station." ;
-	rdfs:label "filling station location"@en , "TankstellenOrt"@de ;
+	rdfs:comment "Indicates the height of the filling station. This is important especially for trucks" ;
+	rdfs:label "filling station height"@en, ""@de ;
 	rdfs:domain mv:FillingStation ;
 	rdfs:range rdfs:Literal .
-	
-mv:openingHours
-	a rdf:Property , owl:DatatypeProperty ;
-	rdfs:comment "Indicates the opening hours of the filling station." ;
-	rdfs:label "filling station opening hours"@en , "TankstellenOffnungzeiten"@de ;
-	rdfs:domain mv:FillingStation ;
-	rdfs:range rdfs:Literal .
-	
-mv:availablePaymentType
-	a rdf:Property , owl:DatatypeProperty ;
-	rdfs:comment "Indicates the payment types that are available to the customer." ;
-	rdfs:label "filling station payment type"@en , "TankstellenZahlungsart"@de ;
-	rdfs:domain mv:FillingStation ;
-	rdfs:range rdfs:Literal .
-	
-mv:maximumHeight
-	a rdf:Property , owl:DatatypeProperty ;
-	rdfs:comment "Indicates the maximum height of the filling station." ;
-	rdfs:label "filling station maximum height"@en , "Tankstellenhöhe"@de ;
-	rdfs:domain mv:FillingStation ;
-	rdfs:range rdfs:Literal .
+
+
+
+
+#Datatype
+
+mv:fillingStationLocation
+	a rdfs:Datatype
+
+
+mv:ShellStation 
+	a mv:FuelStation 
+
+
+
+
+
+
+
+

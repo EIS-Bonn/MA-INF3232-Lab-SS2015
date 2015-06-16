@@ -8,14 +8,18 @@
 mv:Fuel
 	a rdfs:Class , owl:Class ;
 	rdfs:comment "Material to produce energy for motor vehicles." ;
-	rdfs:label "fuel"@en , "Kraftstoff"@de .
+	rdfs:label "Fuel"@en , "Kraftstoff"@de .
 
-mv:DieselFuel
+mv:Adblue
 	rdfs:subClassOf mv:Fuel ;
-	rdfs:comment "Liquid fuel used in diesel engines." ;
-	rdfs:label "diesel fuel"@en , "Diesel"@de ;
-	skos:altLabel "Dieselkraftstoff"@de ;
-	skos:hiddenLabel "Dieselöl"@de . 
+	rdfs:comment "******************" ;
+	rdfs:label "Adblue"@en , "Adblue"@de ;
+	
+mv:Autogas
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "Common name for liquefied petroleum gas (LPG) when it is used as a fuel in internal combustion engines in vehicles. It is a mixture of propane and butane." ;
+	rdfs:label "Autogas"@en , "Autogas"@de ;
+	skos:altLabel "LPG" , "Liquified petroleum gas"@en .
 	
 mv:Biodiesel
 	rdfs:subClassOf mv:DieselFuel ;
@@ -24,16 +28,44 @@ mv:Biodiesel
 	skos:altLabel "Biodieselkraftstoff"@de ;
 	skos:hiddenLabel "Biodieselöl"@de . 
 
+mv:CompressedNaturalGas
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "Methane stored at high pressure which is used in place of gasoline (petrol)." ;
+	rdfs:label "CNG" , "Erdgas"@de ;
+	skos:altLabel "Compressed natural gas" .
+	
+mv:DieselFuel
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "Liquid fuel used in diesel engines." ;
+	rdfs:label "Diesel fuel"@en , "Diesel"@de ;
+	skos:altLabel "Dieselkraftstoff"@de ;
+	skos:hiddenLabel "Dieselöl"@de . 
+
+mv:E85
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "That includes an ethanol fuel blend of 85% denatured ethanol fuel and 15% gasoline or other hydrocarbon by volume." ;
+	rdfs:label "E85"@en , "E85"@de ;
+	
 mv:Ethanol
 	rdfs:subClassOf mv:Fuel ;
 	rdfs:comment "Liquid fuel used as motor fuel, made from biomass." ;
-	rdfs:label "ethanol fuel"@en , "Äthanol"@de .
-
+	rdfs:label "Ethanol fuel"@en , "Äthanol"@de .
+	
+mv:ExcelliumDiesel
+	rdfs:subClassOf mv:DieselFuel ;
+	rdfs:comment "******" ;
+	rdfs:label "Excellium diesel"@en , "Excellium diesel"@de ;
+	
+mv:ExcelliumSuperPlus
+	rdfs:subClassOf mv:****** ;
+	rdfs:comment "*********" ;
+	rdfs:label "Excellium super plus"@en , "Excellium super plus"@de ;
+	
 mv:Hydrogen
 	rdfs:subClassOf mv:Fuel ;
 	rdfs:comment "Liquid or gas zero-emission fuel." ;
-	rdfs:label "hydrogen fuel"@en , "Wasserstoff"@de .
-	
+	rdfs:label "Hydrogen fuel"@en , "Wasserstoff"@de .
+
 mv:LiquidGas
 	rdfs:subClassOf mv:Fuel ;
 	rdfs:comment "Gas that has been turned into a liquid by cooling or compressing it." ;
@@ -42,137 +74,244 @@ mv:LiquidGas
 mv:LiquidPetroleumGas
 	rdfs:subClassOf mv:LiquidGas ;
 	rdfs:comment "Mixtures of hydrocarbon gases used as fuel for vehicles." ;
-	rdfs:label "LiquidPetroleumGas fuel"@en , "Petrol Flüssigas"@de ;
+	rdfs:label "LiquidPetroleumGas fuel"@en , "Petrol flüssigas"@de ;
 	skos:hiddenLabel "LPG"@en .
 	
-mv:Petrol
-	rdfs:subClassOf mv:Fuel ;
-	rdfs:comment "Transparent, petroleum-derived liquid that is used primarily as a fuel in internal combustion engines." ;
-	rdfs:label "petrol"@en , "Benzin"@de ;
-	skos:altLabel "gasoline"@en-US, "Motorenbenzin"@de .	
-
+mv:LKWDiesel
+	rdfs:subClassOf mv:DieselFuel ;
+	rdfs:comment "*************" ;
+	rdfs:label "LKW-Diesel"@en , "LKW-Diesel"@de ;
+	
+mv:MaxxMotionDiesel
+	rdfs:subClassOf mv:DieselFuel ;
+	rdfs:comment "**************" ;
+	rdfs:label "Maxx motion diesel"@en , "Maxx motion diesel"@de ;  
+	
+mv:MaxxMotionSuper100
+	rdfs:subClassOf mv:****;
+	rdfs:comment "***********" ;
+	rdfs:label "Maxx motion super 100"@en , "Maxx motion super 100"@de ;
+	
 mv:Methane
 	rdfs:subClassOf mv:Fuel ;
 	rdfs:comment "Methane stored at high pressure which is used in place of gasoline (petrol)." ;
-	rdfs:label "CompressedNaturalGas fuel"@en , "Erdgas"@de ;
+	rdfs:label "Compressed natural gas fuel"@en , "Erdgas"@de ;
 	skos:hiddenLabel "CNG"@en .
 
-mv:Autogas
+mv:Petrol
 	rdfs:subClassOf mv:Fuel ;
-	rdfs:comment "Common name for liquefied petroleum gas (LPG) when it is used as a fuel in internal combustion engines in vehicles. It is a mixture of propane and butane." ;
-	rdfs:label "autogas"@en , "Autogas"@de ;
-	skos:altLabel "LPG" , "liquified petroleum gas"@en .
-
-mv:CompressedNaturalGas
+	rdfs:comment "Transparent, petroleum-derived liquid that is used primarily as a fuel in internal combustion engines." ;
+	rdfs:label "Petrol"@en , "Benzin"@de ;
+	skos:altLabel "Gasoline"@en-US, "Motorenbenzin"@de .
+	
+mv:Super(E5)
 	rdfs:subClassOf mv:Fuel ;
-	rdfs:comment "Methane stored at high pressure which is used in place of gasoline (petrol)." ;
-	rdfs:label "CNG" , "Erdgas"@de ;
-	skos:altLabel "compressed natural gas" .
+	rdfs:comment "Liquid fuel used in diesel engines." ;
+	rdfs:label "Super E5"@en , "Super E5"@de ;
+	
+mv:Super(E10)
+	rdfs:subClassOf mv:Fuel ;
+	rdfs:comment "Liquid fuel used in diesel engines." ;
+	rdfs:label "Super E10"@en , "Super E10"@de ; 
 
+mv:SuperDiesel
+	rdfs:subClassOf mv:Petrol ;
+	rdfs:comment "Liquid fuel used in diesel engines." ;
+	rdfs:label "Super diesel"@en , "Super diesel"@de ;
+	
+mv:SuperPlus
+	rdfs:subClassOf mv:Petrol ;
+	rdfs:comment "Gasoline type under RON(Research octane number) 98" ;
+	rdfs:label "Super plus"@en , "Super plus"@de ;
+	
+mv:UltimateDiesel
+	rdfs:subClassOf mv:DieselFuel  ;
+	rdfs:comment "Liquid fuel used in diesel engines." ;
+	rdfs:label "Ultimate diesel"@en , "Ultimate diesel"@de ;
+	
+mv:UltimateSuper
+	rdfs:subClassOf mv:Petrol ;
+	rdfs:comment "Gasoline type under RON(Research octane number) 98" ;
+	rdfs:label "Ultimate super"@en , "Ultimate super"@de ;
+	
+mv:VPowerDiesel
+	rdfs:subClassOf mv:DieselFuel  ;
+	rdfs:comment "Blend of regular petroleum-based diesel and synthetic diesel, created using gas to liquids (GTL), along with some extra additives designed to clean the injection system and improve injection pump and injector lubricity." ;
+	rdfs:label "V-Power diesel"@en , "V-Power diesel"@de ;
+	
+mv:VPowerRacing
+	rdfs:subClassOf mv:Petrol ;
+	rdfs:comment "Gasoline type under RON(Research octane number) 100" ;
+	rdfs:label "V-Power racing"@en , "V-Power racing"@de ;
 
 
 # Properties
 
-mv:octaneNumber
-	a rdf:Property , owl:DatatypeProperty ;
-	rdfs:comment "Indicates the octane number of fuel." ; 
-	rdfs:label "octane number"@en , "Oktanzahl"@de ;
-	skos:altLabel "octane rating"@en ;
-	rdfs:domain mv:Petrol ; #aber auch CNG und LPG haben Oktanzahl (und Diesel theoretisch auch?), mehrere Oktanzahlarten
-	rdfs:range rdfs:Literal .
-
-mv:cetaneNumber
-	a rdf:Property , owl:DatatypeProperty ;
-	rdfs:comment "Indicates the combustion speed of diesel fuel." ; #It is an inverse of the similar octane rating for petrol.
-	rdfs:label "cetane number"@en , "Cetanzahl"@de ;
-	skos:altLabel "CN"@en , "CZ"@de ;
-	rdfs:domain mv:DieselFuel ;
-	rdfs:range rdfs:Literal .
-
-mv:methaneNumber
-	a rdf:Property , owl:DatatypeProperty ; #Unterschied bei den einzelnen nummern ist der Referenzkraftstoff
-	rdfs:comment "Indicates the methane number of fuel. It uses a reference fuel blend of methane, with a methane number of 100, and hydrogen, with a methane number of 0" ; 
-	rdfs:label "methane number"@en , "Methanzahl"@de ;
-	skos:altLabel "MN"@en , "MZ"@de ;
-	rdfs:domain mv:Fuel ;
-	rdfs:range rdfs:Literal .
 	
-mv:fuelMaterial
-	a rdf:Property , owl:DatatypeProperty ; 
-	rdfs:comment "Indicates materials that fuel is made of" ; 
-	rdfs:label "fuel material"@en , "Brennmaterial"@de ;
-	skos:altLabel "FM"@en , "BM"@de ;
-	rdfs:domain mv:Fuel ;
-	rdfs:range rdfs:Literal .
-	
-mv:gasolineGallonEquivalent
-	a rdf:Property , owl:DatatypeProperty ; 
-	rdfs:comment "Indicates the amount of alternative fuel it takes to equal the energy content of one liquid gallon of gasoline" ; 
-	rdfs:label "gasoline gallon equivalent"@en , "Benzin Equivalent"@de ;
-	skos:altLabel "GGE"@en , "BGG"@de ;
-	rdfs:domain mv:Fuel ;
-	rdfs:range rdfs:Literal .
-	
-mv:energyContent
-	a rdf:Property , owl:DatatypeProperty ; 
-	rdfs:comment "Indicates amount of heat released during the combustion" ; 
-	rdfs:label "energy content"@en , "Energiegehalt"@de ;
-	skos:altLabel "EC"@en , "EG"@de ;
-	rdfs:domain mv:Fuel ;
-	rdfs:range rdfs:Literal .
-	
-mv:lowerHeatingValue
-	a rdf:Property , owl:DatatypeProperty ; 
-	rdfs:comment "Determined by subtracting the heat of vaporization of the water vapor from the higher heating value" ; 
-	rdfs:label "lower heating value"@en , "Heizwert"@de ;
-	skos:altLabel "LHV"@en , "HW"@de ;
-	rdfs:domain mv:EnergyContent ;
-	rdfs:range rdfs:Literal .
-
-mv:higherHeatingValue
-	a rdf:Property , owl:DatatypeProperty ; 
-	rdfs:comment "Determined by bringing all the products of combustion back to the original pre-combustion temperature, and in particular condensing any vapor produced" ; 
-	rdfs:label "higher heating value"@en , "Brennwert"@de ;
-	skos:altLabel "HHV"@en , "BW"@de ;
-	rdfs:domain mv:EnergyContent ;
-	rdfs:range rdfs:Literal .
-
-mv:physicalState
-	a rdf:Property , owl:DatatypeProperty ; 
-	rdfs:comment "Indicates physical state of the fuel " ; 
-	rdfs:label "physical state"@en , "Physikalischer Zustand"@de ;
-	skos:altLabel "PS"@en , "ZS"@de ;
-	rdfs:domain mv:Fuel ;
-	rdfs:range rdfs:Literal .
-	
-mv:flashPoint
-	a rdf:Property , owl:DatatypeProperty ; 
-	rdfs:comment "Indicates minimum temperature at which a liquid gives off vapor within a test vessel in sufficient concentration to form an ignitable mixture with air near the surface of the liquid" ; 
-	rdfs:label "flash point"@en , "Flammpunkt"@de ;
-	skos:altLabel "FP"@en , "FP"@de ;
-	rdfs:domain mv:Fuel ;
-	rdfs:range rdfs:Literal .
-	
-mv:autoignitionTemperature
+mv:AutoignitionTemperature
 	a rdf:Property , owl:DatatypeProperty ; 
 	rdfs:comment "Indicates lowest temperature at which a flammable gas vapor will ignite spontaneously, without a source of ignition, after several minutes of exposure to sources of heat." ; 
-	rdfs:label "Autoignition Temperature"@en , "Selbstentzündungstemperatur"@de ;
+	rdfs:label "Autoignition temperature"@en , "Selbstentzündungs temperatur"@de ;
 	skos:altLabel "AT"@en , "FT"@de ;
 	rdfs:domain mv:Fuel ;
 	rdfs:range rdfs:Literal .
 
-mv:chemicalStructure
+mv:CarbonResidue
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Measure of the carbon depositing tendencies of a diesel fuel after evaporation and pyrolysis under prescribed conditions" ;
+	rdfs:label "Carbon residue"@en , "******"@de ;
+	skos:altLabel "CR"@en , "*****"@de ;
+	rdfs:domain mv:DieselFuel ;
+	rdfs:range rdfs:Literal .
+	
+mv:CetaneNumber
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the combustion speed of diesel fuel." ; #It is an inverse of the similar octane rating for petrol.
+	rdfs:label "Cetane number"@en , "Cetanzahl"@de ;
+	skos:altLabel "CN"@en , "CZ"@de ;
+	rdfs:domain mv:DieselFuel ;
+	rdfs:range rdfs:Literal .
+	
+mv:ChemicalStructure
 	a rdf:Property , owl:DatatypeProperty ; 
 	rdfs:comment "Indicates chemical structure of the fuel" ; 
-	rdfs:label "chemical structure"@en , "Chemische Struktur"@de ;
+	rdfs:label "Chemical structure"@en , "Chemische struktur"@de ;
 	skos:altLabel "CS"@en , "CS"@de ;
 	rdfs:domain mv:Fuel ;
 	rdfs:range rdfs:Literal .
+
+mv:CloudPoint
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Temperature at which paraffin wax falls out of solution and starts to form wax crystals in the fuel." ; 
+	rdfs:label "Cloud point"@en , "*************"@de ;
+	skos:altLabel "CP"@en , "********"@de ;
+	rdfs:domain mv:DieselFuel ;
+	rdfs:range rdfs:Literal .
+
+mv:ColdFilterPlugPoint
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Temperature where fuel can no longer flow freely through a fuel filter, approximately halfway between the cloud point and the pour point." ; 
+	rdfs:label "Cold filter plug point"@en , "*************"@de ;
+	skos:altLabel "CFPP"@en , "********"@de ;
+	rdfs:domain mv:DieselFuel ;
+	rdfs:range rdfs:Literal .
+
+mv:ElectricalConductivity
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Ability of a fuel to dissipate electric charge that has been generated during pumping and filtering operations is controller by its conductivity" ; 
+	rdfs:label "Electrical Conductivity"@en , "*************"@de ;
+	skos:altLabel "EC"@en , "********"@de ;
+	rdfs:domain mv:DieselFuel ;
+	rdfs:range rdfs:Literal .
 	
-mv:viscosity
+mv:EnergyContent
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Indicates amount of heat released during the combustion" ; 
+	rdfs:label "Energy content"@en , "Energiegehalt"@de ;
+	skos:altLabel "EC"@en , "EG"@de ;
+	rdfs:domain mv:Fuel ;
+	rdfs:range rdfs:Literal .
+	
+mv:FlashPoint
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Indicates minimum temperature at which a liquid gives off vapor within a test vessel in sufficient concentration to form an ignitable mixture with air near the surface of the liquid" ; 
+	rdfs:label "Flash point"@en , "Flammpunkt"@de ;
+	skos:altLabel "FP"@en , "FP"@de ;
+	rdfs:domain mv:Fuel ;
+	rdfs:range rdfs:Literal .
+	
+mv:FuelMaterial
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Indicates materials that fuel is made of" ; 
+	rdfs:label "Fuel material"@en , "Brennmaterial"@de ;
+	skos:altLabel "FM"@en , "BM"@de ;
+	rdfs:domain mv:Fuel ;
+	rdfs:range rdfs:Literal .
+
+mv:GasolineGallonEquivalent
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Indicates the amount of alternative fuel it takes to equal the energy content of one liquid gallon of gasoline" ; 
+	rdfs:label "Gasoline gallon equivalent"@en , "Benzin equivalent"@de ;
+	skos:altLabel "GGE"@en , "BGG"@de ;
+	rdfs:domain mv:Fuel ;
+	rdfs:range rdfs:Literal .
+
+mv:HigherHeatingValue
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Determined by bringing all the products of combustion back to the original pre-combustion temperature, and in particular condensing any vapor produced" ; 
+	rdfs:label "Higher heating value"@en , "Brennwert"@de ;
+	skos:altLabel "HHV"@en , "BW"@de ;
+	rdfs:domain mv:EnergyContent ;
+	rdfs:range rdfs:Literal .
+
+mv:LowerHeatingValue
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Determined by subtracting the heat of vaporization of the water vapor from the higher heating value" ; 
+	rdfs:label "Lower heating value"@en , "Heizwert"@de ;
+	skos:altLabel "LHV"@en , "HW"@de ;
+	rdfs:domain mv:EnergyContent ;
+	rdfs:range rdfs:Literal .
+
+mv:Lubricity
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Since engines require the diesel fuel to act as a lubricant for their injection systems, diesel fuel must have sufficient lubricity to give adequate protection against excessive injection system wear. " ; 
+	rdfs:label "Lubricity"@en , "*******"@de ;
+	skos:altLabel "LB"@en , "****"@de ;
+	rdfs:domain mv:DieselFuel ;
+	rdfs:range rdfs:Literal .
+	
+mv:MethaneNumber
+	a rdf:Property , owl:DatatypeProperty ; #Unterschied bei den einzelnen nummern ist der Referenzkraftstoff
+	rdfs:comment "Indicates the methane number of fuel. It uses a reference fuel blend of methane, with a methane number of 100, and hydrogen, with a methane number of 0" ; 
+	rdfs:label "Methane number"@en , "Methanzahl"@de ;
+	skos:altLabel "MN"@en , "MZ"@de ;
+	rdfs:domain mv:Fuel ;
+	rdfs:range rdfs:Literal .
+
+mv:OctaneNumber
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the octane number of fuel." ; 
+	rdfs:label "Octane number"@en , "Oktanzahl"@de ;
+	skos:altLabel "Octane rating"@en ;
+	rdfs:domain mv:Petrol ; #aber auch CNG und LPG haben Oktanzahl (und Diesel theoretisch auch?), mehrere Oktanzahlarten
+	rdfs:range rdfs:Literal .
+
+mv:PhysicalState
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Indicates physical state of the fuel " ; 
+	rdfs:label "Physical state"@en , "Physikalischer Zustand"@de ;
+	skos:altLabel "PS"@en , "PZ"@de ;
+	rdfs:domain mv:Fuel ;
+	rdfs:range rdfs:Literal .	
+	
+mv:PourPoint
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Temperature at which fuel will no longer flow or the point at which fuel gels or turns solid." ; 
+	rdfs:label "Pour point"@en , "*************"@de ;
+	skos:altLabel "PP"@en , "********"@de ;
+	rdfs:domain mv:DieselFuel ;
+	rdfs:range rdfs:Literal .
+
+mv:SulphurContent
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "Sulphur tolerance by an engine is dependant on the type of engine, the type of service and lube oil used" ; 
+	rdfs:label "Sulphur content"@en , "*************"@de ;
+	skos:altLabel "SC"@en , "********"@de ;
+	rdfs:domain mv:DieselFuel ;
+	rdfs:range rdfs:Literal .
+	
+mv:Viscosity
 	a rdf:Property , owl:DatatypeProperty ; 
 	rdfs:comment "Indicates measure of fuel resistance to gradual deformation by shear stress or tensile stress" ; 
-	rdfs:label "viscosity"@en , "Viskosität"@de ;
-	skos:altLabel "V"@en , "V"@de ;
+	rdfs:label "Viscosity"@en , "Viskosität"@de ;
+	skos:altLabel "VS"@en , "VS"@de ;
 	rdfs:domain mv:Fuel ;
+	rdfs:range rdfs:Literal .
+
+mv:Volatility
+	a rdf:Property , owl:DatatypeProperty ; 
+	rdfs:comment "The distillation characteristic of the fuel" ; 
+	rdfs:label "Volatility"@en , "********"@de ;
+	skos:altLabel "VL"@en , "*******"@de ;
+	rdfs:domain mv:DieselFuel ;
 	rdfs:range rdfs:Literal .

@@ -21,6 +21,7 @@ mv:ChargingStation
 	rdfs:subClassOf mv:FillingStation ; 
 	rdfs:comment "Facility for electric motor vehicle." ;
 	rdfs:label "charging station"@en, ""@de .
+
 	
 
 # Properties
@@ -46,11 +47,23 @@ mv:fillingStationHeight
 	rdfs:domain mv:FillingStation ;
 	rdfs:range rdfs:Literal .
 
+mv:hasParkingFacility
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicate whether Filling Station has Parking Facility or not" ;
+	rdfs:label "has parking facility" ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:hasWashingFacility
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicate whether Filling Station has Washing Facility or not" ;
+	rdfs:label "has washing facility" ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+
 
 
 # Individuals
-
-#Fuel Station Individuals
 
 mv:FuelStationA 
 	a mv:FuelStation ;

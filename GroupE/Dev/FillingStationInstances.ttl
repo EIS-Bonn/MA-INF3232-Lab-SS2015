@@ -1,520 +1,192 @@
-<http://linkedgeodata.org/triplify/way87383464>
-        <http://linkedgeodata.org/ontology/changeset>
-                "6791933"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2010-12-28T21:12:51"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node369544848>
-        <http://linkedgeodata.org/ontology/changeset>
-                "10898812"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "HEM" ;
-        <http://linkedgeodata.org/ontology/version>
-                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2012-03-07T12:31:33"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.15574571E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.6825216E0 .
-
-<http://linkedgeodata.org/triplify/way198897346>
+<http://linkedgeodata.org/triplify/node732716304>
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "ARAL" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "273" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Escher Straße" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "19438422"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-12-13T20:35:54"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node1693865121>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Tankstelle Berg" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "12053656"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                false ;
-        <http://purl.org/dc/terms/modified>
-                "2012-06-29T10:40:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.06866059E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.640668300000001E0 .
-
-<http://linkedgeodata.org/triplify/way59915245>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Jet" ;
+                "BfT" ;
         <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Dortmund" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "182" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Hermannstraße" ;
+                "Engelskirchen" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "19901063"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/source>
-                "HiRes aerial imagery" ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-01-09T16:09:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/way96294290>
-        <http://linkedgeodata.org/ontology/changeset>
-                "7795525"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "Mo-Sa 06:00-22:00; Su 07:00-22:00" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-04-07T17:22:18"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node340413963>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Krefeld" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "370" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Uerdinger Straße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "7667007"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-03-25T17:25:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.1341456400000006E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.598243500000001E0 ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49-2151-503418" .
-
-<http://linkedgeodata.org/triplify/node2360932423>
-        <http://linkedgeodata.org/ontology/brand>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "16705533"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-06-25T23:12:55"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.15938725E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.220238800000001E0 .
-
-<http://linkedgeodata.org/triplify/way95854820>
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "20" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Jülicher Straße" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "25324559"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_91>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "24/7" ;
-        <http://linkedgeodata.org/ontology/version>
-                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-09-09T11:59:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node307997069>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Schwerte" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "30" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Hörder Straße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "17033284"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2013-07-21T11:31:59"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.14505161E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.5623838E0 .
-
-<http://linkedgeodata.org/triplify/way59080748>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "11423428"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "24/7" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Aral AG" ;
-        <http://linkedgeodata.org/ontology/tenant>
-                "Roland Diedrich" ;
-        <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2012-04-26T14:05:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://xmlns.com/foaf/0.1/fax>
-                "+49 2331 631030" ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49 2331 61999" .
-
-<http://linkedgeodata.org/triplify/node391717746>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Markant" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Dortmund" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "31-33" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Bornstraße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "19465003"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel%3Ae10>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "24/7" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Westfalen AG" ;
-        <http://linkedgeodata.org/ontology/payment%3Aamerica_express>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/payment%3Acash>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/payment%3Adiners_club>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/payment%3Adkv>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/payment%3Agirocard>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/payment%3Amaestro>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/payment%3Amastercard>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/payment%3Auta>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/payment%3Avisa>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/payment:credit_cards>
-                true ;
-        <http://linkedgeodata.org/ontology/payment:debit_cards>
-                true ;
-        <http://linkedgeodata.org/ontology/surveillance>
-                "outdoor" ;
-        <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-12-15T15:27:40"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.1519815300000005E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.4701724E0 ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49 231 812233" .
-
-<http://linkedgeodata.org/triplify/node280288328>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Mr. Wash Tankstelle" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "9127305"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-08-26T10:14:14"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.145534910000001E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.997183000000001E0 .
-
-<http://linkedgeodata.org/triplify/node2999531282>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "STAR" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "24572320"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel%3Ae10>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/source>
-                "Bing" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2014-08-06T12:05:11"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.12547146E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.957965700000001E0 .
-
-<http://linkedgeodata.org/triplify/way55557948>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "4753976"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/version>
-                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2010-05-20T07:51:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node538027673>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "LEV" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "19399254"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel%3Abiodiesel>
-                "yes" ;
+                "19460093"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/fuel:cng>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
                 true ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/version>
-                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2013-12-11T18:23:52"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.16582073E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.0026117E0 .
-
-<http://linkedgeodata.org/triplify/node323682934>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "ARAL" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "18956915"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Gerd Sturm" ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "Mo-Fr 06:00-22:00; Sa-Su 07:00-22:00" ;
+        <http://linkedgeodata.org/ontology/source>
+                "http://www.gas-tankstellen.de" ;
         <http://linkedgeodata.org/ontology/version>
                 "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2013-11-17T19:15:24"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                "2013-12-15T09:29:52"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.0314324000000006E1 ;
+                5.0986741200000004E1 ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.4622706E0 .
+                7.3893639E0 .
 
-<http://linkedgeodata.org/triplify/node416083491>
+<http://linkedgeodata.org/triplify/node2385277159>
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "ED" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "9447804"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2011-10-02T20:29:39"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.03057469E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.3075280000000005E0 .
-
-<http://linkedgeodata.org/triplify/way155258396>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "TOTAL" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "10996564"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Total" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2012-03-16T10:40:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node266779071>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Wuppertal" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "57" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Ronsdorfer Straße" ;
+                "Jet" ;
         <http://linkedgeodata.org/ontology/brand>
-                "Star" ;
+                "Jet" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "8880104"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel%3Ae10>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "Mo-Sa 06:00-22:00; Su 08:00-22:00" ;
-        <http://linkedgeodata.org/ontology/tenant>
-                "Gudrun Selzer" ;
-        <http://linkedgeodata.org/ontology/version>
-                "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-07-31T13:44:33"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.12516844E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.1534189E0 ;
-        <http://xmlns.com/foaf/0.1/fax>
-                "+49 202 2422524" ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49 202 420430" .
-
-<http://linkedgeodata.org/triplify/node2275175594>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "E-Bike Tankstelle" ;
-        <http://linkedgeodata.org/ontology/bike>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "15822710"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/charging>
-                "pedelec" ;
-        <http://linkedgeodata.org/ontology/charging%3Apedelec>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/fuel%3A1_25>
-                "no" ;
-        <http://linkedgeodata.org/ontology/fuel%3A1_50>
-                "no" ;
-        <http://linkedgeodata.org/ontology/fuel%3Abiodiesel>
-                "no" ;
-        <http://linkedgeodata.org/ontology/fuel%3Abiogas>
-                "no" ;
-        <http://linkedgeodata.org/ontology/fuel%3Ae10>
-                "no" ;
-        <http://linkedgeodata.org/ontology/fuel%3Ae85>
-                "no" ;
-        <http://linkedgeodata.org/ontology/fuel%3Aelectricity>
-                "yes" ;
+                "16961140"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/fuel:GTL_diesel>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:cng>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:lpg>
-                false ;
+                true ;
         <http://linkedgeodata.org/ontology/fuel:octane_100>
                 false ;
         <http://linkedgeodata.org/ontology/fuel:octane_91>
                 false ;
         <http://linkedgeodata.org/ontology/fuel:octane_95>
-                false ;
+                true ;
         <http://linkedgeodata.org/ontology/fuel:octane_98>
-                false ;
+                true ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-07-15T13:57:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.12152722E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1472514E0 .
+
+<http://linkedgeodata.org/triplify/way89826613>
+        <http://linkedgeodata.org/ontology/changeset>
+                "6677715"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2010-12-16T16:23:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node27540799>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bft" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9552229"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/version>
                 "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
         <http://purl.org/dc/terms/modified>
-                "2013-04-22T12:50:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                "2011-10-14T21:57:27"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.12839206E1 ;
+                5.06516152E1 ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.2914694E0 .
+                7.302276900000001E0 .
 
-<http://linkedgeodata.org/triplify/way91859027>
+<http://linkedgeodata.org/triplify/node2204543515>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Badziong" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "13945780"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "15383787"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-03-16T14:19:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.09146189E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                6.8315929E0 .
+
+<http://linkedgeodata.org/triplify/node286854722>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "TruckPoint" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "13456133"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "ED" ;
         <http://linkedgeodata.org/ontology/version>
                 "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2012-11-20T15:23:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+                "2012-10-11T18:09:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.03963927E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.3817576E0 .
 
-<http://linkedgeodata.org/triplify/node367285255>
+<http://linkedgeodata.org/triplify/node322998809>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Total" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "16117156"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
+                "20481429"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-02-10T11:24:27"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.08745794E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                6.9497187E0 .
+
+<http://linkedgeodata.org/triplify/node266413792>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mundorf-Tank" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "22978463"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-06-17T09:48:05"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0829601000000004E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.027274800000001E0 .
+
+<http://linkedgeodata.org/triplify/way54135306>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bft Tankstelle" ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "157" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Endenicher Straße" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "14903127"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiodiesel>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiogas>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae85>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Aelectricity>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ahydrogen>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Asvo>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel:cng>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
                 true ;
         <http://linkedgeodata.org/ontology/fuel:octane_95>
                 true ;
         <http://linkedgeodata.org/ontology/fuel:octane_98>
                 true ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Aral" ;
+        <http://linkedgeodata.org/ontology/source>
+                "Yahoo!Sat" ;
         <http://linkedgeodata.org/ontology/version>
-                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2013-05-13T23:02:54"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.06208053E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.4278094E0 .
+                "2013-02-03T22:52:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/fax>
+                "0228 7668981" ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "0228 94499141" .
+
+<http://linkedgeodata.org/triplify/way93234666>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "6852490"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/modified>
+                "2011-01-03T18:59:39"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <http://linkedgeodata.org/triplify/node291399266>
         <http://linkedgeodata.org/ontology/addr%3Acity>
@@ -544,37 +216,19 @@
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
                 7.199864000000001E0 .
 
-<http://linkedgeodata.org/triplify/way164762341>
+<http://linkedgeodata.org/triplify/node1341187684>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Esso" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "11685286"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "8562568"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/version>
                 "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2012-05-23T23:59:29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/way130329187>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Total" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "9327000"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Total" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-09-17T21:34:21"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/way89811249>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "bft" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Solingen" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "19200416"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-11-30T21:19:06"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+                "2011-06-27T16:35:06"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.10056401E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                6.931755900000001E0 .
 
 <http://linkedgeodata.org/triplify/node582320160>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -594,403 +248,157 @@
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
                 7.3569671E0 .
 
-<http://linkedgeodata.org/triplify/way97722459>
-        <http://linkedgeodata.org/ontology/changeset>
-                "7157906"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/layer>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-02-01T20:04:51"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node260226752>
+<http://linkedgeodata.org/triplify/node1555695113>
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "Mr Wash" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Krefeld" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "91" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Dießemer Bruch" ;
+                "Avex" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "11988229"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "10163185"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2012-06-23T14:11:27"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                "2011-12-20T13:40:14"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.1325681200000005E1 ;
+                5.08974381E1 ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.591326400000001E0 .
+                6.8210157E0 .
 
-<http://linkedgeodata.org/triplify/way55600091>
+<http://linkedgeodata.org/triplify/node262904176>
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "Freie Tankstelle" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Dortmund" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "78" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Hamburger Straße" ;
+                "Shell" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "19901063"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "12158612"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/operator>
-                "Taskin Usta" ;
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/surveillance>
+                "outdoor" ;
         <http://linkedgeodata.org/ontology/version>
                 "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2014-01-09T16:02:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://xmlns.com/foaf/0.1/fax>
-                "0231/1763999" ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "0231/523536" .
+                "2012-07-09T09:42:30"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0807123100000005E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1301097E0 .
 
-<http://linkedgeodata.org/triplify/way121062701>
+<http://linkedgeodata.org/triplify/node629108670>
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "Shell" ;
+                "Aral" ;
         <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Solingen" ;
+                "Wipperfürth" ;
         <http://linkedgeodata.org/ontology/addr%3Acountry>
                 "DE" ;
         <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "218" ;
+                "5" ;
         <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Schützenstraße" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Shell" ;
+                "Leiersmühle" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "8680618"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:GTL_diesel>
+                "21510446"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "Mo-Sa 06:00-22:00; Su 08:00-22:00" ;
+        <http://linkedgeodata.org/ontology/version>
+                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-04-05T11:42:06"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.11216785E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.410049600000001E0 ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "02267/1847" .
+
+<http://linkedgeodata.org/triplify/node1679476262>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ARAL" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "15517474"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
                 true ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_100>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
+        <http://purl.org/dc/terms/modified>
+                "2013-03-27T17:12:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0905122600000006E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.411725700000001E0 .
+
+<http://linkedgeodata.org/triplify/way165026128>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "100" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Königswinterer Straße" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "11706274"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
                 true ;
         <http://linkedgeodata.org/ontology/opening_hours>
                 "24/7" ;
         <http://linkedgeodata.org/ontology/operator>
-                "Echterhagen Autoservice GmbH" ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-07-10T09:42:16"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node1701605869>
-        <http://linkedgeodata.org/ontology/brand>
-                "Oil" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "11181673"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2012-04-04T22:17:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.0612349900000005E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                8.068686600000001E0 .
-
-<http://linkedgeodata.org/triplify/node248212729>
-        <http://www.w3.org/2000/01/rdf-schema#label>
                 "Shell" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "795711"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2009-01-16T23:53:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.0854683800000004E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.2009451E0 .
-
-<http://linkedgeodata.org/triplify/node566675734>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Kamp-Lintfort" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "8839821"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-07-26T22:39:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.1503428500000005E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.536334500000001E0 .
-
-<http://linkedgeodata.org/triplify/way174368519>
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>
-                "Tankstelle" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "12602411"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/source>
-                "Kreis_Viersen_Katasteramt_2012_06" ;
+                "Yahoo!Sat" ;
         <http://linkedgeodata.org/ontology/version>
                 "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2012-08-03T23:22:25"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+                "2012-05-26T14:46:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://linkedgeodata.org/triplify/way262192376>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Aral Hammertal" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Witten" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "1" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Im Hammertal" ;
-        <http://linkedgeodata.org/ontology/addr%3Asuburb>
-                "Herbede" ;
+<http://linkedgeodata.org/triplify/node654132325>
         <http://linkedgeodata.org/ontology/changeset>
-                "20631279"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2014-02-18T11:15:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node371204321>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Hit" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "10222046"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2011-12-28T19:13:26"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.08178477E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.2854082E0 .
-
-<http://linkedgeodata.org/triplify/node600871885>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Betzdorf" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "126" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Wilhelmstraße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "19830745"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell Station Krause GmbH" ;
-        <http://linkedgeodata.org/ontology/version>
-                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-01-05T20:39:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.0796178000000005E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.862311600000001E0 ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49 2741 971493" .
-
-<http://linkedgeodata.org/triplify/node93031891>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "260075"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/createdBy>
-                "Potlatch 0.5d" ;
-        <http://linkedgeodata.org/ontology/version>
-                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2008-06-22T23:52:22"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.15028203E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.4164937E0 .
-
-<http://linkedgeodata.org/triplify/node732715351>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Adolf & Kämpf GmbH" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Altenkirchen" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "45" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Kölner Straße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "19728003"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:cng>
-                false ;
+                "14705463"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/fuel:lpg>
                 true ;
         <http://linkedgeodata.org/ontology/opening_hours>
-                "Mo-Su 05:30-24:00" ;
-        <http://linkedgeodata.org/ontology/source>
-                "http://www.gas-tankstellen.de" ;
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "RuLa-Autogas" ;
         <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-01-19T11:21:37"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0820314800000006E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                6.9884734E0 .
+
+<http://linkedgeodata.org/triplify/node269151023>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "6575776"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/wheelchair>
                 true ;
         <http://purl.org/dc/terms/modified>
-                "2013-12-31T09:56:45"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                "2010-12-07T16:42:55"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.0687490000000004E1 ;
+                5.12261122E1 ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.63198E0 .
+                7.1508259E0 .
 
-<http://linkedgeodata.org/triplify/node2295721999>
+<http://linkedgeodata.org/triplify/way169645974>
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "16027401"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-05-08T13:02:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.09492637E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.5450876000000004E0 .
-
-<http://linkedgeodata.org/triplify/way93317571>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Aral" ;
+                "MediGas Meyrose" ;
         <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Kaarst" ;
+                "Hennef" ;
         <http://linkedgeodata.org/ontology/addr%3Acountry>
                 "DE" ;
         <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "1" ;
+                "73" ;
         <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Kaarster Straße" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Aral" ;
+                "Westerwaldstraße" ;
+        <http://linkedgeodata.org/ontology/automated>
+                "yes" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "8348122"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:GTL_diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_100>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_91>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "Mo-Fr 06:00-22:00; Sa 07:00-22:00; Su 09:00-22:00" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/payment:credit_cards>
-                true ;
-        <http://linkedgeodata.org/ontology/payment:debit_cards>
-                true ;
-        <http://linkedgeodata.org/ontology/source>
-                "Bing" ;
-        <http://linkedgeodata.org/ontology/tenant>
-                "Uwe Clas" ;
-        <http://linkedgeodata.org/ontology/version>
-                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-06-05T13:36:21"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://xmlns.com/foaf/0.1/fax>
-                "+49 2131 604000" ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49 2131 605076" .
-
-<http://linkedgeodata.org/triplify/node287965842>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "9587957"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/version>
-                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-10-18T22:04:40"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.14472298E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.093027E0 .
-
-<http://linkedgeodata.org/triplify/node2366256376>
-        <http://linkedgeodata.org/ontology/brand>
-                "Westfalia" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "16758269"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:GTL_diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-06-29T23:46:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.16042076E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.273447900000001E0 .
-
-<http://linkedgeodata.org/triplify/node655211128>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Total" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Total" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "13237696"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:cng>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:lpg>
-                false ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Total" ;
-        <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2012-09-24T21:08:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.14437518E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.6757317E0 .
-
-<http://linkedgeodata.org/triplify/node732715057>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "celos Deutschland GmbH" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Oberhausen-Sterkrade" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Biefangstraße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "16000011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "21609960"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/fuel:cng>
                 false ;
         <http://linkedgeodata.org/ontology/fuel:lpg>
@@ -1000,21 +408,41 @@
         <http://linkedgeodata.org/ontology/version>
                 "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2013-05-06T19:22:10"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.1511190500000005E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.833485400000001E0 .
+                "2014-04-10T17:44:38"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://linkedgeodata.org/triplify/way135398922>
-        <http://linkedgeodata.org/ontology/brand>
-                "BFT" ;
+<http://linkedgeodata.org/triplify/node1579374223>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "9701328"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "10311067"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
         <http://linkedgeodata.org/ontology/version>
                 "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
         <http://purl.org/dc/terms/modified>
-                "2011-10-31T10:06:46"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+                "2012-01-06T13:43:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.04433E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.4675326E0 .
+
+<http://linkedgeodata.org/triplify/node93386127>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "24395609"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/source>
+                "survey" ;
+        <http://linkedgeodata.org/ontology/version>
+                "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-07-28T07:13:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.11588329E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.227971800000001E0 .
 
 <http://linkedgeodata.org/triplify/node278340315>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -1033,58 +461,6 @@
                 5.1023250600000004E1 ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
                 7.3704897E0 .
-
-<http://linkedgeodata.org/triplify/way158827410>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "BOHR Tankstelle & Shop" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "11248645"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "BOHR GmbH" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2012-04-10T09:30:07"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node1597902087>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Esso" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "10439953"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Esso" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2012-01-19T19:44:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.09558509E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.001100500000001E0 .
-
-<http://linkedgeodata.org/triplify/way112553663>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Dortmund" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "2" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Schützenstraße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "8099251"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/source>
-                "HiRes aerial imagery" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-05-10T08:57:37"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <http://linkedgeodata.org/triplify/way121809400>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -1120,78 +496,6 @@
         <http://purl.org/dc/terms/modified>
                 "2014-06-11T08:56:05"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://linkedgeodata.org/triplify/node419830760>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Stolberg" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "1" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Europastraße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "24057356"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/version>
-                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2014-07-10T08:18:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.07709345E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.2259751E0 .
-
-<http://linkedgeodata.org/triplify/way121764870>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Total" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Mülheim an der Ruhr" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "77" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Zeppelinstraße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "25193077"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Total" ;
-        <http://linkedgeodata.org/ontology/version>
-                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-09-02T23:47:52"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node2386406139>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "16974436"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:lpg>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "24/7" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Oliver DUNKER" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-07-16T14:46:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.12929709E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.2863818E0 ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49 2336 3645" .
-
 <http://linkedgeodata.org/triplify/node299432128>
         <http://linkedgeodata.org/ontology/brand>
                 "Shell" ;
@@ -1208,39 +512,71 @@
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
                 7.242102900000001E0 .
 
-<http://linkedgeodata.org/triplify/node274089845>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Aral" ;
+<http://linkedgeodata.org/triplify/node1430404138>
+        <http://linkedgeodata.org/ontology/brand>
+                "Tankpool24" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "22765494"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
+                "9273876"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
                 true ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Tankpool24" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2014-06-06T02:21:24"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                "2011-09-11T20:47:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.0441757900000006E1 ;
+                5.0818296800000006E1 ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.666271300000001E0 .
+                7.1238858E0 .
 
-<http://linkedgeodata.org/triplify/way110282032>
+<http://linkedgeodata.org/triplify/node316143077>
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "Günstig Tanken" ;
+                "Esso" ;
         <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Neuss" ;
+                "Solingen" ;
         <http://linkedgeodata.org/ontology/addr%3Acountry>
                 "DE" ;
         <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "93" ;
+                "197" ;
         <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Bataverstraße" ;
-        <http://linkedgeodata.org/ontology/building%3Acolour>
-                "white" ;
-        <http://linkedgeodata.org/ontology/building%3Alevels>
-                "1" ;
+                "Löhdorfer Straße" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "16254151"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "17132919"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Esso" ;
+        <http://linkedgeodata.org/ontology/version>
+                "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-07-29T02:49:05"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.11492689E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.023536200000001E0 ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "+49-212-62727" .
+
+<http://linkedgeodata.org/triplify/way99031005>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Jet" ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Erftstadt" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/brand>
+                "Jet" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12214817"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/fuel%3Ae10>
                 "yes" ;
         <http://linkedgeodata.org/ontology/fuel:diesel>
@@ -1249,216 +585,12 @@
                 true ;
         <http://linkedgeodata.org/ontology/fuel:octane_98>
                 true ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Herbert Grund" ;
-        <http://linkedgeodata.org/ontology/roof%3Ashape>
-                "flat" ;
         <http://linkedgeodata.org/ontology/source>
-                "Bing Sat" ;
-        <http://linkedgeodata.org/ontology/version>
-                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-05-23T17:32:29"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49 2131 95172" .
-
-<http://linkedgeodata.org/triplify/node1330768394>
-        <http://linkedgeodata.org/ontology/brand>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "9657094"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2011-10-26T19:30:55"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.12608812E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.334883700000001E0 .
-
-<http://linkedgeodata.org/triplify/way92392955>
-        <http://linkedgeodata.org/ontology/changeset>
-                "24381351"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "24/7" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Rauw" ;
-        <http://linkedgeodata.org/ontology/version>
-                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-07-27T12:49:57"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node296332960>
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Balve - Langenholthausen" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "2" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Neuenrader Straße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "7742480"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-04-02T11:53:38"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.13146228E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.8750109E0 .
-
-<http://linkedgeodata.org/triplify/node276115579>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Elan" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Düsseldorf" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "171a" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Dreherstraße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "21746961"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Elan" ;
-        <http://linkedgeodata.org/ontology/source>
-                "survey" ;
-        <http://linkedgeodata.org/ontology/version>
-                "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                false ;
-        <http://purl.org/dc/terms/modified>
-                "2014-04-17T12:54:10"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.1229812800000005E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.848058900000001E0 .
-
-<http://linkedgeodata.org/triplify/node606357138>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Avia" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Grefrath" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "39" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Mülhausener Straße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "25051088"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "Mo-Fr 06:00-21:00; Sa 07:00-21:00; Su 08:00-21:00" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Avia Heinrich Klöcker GmbH & Co. KG" ;
-        <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-08-27T14:53:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.13392276E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.3508566E0 ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49-2158-404617" .
-
-<http://linkedgeodata.org/triplify/node731282404>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "LPG Gas Tank" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Köln" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "2" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Waffenschmidtstraße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "22799501"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:lpg>
-                true ;
-        <http://linkedgeodata.org/ontology/version>
-                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-06-07T22:43:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.1004540000000006E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.8717500000000005E0 .
-
-<http://linkedgeodata.org/triplify/node1617017648>
-        <http://linkedgeodata.org/ontology/changeset>
-                "22986928"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Tamoil" ;
-        <http://linkedgeodata.org/ontology/version>
-                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2014-06-17T17:18:19"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.0771019200000005E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.451245E0 .
-
-<http://linkedgeodata.org/triplify/node648922269>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "ED-Tankstelle" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "15" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Aachener Straße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "6921936"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "ED" ;
+                "Local Knowledge" ;
         <http://linkedgeodata.org/ontology/version>
                 "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2011-01-10T00:01:42"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.03725615E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.5287044000000005E0 .
-
-<http://linkedgeodata.org/triplify/way78148276>
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Witten" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "345" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Hörder Straße" ;
-        <http://linkedgeodata.org/ontology/addr%3Asuburb>
-                "Stockum" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "16285204"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2013-05-25T23:30:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+                "2012-07-14T10:02:49"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <http://linkedgeodata.org/triplify/way150807377>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -1506,104 +638,6 @@
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
                 7.2260213E0 .
 
-<http://linkedgeodata.org/triplify/way155006199>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Esso" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Würselen" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "56" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Aachener Straße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "16799410"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:cng>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:lpg>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:octane_91>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "24/7" ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2013-07-03T02:34:52"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node265885141>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "18298907"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:lpg>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "24/7" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/version>
-                "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-10-11T16:26:36"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.1573944600000004E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.011673200000001E0 .
-
-<http://linkedgeodata.org/triplify/node2194202370>
-        <http://linkedgeodata.org/ontology/brand>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "15314541"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-03-10T14:10:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.11622366E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.1103250000000005E0 .
-
-<http://linkedgeodata.org/triplify/node838128912>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Total" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "12734589"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_91>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Total" ;
-        <http://linkedgeodata.org/ontology/version>
-                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
-        <http://purl.org/dc/terms/modified>
-                "2012-08-16T01:07:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.1447890300000005E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.786717800000001E0 .
-
 <http://linkedgeodata.org/triplify/way127478680>
         <http://linkedgeodata.org/ontology/addr%3Astreet>
                 "Siegburger Straße" ;
@@ -1616,27 +650,31 @@
         <http://purl.org/dc/terms/modified>
                 "2014-02-07T02:15:05"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://linkedgeodata.org/triplify/way31771174>
+<http://linkedgeodata.org/triplify/way200949045>
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Aachen" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "44" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Stolberger Straße" ;
+                "ARAL" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "10976253"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "05:00-24:00" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell" ;
+                "14636192"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2012-03-14T11:29:23"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+                "2013-01-13T16:54:20"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way67281883>
+        <http://linkedgeodata.org/ontology/brand>
+                "ftp" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "24930398"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae10>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/source>
+                "Bing 2012" ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-08-22T14:16:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <http://linkedgeodata.org/triplify/way32891570>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -1648,59 +686,23 @@
         <http://purl.org/dc/terms/modified>
                 "2012-05-16T13:48:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://linkedgeodata.org/triplify/way55196445>
+<http://linkedgeodata.org/triplify/node1186071105>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bft" ;
+        <http://linkedgeodata.org/ontology/brand>
+                "bft" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "9530803"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "AVIA" ;
+                "22069197"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/version>
                 "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
         <http://purl.org/dc/terms/modified>
-                "2011-10-11T15:44:39"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/way173283082>
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>
-                "Tankstelle" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "12522760"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/source>
-                "Kreis_Viersen_Katasteramt_2012_06" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2012-07-28T14:52:31"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node311380744>
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Lüdenscheid" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "92" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Heedfelder Straße" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "24897391"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:lpg>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_100>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Shell" ;
-        <http://linkedgeodata.org/ontology/version>
-                "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-08-20T23:58:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                "2014-05-01T19:54:50"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.12292634E1 ;
+                5.1145102E1 ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.611686100000001E0 .
+                7.3507427000000005E0 .
 
 <http://linkedgeodata.org/triplify/way38845006>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -1738,161 +740,77 @@
         <http://purl.org/dc/terms/modified>
                 "2013-07-13T17:08:07"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
-<http://linkedgeodata.org/triplify/way226851212>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Star" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "176" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Lützenkirchener Straße" ;
+<http://linkedgeodata.org/triplify/node1843207440>
         <http://linkedgeodata.org/ontology/changeset>
-                "22299044"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-05-12T21:34:19"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node471092784>
-        <http://linkedgeodata.org/ontology/access>
+                "18766705"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3A1_25>
                 "no" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "2203427"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "ASEAG" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2009-08-19T20:05:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.0786674000000005E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.1302173E0 .
-
-<http://linkedgeodata.org/triplify/node892262246>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Aral-Autohof Rheinböllen Elbert GmbH" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "9630843"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:GTL_diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:cng>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:lpg>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_100>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "24/7" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Aral" ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2011-10-23T11:35:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                4.9996228200000004E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.683730700000001E0 .
-
-<http://linkedgeodata.org/triplify/node2354375926>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Gas Station" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "SHELL" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "16637883"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/operator>
-                "SHELL" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-06-21T05:55:22"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.15249815E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.3692833E0 .
-
-<http://linkedgeodata.org/triplify/node334127530>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "SVG Autohof Eifeltor" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Köln" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "1" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Am Eifeltor" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "20446783"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "24/7" ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-02-08T16:07:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.08877917E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.924748E0 ;
-        <http://xmlns.com/foaf/0.1/fax>
-                "+49 221 9362323" ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49 221 9362443" .
-
-<http://linkedgeodata.org/triplify/way220013558>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "STAR-Tankstelle" ;
-        <http://linkedgeodata.org/ontology/addr%3Acity>
-                "Meckenheim" ;
-        <http://linkedgeodata.org/ontology/addr%3Acountry>
-                "DE" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousename>
-                "Star Tankstelle" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "2-4" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Gelsdorfer Straße" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "STAR" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "18842625"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/ethanol>
+        <http://linkedgeodata.org/ontology/fuel%3A1_50>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiodiesel>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiogas>
                 "no" ;
         <http://linkedgeodata.org/ontology/fuel%3Ae10>
                 "yes" ;
+        <http://linkedgeodata.org/ontology/fuel%3Aelectricity>
+                "no" ;
         <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:lpg>
-                false ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
                 true ;
         <http://linkedgeodata.org/ontology/fuel:octane_98>
                 true ;
         <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2013-11-11T20:37:36"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+                "2013-11-07T16:46:28"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.08335744E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.031106E0 .
 
-<http://linkedgeodata.org/triplify/way131030382>
+<http://linkedgeodata.org/triplify/node1738233106>
         <http://linkedgeodata.org/ontology/changeset>
-                "9377653"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "17238004"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
         <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2011-09-23T17:35:16"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+                "2013-08-06T10:23:39"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0679889800000005E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.269938300000001E0 .
+
+<http://linkedgeodata.org/triplify/node387939347>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Total" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "15042280"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Total" ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/modified>
+                "2013-02-15T18:18:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.1172051800000006E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.089561300000001E0 .
+
+<http://linkedgeodata.org/triplify/way28699734>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bft Station" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "20185412"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "bft" ;
+        <http://linkedgeodata.org/ontology/version>
+                "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-01-24T23:14:01"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 
 <http://linkedgeodata.org/triplify/node300889193>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -1908,27 +826,49 @@
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
                 7.0474711E0 .
 
-<http://linkedgeodata.org/triplify/way108600721>
+<http://linkedgeodata.org/triplify/way104898149>
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "Aral Tankstelle" ;
+                "Avia" ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Düsseldorf" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "13" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Reinhold-Schneider-Straße" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "24177793"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/diesel>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/fuel%3Ae10>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:lpg>
-                true ;
+                "10503752"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "Mo-Fr 07:00-19:00; Sa 07:00-15:00" ;
         <http://linkedgeodata.org/ontology/operator>
-                "Aral" ;
+                "Avia" ;
+        <http://linkedgeodata.org/ontology/ref>
+                "21009" ;
         <http://linkedgeodata.org/ontology/version>
-                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2014-07-16T13:03:52"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+                "2012-01-26T15:39:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/fax>
+                "+49 211 7394666" ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "+49 211 709193" .
+
+<http://linkedgeodata.org/triplify/node1672139472>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "JET" ;
+        <http://linkedgeodata.org/ontology/brand>
+                "JET" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "20957792"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-03-06T21:19:36"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.11711426E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.206859000000001E0 .
 
 <http://linkedgeodata.org/triplify/node710739256>
         <http://linkedgeodata.org/ontology/changeset>
@@ -1950,83 +890,45 @@
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
                 7.252057400000001E0 .
 
-<http://linkedgeodata.org/triplify/node251978810>
+<http://linkedgeodata.org/triplify/node295211947>
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "star" ;
+                "Gastankstelle Augstein" ;
         <http://linkedgeodata.org/ontology/changeset>
-                "19134269"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/version>
-                "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-11-26T22:04:10"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.08098571E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.038541100000001E0 .
-
-<http://linkedgeodata.org/triplify/way210861728>
-        <http://linkedgeodata.org/ontology/brand>
-                "Freie Tankstelle" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "15413374"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "Mo-Fr 07:00-17:00" ;
-        <http://linkedgeodata.org/ontology/version>
-                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-03-18T22:03:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-
-<http://linkedgeodata.org/triplify/node1707683406>
-        <http://linkedgeodata.org/ontology/changeset>
-                "15809861"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel%3Ae10>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Metro" ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-04-21T13:57:45"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.13754636E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.635248300000001E0 .
-
-<http://linkedgeodata.org/triplify/node246466812>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Jet" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Independent" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "20059216"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel%3Ae10>
-                "yes" ;
-        <http://linkedgeodata.org/ontology/fuel:cng>
+                "17131593"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
                 false ;
         <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
+                false ;
         <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
                 false ;
         <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "Mo-Fr 05:00-22:00;Sa,Su 06:00-22:00" ;
-        <http://linkedgeodata.org/ontology/operator>
-                "ConocoPhillips Germany GmbH" ;
-        <http://linkedgeodata.org/ontology/version>
-                "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
                 false ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2014-01-18T00:18:47"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                "2013-07-28T23:31:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.13292778E1 ;
+                5.1058869400000006E1 ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.0097899E0 .
+                6.8236156E0 .
+
+<http://linkedgeodata.org/triplify/node617027858>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "BFT" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "18944721"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-11-17T00:26:54"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.06967033E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.0815155E0 .
 
 <http://linkedgeodata.org/triplify/node880241787>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -2056,78 +958,14 @@
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
                 6.6822927000000005E0 .
 
-<http://linkedgeodata.org/triplify/node1360535847>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "ARAL Tankstelle" ;
-        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
-                "58a" ;
-        <http://linkedgeodata.org/ontology/addr%3Astreet>
-                "Saarstraße" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Aral" ;
+<http://linkedgeodata.org/triplify/node676737476>
         <http://linkedgeodata.org/ontology/changeset>
-                "19579252"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_98>
-                true ;
-        <http://linkedgeodata.org/ontology/operator>
-                "Harald Lehnart" ;
+                "4256943"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/version>
-                "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/wheelchair>
-                true ;
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://purl.org/dc/terms/modified>
-                "2013-12-22T11:47:53"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                "2010-03-28T16:30:25"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                4.9955881500000004E1 ;
+                5.10790518E1 ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.524902300000001E0 .
-
-<http://linkedgeodata.org/triplify/node1078854618>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "R&M Bootsservice / Diesel und Super" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "14943437"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/operator>
-                "ED" ;
-        <http://linkedgeodata.org/ontology/seamark%3Asmall_craft_facility%3Acategory>
-                "fuel_station" ;
-        <http://linkedgeodata.org/ontology/seamark%3Atype>
-                "small_craft_facility" ;
-        <http://linkedgeodata.org/ontology/version>
-                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2013-02-07T11:41:42"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.0310550400000004E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                7.5178799000000005E0 ;
-        <http://xmlns.com/foaf/0.1/phone>
-                "+49 2606 962092" .
-
-<http://linkedgeodata.org/triplify/node796709171>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "EG Bröcker" ;
-        <http://linkedgeodata.org/ontology/brand>
-                "Independent" ;
-        <http://linkedgeodata.org/ontology/changeset>
-                "24733086"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://linkedgeodata.org/ontology/fuel:diesel>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_91>
-                true ;
-        <http://linkedgeodata.org/ontology/fuel:octane_95>
-                true ;
-        <http://linkedgeodata.org/ontology/opening_hours>
-                "Mo-Fr 07:00-20:00; Sa 07:00-14:00" ;
-        <http://linkedgeodata.org/ontology/version>
-                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
-        <http://purl.org/dc/terms/modified>
-                "2014-08-13T23:27:17"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                5.12895036E1 ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                6.981361100000001E0 .
+                7.1178805E0 .

@@ -3,6 +3,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vCard:   <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
 mv:Country
 	a rdfs:Class , owl:Class ;
@@ -32,3 +34,87 @@ a rdf:Property , owl:DatatypeProperty ;
 	rdfs:label "Number of charging stations"@en , "Ladestation Menge" @de ;
 	rdfs:domain mv:Country ; 
 	rdfs:range rdfs:integer .
+	
+#Individuals
+
+mv:FuelStationA 
+	a mv:FuelStation ;
+	mv:fillingStationHeight "5.0m" ;
+	mv:brand "Aral" ;
+	mv:fillingStationName "Aral Tankstelle" ;	
+	mv:wheelchair "true" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bonn" ;
+						vCard:postal-code "53117" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "58a" ;
+						vCard:street-address "Saarstraße" 
+					 ];
+	vCard:operator "Harald Lehnart" ;				 
+	geo:long "6.524902300000001E0" ;
+	geo:lat "4.9955881500000004E1" .
+
+
+mv:FuelStationB 
+	a mv:FuelStation ;
+	#mv:fillingStationHeight "5.0m" ;
+	mv:source "HiRes aerial imagery" ;
+	mv:version "3" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Dortmund" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "182" ;
+						vCard:street-address "Hermannstraße" 
+					 ] .
+					 
+mv:FuelStationC 
+	a mv:FuelStation ;
+	#mv:fillingStationHeight "5.0m" ;
+	#mv:brand "Aral" ;
+	mv:fillingStationName "Aral Tankstelle" ;	
+	#mv:wheelchair "true" ;
+	mv:version "5" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Krefeld" ;
+						vCard:postal-code "53117" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "370" ;
+						vCard:street-address "Uerdinger Straße" 
+					 ];
+	vCard:operator "Star" ;			
+	vCard:phone "+49-2151-503418" ;	
+	geo:long "6.598243500000001E0" ;
+	geo:lat "5.1341456400000006E1" .
+
+mv:BatteryStationA 
+	a mv:BatteryStation ;
+	mv:batteryStationHeight "3.0m" ;
+	mv:BatteryStationName "OBI Markt Bonn-Nord" ;	
+	mv:wheelchair "true" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bonn" ;
+						vCard:postal-code "53119" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "166" ;
+						vCard:street-address "Bornheimer Straße" 
+					 ];
+	
+	vCard:website "http://www.obi.de/de/maerkte/Bonn-Nord/index.html" ;		
+	mv:booking "false" ;	
+	mv:openingHours "Monday from 0800 to 2000" .
+	
+mv:BatteryStationB  
+	a mv:BatteryStation ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bonn" ;
+						vCard:postal-code "53175" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "127" ;
+						vCard:street-address "Godesberger Allee" 
+					 ];
+	vCard:operator "RWE" .

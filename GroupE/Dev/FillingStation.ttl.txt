@@ -63,18 +63,20 @@ mv:hasWashingFacility
 
 
 
-# Individuals
+# Individ
 
 mv:FuelStationA 
 	a mv:FuelStation ;
 	mv:fillingStationNumber "" ;
 	mv:fillingStationHeight "5.0m" ;
-	vcard:organization-name "Shell Tankstelle" ;
-	vcard:country-name "Germany" ;
-	vcard:locality "Bonn" ;
-	vcard:postal-code "53117" ;
-	vcard:region "North Rhine-Westphalia" ;
-	vcard:street-address "Kölnstraße 655" ;
+	vcard:organization-name "Shell Tankstelle" ;	
+	vcard:hasAddress [
+						vcard:country-name "Germany" ;
+						vcard:locality "Bonn" ;
+						vcard:postal-code "53117" ;
+						vcard:region "North Rhine-Westphalia" ;
+						vcard:street-address "Kölnstraße 655" 
+					 ];
 	vcard:tel "0228 673966" ;
 	vcard:url "shell.de" ;
 	geo:long "7.057300" ;
@@ -86,11 +88,13 @@ mv:FuelStationB
 	mv:fillingStationNumber "" ;
 	mv:fillingStationHeight "5.0m" ;
 	vcard:organization-name "Esso" ;
-	vcard:country-name "Germany" ;
-	vcard:locality "Bonn" ;
-	vcard:postal-code "53225" ;
-	vcard:region "North Rhine-Westphalia" ;
-	vcard:street-address "St. Augustiner Str. 145" ;
+	vcard:hasAddress [
+						vcard:country-name "Germany" ;
+						vcard:locality "Bonn" ;
+						vcard:postal-code "53225" ;
+						vcard:region "North Rhine-Westphalia" ;
+						vcard:street-address "St. Augustiner Str. 145" 
+					 ];
 	vcard:tel "0228 476790" ;
 	vcard:url "essofuelfinder.com" ;
 	geo:long "7.122874" ;
@@ -102,11 +106,13 @@ mv:FuelStationC
 	mv:fillingStationNumber "" ;
 	mv:fillingStationHeight "5.0m" ;
 	vcard:organization-name "ED-Tankstelle Jürgen Metzling e.K." ;
-	vcard:country-name "Germany" ;
-	vcard:locality "Bonn" ;
-	vcard:postal-code "53119" ;
-	vcard:region "North Rhine-Westphalia" ;
-	vcard:street-address "Lievelingsweg 10" ;
+	vcard:hasAddress [
+						vcard:country-name "Germany" ;
+						vcard:locality "Bonn" ;
+						vcard:postal-code "53119" ;
+						vcard:region "North Rhine-Westphalia" ;
+						vcard:street-address "Lievelingsweg 10" 
+					 ];
 	vcard:tel "0228 676991" ;
 	vcard:url "essofuelfinder.com" ;
 	geo:long "7.084079" ;
@@ -118,11 +124,13 @@ mv:FuelStationD
 	mv:fillingStationNumber "" ;
 	mv:fillingStationHeight "5.0m" ;
 	vcard:organization-name "SVG-Tankstelle" ;
-	vcard:country-name "Germany" ;
-	vcard:locality "Bonn" ;
-	vcard:postal-code "53119" ;
-	vcard:region "North Rhine-Westphalia" ;
-	vcard:street-address "Potsdamer Platz 7" ;
+	vcard:hasAddress [
+						vcard:country-name "Germany" ;
+						vcard:locality "Bonn" ;
+						vcard:postal-code "53119" ;
+						vcard:region "North Rhine-Westphalia" ;
+						vcard:street-address "Potsdamer Platz 7" 
+					 ];
 	vcard:tel "0228 654851" ;
 	vcard:url "svg-nordrhein.de" ;
 	geo:long "7.077556" ;

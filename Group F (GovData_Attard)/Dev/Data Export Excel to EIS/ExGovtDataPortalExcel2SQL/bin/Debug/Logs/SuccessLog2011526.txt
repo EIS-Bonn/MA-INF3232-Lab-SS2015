@@ -1,4 +1,0 @@
-MOVED C:\Users\Usman\Desktop\All test files\Marcotest\test\888NewAmadeus.xls C:\Users\Usman\Desktop\All test files\Marcotest\test\ARCHIVE\888NewAmadeus.xls
-MOVED C:\Users\Usman\Desktop\All test files\Marcotest\test\mazda_old.xls C:\Users\Usman\Desktop\All test files\Marcotest\test\ARCHIVE\mazda_old.xls
-MOVED C:\Users\Usman\Desktop\All test files\Marcotest\test\ARCHIVE\mazda_old.xls=> C:\Users\Usman\Desktop\All test files\Marcotest\test\ARCHIVE\ARCHIVE\mazda_old.xls
-MOVED C:\Users\Usman\Desktop\All test files\Marcotest\test\ARCHIVE\mazda_old.xls=> C:\Users\Usman\Desktop\All test files\Marcotest\test\ARCHIVE\ARCHIVE\mazda_old.xls

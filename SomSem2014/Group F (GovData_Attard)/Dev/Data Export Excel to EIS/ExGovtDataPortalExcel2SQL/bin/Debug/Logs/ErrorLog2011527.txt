@@ -1,4 +1,0 @@
-5/27/2011 3:34:26 PM ==> C:\Users\Usman\Desktop\All test files\unparsed\gdfsueznewamadeus.xls	Table column headers not supported
-5/27/2011 3:40:56 PM ==> C:\Users\Usman\Desktop\All test files\email test\21_city.xls	23 Line 11	 Data validation:City  not in proper formate
-5/27/2011 3:42:56 PM ==> C:\Users\Usman\Desktop\All test files\email test\21_city.xls	23 Line 11	 Data validation:City  not in proper formate
-5/27/2011 3:43:51 PM ==> C:\Users\Usman\Desktop\All test files\email test\21_city.xls	Data Validation:File is not in the Euro: skipped 

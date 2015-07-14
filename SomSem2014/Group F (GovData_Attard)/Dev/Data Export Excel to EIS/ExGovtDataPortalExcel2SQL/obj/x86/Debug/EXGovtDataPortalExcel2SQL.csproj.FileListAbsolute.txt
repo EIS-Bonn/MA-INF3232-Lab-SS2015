@@ -1,8 +1,0 @@
-D:\2014\EIS\PatentExcel2SQL\PatentExcel2SQL\obj\x86\Debug\PatentExcel2SQL.exe
-D:\2014\EIS\PatentExcel2SQL\PatentExcel2SQL\obj\x86\Debug\PatentExcel2SQL.pdb
-D:\2014\EIS\PatentExcel2SQL\PatentExcel2SQL\bin\Debug\PatentExcel2SQL.exe
-D:\2014\EIS\PatentExcel2SQL\PatentExcel2SQL\bin\Debug\PatentExcel2SQL.pdb
-D:\2014\EIS\PatentExcel2SQL\PatentExcel2SQL\obj\x86\Debug\EXGovtDataPortalExcel2SQL.csprojResolveAssemblyReference.cache
-D:\2014\EIS\PatentExcel2SQL\PatentExcel2SQL\obj\x86\Debug\EXGovtDataPortalExcel2SQL.Form1.resources
-D:\2014\EIS\PatentExcel2SQL\PatentExcel2SQL\obj\x86\Debug\EXGovtDataPortalExcel2SQL.Properties.Resources.resources
-D:\2014\EIS\PatentExcel2SQL\PatentExcel2SQL\obj\x86\Debug\EXGovtDataPortalExcel2SQL.csproj.GenerateResource.Cache

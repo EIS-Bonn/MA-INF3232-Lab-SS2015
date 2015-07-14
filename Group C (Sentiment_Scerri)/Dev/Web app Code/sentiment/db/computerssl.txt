@@ -1,4 +1,0 @@
-pass: ecEmthok7
-
-db name: web15_dbsentimen
-db user: web15_dbsent

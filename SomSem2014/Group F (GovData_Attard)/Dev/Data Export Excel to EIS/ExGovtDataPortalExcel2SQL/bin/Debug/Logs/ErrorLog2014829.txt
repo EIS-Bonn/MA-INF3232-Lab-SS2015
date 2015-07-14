@@ -1,2 +1,0 @@
-29/08/2014 00:04:42 ==> D:\2014\EIS\Lab\sqldata.xlsx	This file do not contain Parent or Parent BvD_ID number
-29/08/2014 00:04:42 ==> D:\2014\EIS\Lab\sqldata.xlsx	Table column headers not supported

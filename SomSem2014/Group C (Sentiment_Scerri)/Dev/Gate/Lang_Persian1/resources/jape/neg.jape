@@ -1,9 +1,0 @@
-Phase: Negation2
-Input: Token 
-Options: control = appelt 
-Rule: negation2
-(   
-   ({Token.string==~"بی[ا آ ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ی ]*",Token.rule=="Prefixes"})   
-):match
--->
-:match.negation2 = {kind = "neg3", rule = "neg2"}

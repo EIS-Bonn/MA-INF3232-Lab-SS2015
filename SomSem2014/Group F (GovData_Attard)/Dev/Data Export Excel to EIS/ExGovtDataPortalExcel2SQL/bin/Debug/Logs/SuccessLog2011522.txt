@@ -1,2 +1,0 @@
-MOVE C:\Users\Usman\Desktop\test PAss\test\888NewAmadeus.xls C:\Users\Usman\Desktop\test PAss\test\ARCHIVE\888NewAmadeus.xls
-MOVE C:\Users\Usman\Desktop\unparsed\CompagnieDuBoisSauvageNewAmadeus.xls C:\Users\Usman\Desktop\unparsed\ARCHIVE\CompagnieDuBoisSauvageNewAmadeus.xls

@@ -1,4 +1,0 @@
-N_SING (\d)*
-N_SING (\D)*
-N_SING (\W)*
-N_SING (\w)*

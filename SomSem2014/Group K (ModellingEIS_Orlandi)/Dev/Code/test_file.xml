@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Root>
-  <Model Name="Login Business process" TypeNum="13" ID="">
-    <ObjDef Name="Enter credentials" TypeNum="22" ID="" />
-    <CxnDef SourceName="Admin access" TargetName="recruiting" TypeNum="43" ID="" />
-    <CxnDef SourceName="Enter credentials" TargetName="Admin access" TypeNum="44" ID="" />
-  </Model>
-</Root>
-

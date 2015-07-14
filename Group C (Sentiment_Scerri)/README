@@ -1,8 +1,0 @@
-Our project is about creating a sentiment analysis for Persian language.
-
-In Dev folder you can find all codes in our project like eclipse project that contains web service code in eclipse, Gate which contains new plugin source codes and Web App code which contains all codes  and DB we created for gathering data with php.
-
-In Presentation folder you can find all presentation pdf files we have created during lab meetings to say in short talk what we will do for each steps.
-
-In documentation folder you can find Final documentation file which is all steps we have done in details during this semester for this web service, user manual which explain how users can use this web service and poster file which is a complete explanation about our project and its testing results.
-

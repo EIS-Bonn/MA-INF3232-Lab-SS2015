@@ -1,2 +1,0 @@
-MOVE C:\Users\nomland.PATENTSIGHT\Desktop\test\ActiveBiotech__2011-04-05 _AmadeusB.xls C:\Users\nomland.PATENTSIGHT\Desktop\test\ARCHIVE\ActiveBiotech__2011-04-05 _AmadeusB.xls
-MOVE C:\Users\nomland.PATENTSIGHT\Desktop\test\ActiveBiotech__2011-04-05 _AmadeusB.xls C:\Users\nomland.PATENTSIGHT\Desktop\test\ARCHIVE\ActiveBiotech__2011-04-05 _AmadeusB.xls

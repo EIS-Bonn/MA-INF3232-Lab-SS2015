@@ -1,0 +1,45 @@
+Filling Station Type
+<hr>
+<select  ng-model="fillingStationTypeSelected" ng-change="changedValueFillingStation(fillingStationTypeSelected)"
+         data-ng-options="fillingStationType as fillingStationType.name for fillingStationType in fillingStationTypes">
+    <option value="">Select FillingStationType</option>
+</select>
+
+<hr>
+
+{{type}}
+<hr>
+<select  ng-model="fuelTypeSelected" ng-change="changedValueFuelType(fuelTypeSelected)"
+		 data-ng-options="fuelType as fuelType.name for fuelType in fuelTypes">
+	<option value="">{{type}}</option>
+</select>
+
+
+<hr>
+
+GeoLocation
+<hr>
+<select  ng-model="locationSelected" ng-change="changedValueLocation(locationSelected)"
+         data-ng-options="location as location.name for location in locations">
+    <option value="">Select Location</option>
+</select>
+
+
+<hr>
+
+<button ng-style="{'background-color':'#44c767', '-moz-border-radius':'28px',
+	'-webkit-border-radius':'28px',
+	'border-radius':'28px',
+	'border':'1px solid #18ab29',
+	'display':'inline-block',
+	'cursor':'pointer',
+	'color':'#ffffff',
+	'font-family':'Arial',
+	'font-size':'17px',
+	'padding':'16px 31px',
+	'text-decoration':'none',
+	'float':'right', 'clear':'both',
+	'text-shadow':'0px 1px 0px #2f6627'}" ng-click="handleClick();">NEXT</button>
+
+{{my}}
+{{coord}}

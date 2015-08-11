@@ -9,7 +9,7 @@
         <http://geovocab.org/geometry#geometry>
                 <http://linkedgeodata.org/geometry/way174696187> ;
         <http://linkedgeodata.org/ontology/brand>
-                "Shell" ;
+                "Shell" ;   
         <http://linkedgeodata.org/ontology/changeset>
                 "17823869"^^<http://www.w3.org/2001/XMLSchema#int> ;
         <http://linkedgeodata.org/ontology/fuel%3A1_25>

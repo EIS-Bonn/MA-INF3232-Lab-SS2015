@@ -9,7 +9,7 @@
 mv:FillingStation
 	a rdfs:Class , owl:Class ;
 	rdfs:comment "Facility for combustion motor vehicles or electric motor vehicle." ;
-	rdfs:label "filling station"@en .
+	rdfs:label "filling station"@en, "Abfullstation"@de .
 	
 mv:FuelStation
 	rdfs:subClassOf mv:FillingStation ;
@@ -20,7 +20,7 @@ mv:FuelStation
 mv:ChargingStation
 	rdfs:subClassOf mv:FillingStation ; 
 	rdfs:comment "Facility for electric motor vehicle." ;
-	rdfs:label "charging station"@en, ""@de .
+	rdfs:label "charging station"@en, "Ladestation"@de .
 
 	
 
@@ -29,7 +29,7 @@ mv:ChargingStation
 mv:hasOffer
 	a rdf:Property , owl:ObjectProperty ;
 	rdfs:comment "Indicates the sort of fuels product the filling station offers." ;
-	rdfs:label "has offer" ;
+	rdfs:label "has offer"@en, "hat Angebot"@de ;
 	rdfs:domain mv:FillingStation ;
 	rdfs:range mv:Fuel .
 
@@ -43,27 +43,40 @@ mv:fillingStationNumber
 mv:fillingStationHeight
 	a rdf:Property , owl:DatatypeProperty ;
 	rdfs:comment "Indicates the height of the filling station. This is important especially for trucks" ;
-	rdfs:label "filling station height"@en, ""@de ;
+	rdfs:label "filling station height"@en, "Tankstelle heit"@de ;
 	rdfs:domain mv:FillingStation ;
 	rdfs:range rdfs:Literal .
 
 mv:hasParkingFacility
 	a rdf:Property, owl:DatatypeProperty ;
 	rdfs:comment "Indicate whether Filling Station has Parking Facility or not" ;
-	rdfs:label "has parking facility" ;
+	rdfs:label "has parking facility"@en, "hat Parkmoglichkeit"@de ;
 	rdfs:domain mv:FillingStation ;
 	rdfs:range rdfs:Literal .
 
 mv:hasWashingFacility
 	a rdf:Property, owl:DatatypeProperty ;
 	rdfs:comment "Indicate whether Filling Station has Washing Facility or not" ;
-	rdfs:label "has washing facility" ;
+	rdfs:label "has washing facility"@en, "hat Waschmoglichkeit"@de ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:hasShoppingFacility
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicate whether Filling Station has Shopping Facility or not" ;
+	rdfs:label "has shopping facility"@en, "weist Einkaufsgelenheit"@de ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:hasWCFacility
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicate whether Filling Station has WC Facility or not" ;
+	rdfs:label "has WC facility"@en, "hat WC Fazilitat"@de ;
 	rdfs:domain mv:FillingStation ;
 	rdfs:range rdfs:Literal .
 
 
-
-# Individ
+# Individuals
 
 mv:FuelStationA 
 	a mv:FuelStation ;
@@ -135,8 +148,3 @@ mv:FuelStationD
 	vcard:url "svg-nordrhein.de" ;
 	geo:long "7.077556" ;
 	geo:lat "50.741982" .
-
-
-
-
-

@@ -1,0 +1,188 @@
+@prefix mv: <http://eccenca.com/mobivoc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+mv:FillingStation
+	a rdfs:Class , owl:Class ;
+	rdfs:comment "Facility for combustion motor vehicles or electric motor vehicle." ;
+	rdfs:label "filling station"@en .
+	
+mv:FuelStation
+	rdfs:subClassOf mv:FillingStation ;
+	rdfs:comment "Facility for refueling motor vehicle." ;
+	rdfs:label "fuel station"@en, "Tankstelle"@de ;
+	skos:altLabel "petrol station"@en , "gas station"@en-US. # property is used when synonyms, near-synonyms, or abbrevia- tions need to be represented.
+
+mv:ChargingStation
+	rdfs:subClassOf mv:FillingStation ; 
+	rdfs:comment "Facility for electric motor vehicle." ;
+	rdfs:label "charging station"@en .
+
+	
+
+# Properties
+
+mv:ChargingStationName
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the name of the charging station" ;
+	rdfs:label "charging station name"@en ;
+	rdfs:domain mv:ChargingStation ;
+	rdfs:range rdfs:Literal .
+	
+mv:fillingStationNumber
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the unique number of the filling station." ;
+	rdfs:label "filling station number"@en , "Tankstellennummer"@de ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:fillingStationHeight
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the height of the filling station. This is important especially for trucks" ;
+	rdfs:label "filling station height"@en ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:integer .
+	
+mv:hasIdentifications
+	a rdf:Property , owl:ObjectProperty ;
+	rdfs:label "has identifications" ;
+	rdfs:domain mv:ChargingStation ;
+	rdfs:range mv:Fuel .
+
+mv:hasOffer
+	a rdf:Property , owl:ObjectProperty ;
+	rdfs:comment "Indicates the sort of fuels product the filling station offers." ;
+	rdfs:label "has offer" ;
+	rdfs:domain mv:FuelStation ;
+	rdfs:range mv:Fuel .
+
+mv:hasParking
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicates whether Filling Station has Parking Facility or not." ;
+	rdfs:label "has parking facility" ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:hasPrice
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicates the price of the used facility." ;
+	rdfs:label "has price" ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:hasWashingFacility
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicates whether Filling Station has Washing Facility or not." ;
+	rdfs:label "has washing facility" ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:offersAccess
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicates for which people access is permitted." ;
+	rdfs:label "offers access" ;
+	rdfs:domain mv:ChargingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:offersBooking
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicates whether charging Station offers booking option or not." ;
+	rdfs:label "offers booking" ;
+	rdfs:domain mv:ChargingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:offersPlugTypes
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicates which are the offered plug types in the charging Station." ;
+	rdfs:label "offers plug type" ;
+	rdfs:domain mv:ChargingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:openingHours
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicates the opening hours of the filling station." ;
+	rdfs:label "opening hours" ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+	
+mv:PaymentMethod
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicates which type of payment is available." ;
+	rdfs:label "payment method" ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+	
+
+# Individuals
+
+mv:FuelStationA 
+	a mv:FuelStation ;
+	mv:fillingStationNumber "" ;
+	mv:fillingStationHeight "5.0m" ;
+	vcard:organization-name "Shell Tankstelle" ;
+	vcard:country-name "Germany" ;
+	vcard:locality "Bonn" ;
+	vcard:postal-code "53117" ;
+	vcard:region "North Rhine-Westphalia" ;
+	vcard:street-address "Kölnstraße 655" ;
+	vcard:tel "0228 673966" ;
+	vcard:url "shell.de" ;
+	geo:long "7.057300" ;
+	geo:lat "50.761966" .
+
+
+mv:FuelStationB 
+	a mv:FuelStation ;
+	mv:fillingStationNumber "" ;
+	mv:fillingStationHeight "5.0m" ;
+	vcard:organization-name "Esso" ;
+	vcard:country-name "Germany" ;
+	vcard:locality "Bonn" ;
+	vcard:postal-code "53225" ;
+	vcard:region "North Rhine-Westphalia" ;
+	vcard:street-address "St. Augustiner Str. 145" ;
+	vcard:tel "0228 476790" ;
+	vcard:url "essofuelfinder.com" ;
+	geo:long "7.122874" ;
+	geo:lat "50.747196" .
+
+
+mv:FuelStationC 
+	a mv:FuelStation ;
+	mv:fillingStationNumber "" ;
+	mv:fillingStationHeight "5.0m" ;
+	vcard:organization-name "ED-Tankstelle Jürgen Metzling e.K." ;
+	vcard:country-name "Germany" ;
+	vcard:locality "Bonn" ;
+	vcard:postal-code "53119" ;
+	vcard:region "North Rhine-Westphalia" ;
+	vcard:street-address "Lievelingsweg 10" ;
+	vcard:tel "0228 676991" ;
+	vcard:url "essofuelfinder.com" ;
+	geo:long "7.084079" ;
+	geo:lat "50.745675" .
+
+
+mv:FuelStationD
+	a mv:FuelStation ;
+	mv:fillingStationNumber "" ;
+	mv:fillingStationHeight "5.0m" ;
+	vcard:organization-name "SVG-Tankstelle" ;
+	vcard:country-name "Germany" ;
+	vcard:locality "Bonn" ;
+	vcard:postal-code "53119" ;
+	vcard:region "North Rhine-Westphalia" ;
+	vcard:street-address "Potsdamer Platz 7" ;
+	vcard:tel "0228 654851" ;
+	vcard:url "svg-nordrhein.de" ;
+	geo:long "7.077556" ;
+	geo:lat "50.741982" .
+
+
+
+
+

@@ -5,7 +5,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 mv:Vehicle
-a rdfs:Class , owl:Class ;
+	a rdfs:Class , owl:Class ;
 	rdfs:comment "A vehicle is a mobile machine that transports people or cargo." ;
 	rdfs:seeAlso <https://en.wikipedia.org/wiki/Vehicle> ;
 	rdfs:label "vehicle"@en , "Auto"@de .

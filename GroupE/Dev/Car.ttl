@@ -25,6 +25,4 @@ mv:PlugInHybridElectricCar
 	rdfs:label "PlugInHybridElectricCar"@en , "PlugInHybridElektroAuto"@de .
 
 
-#Properties 
-
 	

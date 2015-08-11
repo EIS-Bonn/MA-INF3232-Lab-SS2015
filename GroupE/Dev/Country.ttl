@@ -15,21 +15,21 @@ mv:Country
 #Properties
 
 mv:hasFuelTransportationRegulation
-a rdf:Property , owl:DatatypeProperty ;
+	a rdf:Property , owl:DatatypeProperty ;
 	rdfs:comment "Regulations existing in each country concerning the fuel transportation." ; 
 	rdfs:label "Fuel transportation regulation"@en , "Gas Verkehr Regulierung" @de ;
 	rdfs:domain mv:Country ; 
 	rdfs:range rdfs:Literal .
 	
 mv:hasNumberOfFuelStations
-a rdf:Property , owl:DatatypeProperty ;
+	a rdf:Property , owl:DatatypeProperty ;
 	rdfs:comment "Represents the number of fuel stations in a specific country." ; 
 	rdfs:label "Number of fuel stations"@en , "Tankstelle Menge" @de ;
 	rdfs:domain mv:Country ; 
 	rdfs:range rdfs:integer .
 	
 mv:hasNumberOfChargingStations
-a rdf:Property , owl:DatatypeProperty ;
+	a rdf:Property , owl:DatatypeProperty ;
 	rdfs:comment "Represents the number of charging stations in a specific country." ; 
 	rdfs:label "Number of charging stations"@en , "Ladestation Menge" @de ;
 	rdfs:domain mv:Country ; 

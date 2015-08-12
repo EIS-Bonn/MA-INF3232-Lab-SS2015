@@ -95,8 +95,6 @@ mv:petrolBatteryHybrid
 
 #Properties 
 
-#ready
-
 mv:Ampere
 	a rdf:Property , owl:DatatypeProperty ;
 	rdfs:comment "Represents the flow rate of electric charge." ; 

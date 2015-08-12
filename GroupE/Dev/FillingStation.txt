@@ -204,5 +204,313 @@ mv:FuelStationD
 	geo:long "7.077556" ;
 	geo:lat "50.741982" .
 
+mv:ChargingStationA 
+	a mv:ChargingStation ;
+	mv:ChargingStationName "Beethoven Tiefgarage" ;	
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bonn" ;
+						vCard:postal-code "53111" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:street-address "Engeltalstraße" 
+					 ];	
+	geo:long "7.103397" ;
+	geo:lat "50.738999" ;
+	mv:offersAccess "Open to all users" ;
+	mv:hasIdentifications "None" ;	
+	mv:hasPrice "Free charging, Paid parking" ;	
+	mv:hasParking "2 parking spaces for electric vehicles only" ;
+	mv:offersBooking "Impossible" ;
+	mv:offersPlugTypes "Schuko plug, Plug Type 2" ;
+	mv:openingHours "Monday/Tuesday/Wednesday/Thursday from 00:00 to 01:00 and from 07:00 to 23:59, Friday/Saturday from 00:00 to 02:30 and from 07:00 to 23:59, Sunday from 00:00 to 01:00 and from 09:00 to 23:59" .
+					 
+mv:ChargingStationB
+	a mv:ChargingStation ;
+	mv:ChargingStationName"Kameha Grand Bonn" ;	
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bonn" ;
+						vCard:postal-code "53227" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:street-address "Am Bonner Bogen" 
+					 ];
+	geo:long "7.151704" ;
+	geo:lat "50.718117" ;
+	mv:offersAccess "Open to all users" ;
+	mv:hasIdentifications "Key" ;
+	mv:hasPrice "Free charging" ;
+	mv:hasParking "2 parking spaces for electric vehicles only" ;
+	mv:offersBooking "Optional" ;
+	mv:offersPlugTypes "Plug Type 2" ;
+	mv:openingHours "Open 24/24" .
+
+mv:ChargingStationC
+	a mv:ChargingStation ;
+	mv:ChargingStationName"OBI Markt Bonn-Nord" ;	
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bonn" ;
+						vCard:postal-code "53119" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "166" ;
+						vCard:street-address "Bornheimer Straße" 
+					 ];
+	
+	vCard:website "http://www.obi.de/de/maerkte/Bonn-Nord/index.html" ;	
+	geo:long "7.080653" ;
+	geo:lat "50.738228" ;
+	mv:offersAccess "Open to all users" ;
+	mv:hasIdentifications "None" ;
+	mv:hasPrice "Free charging" ;
+	mv:hasParking "1 parking space for electric vehicles only" ;
+	mv:offersBooking "Impossible" ;
+	mv:offersPlugTypes "Schoko plug" ;
+	mv:openingHours "Monday to Saturday from 08:00 to 20:00" .
+	
+mv:ChargingStationD  
+	a mv:ChargingStation ;
+	mv:ChargingStationName"Stadthausgarage - Bonn" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bonn" ;
+						vCard:postal-code "53111" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:street-address "Weiherstraße" 
+					 ];
+	geo:long "7.093778" ;
+	geo:lat "50.737613" ;
+	mv:offersAccess "Open to all users" ;
+	mv:hasIdentifications "None" ;
+	mv:hasPrice "Free charging" ;
+	mv:hasParking "1 parking space for electric vehicles only" ;
+	mv:offersBooking "Impossible" ;
+	mv:offersPlugTypes "Schoko plug" ;
+	mv:openingHours "Open 24/24" .
+	
+mv:ChargingStationE  
+	a mv:ChargingStation ;
+	mv:ChargingStationName"Automobilgruppe Dirkes Bonn GmbH" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bonn" ;
+						vCard:postal-code "53175" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "60-80" ;
+						vCard:street-address "Godesberger Str." 
+					 ];
+	geo:long "7.140795" ;
+	geo:lat "50.695074" ;
+	mv:offersAccess "Open to all users" ;
+	mv:hasIdentifications "Other" ;
+	mv:hasPrice "Paid charging" ;
+	mv:offersPlugTypes "Schoko plug" .
+	
+mv:ChargingStationF  
+	a mv:ChargingStation ;
+	mv:ChargingStationName"Am Rathaus Alfter" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Alfter" ;
+						vCard:postal-code "53347" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "7" ;
+						vCard:street-address "Am Rathaus" 
+					 ];
+	geo:long "7.026320" ;
+	geo:lat "50.721710" ;
+	mv:offersAccess "For identified persons only" ;
+	mv:hasIdentifications "Text message, Phone call, Other, Mobile Application" ;
+	mv:PaymentMethod "Text message, Mobile Application" ;
+	mv:hasPrice "Paid charging" ;
+	mv:offersPlugTypes "Plug type 2" ;
+	vCard:operator "RWE" ;
+	mv:openingHours "Open 24/24" .
+	
+mv:ChargingStationG  
+	a mv:ChargingStation ;
+	mv:ChargingStationName"TankE - Bornheim" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bornheim" ;
+						vCard:postal-code "53332" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "2" ;
+						vCard:street-address "Rathausstraße" 
+					 ];
+	geo:long "7.004420" ;
+	geo:lat "50.757470" ;
+	vCard:website "http://www.rheinenergie.com/TankEn" ;
+	vCard:operator "Rheinenergie" ;
+	mv:hasIdentifications "Unknown" ;
+	mv:hasPrice "Free charging" ;
+	mv:offersPlugTypes "Schuko plug, Plug Type 2" ;
+	mv:openingHours "Open 24/24" .
+
+mv:ChargingStationH  
+	a mv:ChargingStation ;
+	mv:ChargingStationName"TankE RheinEnergie Ladestation - Stadtbetrieb Bornheim Anstalt des öffentlichen Rechts" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bornheim" ;
+						vCard:postal-code "53332" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "15" ;
+						vCard:street-address "Donnerbachweg" 
+					 ];
+	geo:long "6.948360" ;
+	geo:lat "50.767600" ;
+	vCard:owner "TankE RheinEnergie" ;
+	vCard:website "http://www.rheinenergie.com/de/unternehmensportal/technik_zukunft/elektromobilitaet_1/ladestationen/ladestationen_1.php" ;
+	mv:offersAccess "Open to all users" ;
+	mv:hasIdentifications "Badge has to be ordered" ;
+	mv:hasPrice "Paid charging" ;
+	mv:offersPlugTypes "Schoko plug, Plug type 2" ;
+	mv:openingHours "Open 24/24" .
+	
+mv:ChargingStationI  
+	a mv:ChargingStation ;
+	mv:ChargingStationName"3-5 Reichsstr. Bonn" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Bonn" ;
+						vCard:postal-code "53125" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "3-5" ;
+						vCard:street-address "Reichstrasse" 
+					 ];
+	geo:long "7.075870" ;
+	geo:lat "50.683040" ;
+	vCard:operator "RWE" ;
+	mv:offersAccess "For identified persons only" ;
+	mv:hasIdentifications "Text message, Phone call, Other, Mobile Application" ;
+	mv:PaymentMethod "Text message, Mobile Application" ;
+	mv:hasPrice "Paid charging" ;
+	mv:offersPlugTypes "Plug type 2" ;
+	mv:openingHours "Open 24/24" .
+	
+mv:ChargingStationK  
+	a mv:ChargingStation ;
+	mv:ChargingStationName"104 Zeithstraße Siegburg" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Siegburg" ;
+						vCard:postal-code "53721" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "104" ;
+						vCard:street-address "Zeithstraße" 
+					 ];
+	geo:long "7.218302" ;
+	geo:lat "50.802184" ;
+	vCard:operator "RWE" ;
+	mv:offersAccess "For identified persons only" ;
+	mv:hasIdentifications "Text message, Phone call, Other, Mobile Application" ;
+	mv:PaymentMethod "Text message, Mobile Application" ;
+	mv:hasPrice "Paid charging" ;
+	mv:offersPlugTypes "Plug type 2" ;
+	mv:openingHours "Open 24/24" .
+	
+mv:ChargingStationL 
+	a mv:ChargingStation ;
+	mv:ChargingStationName"Konrad-Adenauer-Allee Siegburg" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Siegburg" ;
+						vCard:postal-code "53721" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:street-address "Konrad-Adenauer-Allee" 
+					 ];
+	geo:long "7.203024" ;
+	geo:lat "50.793180" ;
+	vCard:operator "RWE" ;
+	mv:offersAccess "For identified persons only" ;
+	mv:hasIdentifications "Text message, Phone call, Other, Mobile Application" ;
+	mv:PaymentMethod "Text message, Mobile Application" ;
+	mv:hasPrice "Paid charging" ;
+	mv:offersPlugTypes "Plug type 2" ;
+	mv:openingHours "Open 24/24" .
+	
+mv:ChargingStationM  
+	a mv:ChargingStation ;
+	mv:ChargingStationName"10 Wilhelmstr. Siegburg" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Siegburg" ;
+						vCard:postal-code "53721" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "10" ;
+						vCard:street-address "Wilhelmstr." 
+					 ];
+	geo:long "7.205730" ;
+	geo:lat "50.793205" ;
+	vCard:operator "RWE" ;
+	mv:offersAccess "For identified persons only" ;
+	mv:hasIdentifications "Text message, Phone call, Other, Mobile Application" ;
+	mv:PaymentMethod "Text message, Mobile Application" ;
+	mv:hasPrice "Paid charging" ;
+	mv:offersPlugTypes "Plug type 2" ;
+	mv:openingHours "Open 24/24" .
+	
+mv:ChargingStationN  
+	a mv:ChargingStation ;
+	mv:ChargingStationName"3 Bachstraße Siegburg" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Siegburg" ;
+						vCard:postal-code "53721" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "3" ;
+						vCard:street-address "Bachstrasse" 
+					 ];
+	geo:long "7.203999" ;
+	geo:lat "50.798530" ;
+	vCard:operator "RWE" ;
+	mv:offersAccess "For identified persons only" ;
+	mv:hasIdentifications "Text message, Phone call, Other, Mobile Application" ;
+	mv:PaymentMethod "Text message, Mobile Application" ;
+	mv:hasPrice "Paid charging" ;
+	mv:offersPlugTypes "Plug type 2" ;
+	mv:openingHours "Open 24/24" .
+	
+mv:ChargingStationO  
+	a mv:ChargingStation ;
+	mv:ChargingStationName" Ringstraße Siegburg" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Siegburg" ;
+						vCard:postal-code "53721" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:street-address "Ringstrasse" 
+					 ];
+	geo:long "7.205371" ;
+	geo:lat "50.797767" ;
+	vCard:operator "RWE" ;
+	mv:offersAccess "For identified persons only" ;
+	mv:hasIdentifications "Text message, Phone call, Other, Mobile Application" ;
+	mv:PaymentMethod "Text message, Mobile Application" ;
+	mv:hasPrice "Paid charging" ;
+	mv:offersPlugTypes "Plug type 2" ;
+	mv:openingHours "Open 24/24" .
+	
+mv:ChargingStationP  
+	a mv:ChargingStation ;
+	mv:ChargingStationName" 1 Am Turm Siegburg" ;
+	vCard:hasAddress [
+						vCard:country-name "Germany" ;
+						vCard:city "Siegburg" ;
+						vCard:postal-code "53721" ;
+						vCard:region "North Rhine-Westphalia" ;
+						vCard:housenumber "1" ;
+						vCard:street-address "Am Turm" 
+					 ];
+	geo:long "7.223880" ;
+	geo:lat "50.792406" ;
+	vCard:operator "RWE" ;
+	mv:offersAccess "For identified persons only" ;
+	mv:hasIdentifications "Text message, Phone call, Other, Mobile Application" ;
+	mv:PaymentMethod "Text message, Mobile Application" ;
+	mv:hasPrice "Paid charging" ;
+	mv:offersPlugTypes "Plug type 2" ;
+	mv:openingHours "Open 24/24" .
+
 
 

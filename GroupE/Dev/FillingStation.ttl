@@ -5,6 +5,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix g1: <http://www.nothing.org/graph01#>.
+g1:Parking rdf:type rdfs:Class.
+
 
 mv:FillingStation
 	a rdfs:Class , owl:Class ;
@@ -62,9 +65,9 @@ mv:hasOffer
 
 mv:hasParkingFacility
 	a rdf:Property, owl:DatatypeProperty ;
-	rdfs:comment "Indicate whether Filling Station has Parking Facility or not" ;
+	rdfs:comment "Indicates what kind of parking facilities the station has" ;
 	rdfs:label "has parking facility"@en, "hat Parkmoglichkeit"@de ;
-	rdfs:domain mv:FillingStation ;
+	rdfs:domain g1:Parking ;
 	rdfs:range rdfs:Literal .
 
 mv:hasPrice

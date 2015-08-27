@@ -281,6 +281,13 @@ mv:Copper
 	rdfs:seeAlso <http://www.iso22241.org/> ;
 	rdfs:domain mv:Adblue ;
 	rdfs:range rdfs:Integer .
+
+mv:Cost
+	a rdf:Property , owl:DatatypeProperty ;
+	rdfs:comment "Indicates the price of the fuel" ;
+	rdfs:label "Cost"@en , "Kosten"@de ;
+	rdfs:domain mv:Fuel ;
+	rdfs:range rdfs:Integer .
 	
 mv:Density
 	a rdf:Property , owl:DatatypeProperty ; 

@@ -2,12 +2,15 @@ package application.model.dao.tdb;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
 import org.apache.log4j.Logger;
+import org.json.JSONObject;
 
+import com.google.gson.Gson;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
@@ -37,381 +40,12 @@ public class MobivocDAO implements IMobivocDAO {
 	 
 	public MobivocDAO(){
 		FileManager.get().addLocatorClassLoader(MobivocDAO.class.getClassLoader());
-        this.model = FileManager.get().loadModel("FillingStation.ttl", null, "TURTLE");
+        this.model = FileManager.get().loadModel("mymodel3_1.ttl", null, "TURTLE");
         
 	}
-	//FileManager.get().addLocatorClassLoader(MobivocDAO.class);
-	//Model model = FileManager.get().loadModel("FillingStation.ttl", null, "TURTLE");
-
+	
 	public List<FillingStation> getFillingStation() {
 		// TODO Auto-generated method stub
-
-	/*
-		
-	
-		String queryString = 
-                "PREFIX mv: <http://eccenca.com/mobivoc/> " +
-                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " + 
-                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
-                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
-                "PREFIX skos: <http://www.w3.org/2004/02/skos/core#> " +
-                "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
-                "PREFIX vcard: <http://www.w3.org/2006/vcard/ns#> " +
-        		"SELECT ?fsNumber ?fsHeight ?oName ?cName ?locality ?pCode ?region ?sAddress ?tel ?url ?longtitute ?latitute " +
-                "WHERE { " +
-        		"    ?fuelStation a mv:FuelStation . " +
-        		"    ?fuelStation mv:fillingStationNumber ?fsNumber . " +
-        		"    ?fuelStation mv:fillingStationHeight ?fsHeight . " +
-        		"    ?fuelStation vcard:organization-name  ?oName . " +
-        		"    ?fuelStation vcard:country-name ?cName . " +
-        		"    ?fuelStation vcard:locality ?locality . " +
-        		"    ?fuelStation vcard:postal-code ?pCode . " +
-        		"    ?fuelStation vcard:region ?region . " +
-        		"    ?fuelStation vcard:street-address ?sAddress . " +
-        		"    ?fuelStation vcard:tel ?tel . " +
-        		"    ?fuelStation vcard:url ?url . " +
-        		"    ?fuelStation geo:long ?longtitute . " +
-        		"	 ?fuelStation geo:lat  ?latitute ." +
-        		"}";
-		
-		String queryString2 = 
-                "PREFIX mv: <http://eccenca.com/mobivoc/> " +
-                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " + 
-                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
-                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
-                "PREFIX skos: <http://www.w3.org/2004/02/skos/core#> " +
-                "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
-                "PREFIX vcard: <http://www.w3.org/2006/vcard/ns#> " +
-        		"SELECT ?fsNumber ?fsHeight ?oName ?cName ?locality ?pCode ?region ?sAddress ?tel ?url ?longtitute ?latitute " +
-                "WHERE { " +
-        		"    ?fuelStation a mv:FuelStation . " +
-        		"    ?fuelStation mv:fillingStationNumber ?fsNumber . " +
-        		"    ?fuelStation mv:fillingStationHeight ?fsHeight . " +
-        		"    ?fuelStation vcard:organization-name  ?oName . " +
-        		"    ?fuelStation vcard:hasAddress  [ vcard:country-name ?cName ;  " +
-        		"									  vcard:locality ?locality ;  " +	
-        		"									  vcard:postal-code ?pCode ;  " +
-        		"									  vcard:region ?region ;  " +	
-        		"									  vcard:street-address ?sAddress; ]." +	
-        		"    ?fuelStation vcard:tel ?tel . " +
-        		"    ?fuelStation vcard:url ?url . " +
-        		"    ?fuelStation geo:long ?longtitute . " +
-        		"	 ?fuelStation geo:lat  ?latitute ." +
-        		"}";
-		
-		
-		System.out.println();
-		System.out.println();
-		
-		String queryStringFillingStationAddress = 
-                "PREFIX mv: <http://eccenca.com/mobivoc/> " +
-                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " + 
-                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
-                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
-                "PREFIX skos: <http://www.w3.org/2004/02/skos/core#> " +
-                "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
-                "PREFIX vcard: <http://www.w3.org/2006/vcard/ns#> " +
-        		"SELECT ?fsNumber ?cName ?locality ?pCode ?region ?sAddress " +
-                "WHERE { " +
-        		"    ?fuelStation a mv:FuelStation . " +
-        		"    ?fuelStation mv:fillingStationNumber ?fsNumber . " +
-        		"    ?fuelStation vcard:hasAddress  [ vcard:country-name ?cName ;  " +
-        		"									  vcard:locality ?locality ;  " +	
-        		"									  vcard:postal-code ?pCode ;  " +
-        		"									  vcard:region ?region ;  " +	
-        		"									  vcard:street-address ?sAddress; ]." +	
-        		"}";
-		
-		Query queryFillingStationAddress = QueryFactory.create(queryStringFillingStationAddress);
-        QueryExecution qexec1 = QueryExecutionFactory.create(queryFillingStationAddress, model);
-        
-        try {
-            ResultSet results = qexec1.execSelect();
-            while ( results.hasNext() ) {
-                QuerySolution soln = results.nextSolution();
-                Literal fsNumber = soln.getLiteral("fsNumber");
-                Literal locality = soln.getLiteral("locality");
-                Literal pCode = soln.getLiteral("pCode");
-                Literal region = soln.getLiteral("region");
-                Literal sAddress = soln.getLiteral("sAddress");
-                Literal cName = soln.getLiteral("cName");
-                 
-                System.out.println("ID: " +  fsNumber + ", Country: " + cName + ", City: " + 
-                		locality + " , PostCode: " + pCode + " , Region: " + region + " , Street: " + sAddress 
-                		 );
-            }
-        } finally {
-            qexec1.close();
-        }
-		
-		System.out.println();
-		System.out.println();
-		
-		String queryStringGeoCoordinate = 
-                "PREFIX mv: <http://eccenca.com/mobivoc/> " +
-                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " + 
-                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
-                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
-                "PREFIX skos: <http://www.w3.org/2004/02/skos/core#> " +
-                "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
-                "PREFIX vcard: <http://www.w3.org/2006/vcard/ns#> " +
-        		"SELECT  ?fsNumber ?longtitute ?latitute " +
-                "WHERE { " +
-        		"    ?fuelStation a mv:FuelStation . " +
-        		"    ?fuelStation mv:fillingStationNumber ?fsNumber . " +
-        		"    ?fuelStation geo:long ?longtitute . " +
-        		"	 ?fuelStation geo:lat  ?latitute ." +
-        		"}";
-		
-		Query queryGeoCoordinate = QueryFactory.create(queryStringGeoCoordinate);
-        QueryExecution qexec2 = QueryExecutionFactory.create(queryGeoCoordinate, model);
-        
-        try {
-            ResultSet results = qexec2.execSelect();
-            while ( results.hasNext() ) {
-                QuerySolution soln = results.nextSolution();
-                Literal fsNumber = soln.getLiteral("fsNumber");
-                Literal longtitute = soln.getLiteral("longtitute");
-                Literal latitute = soln.getLiteral("latitute");
-                
-                
-                System.out.println("ID: " +  fsNumber + ", Longitude: " + longtitute + ", Latitude: " + 
-                		latitute 
-                		 );
-            }
-        } finally {
-            qexec2.close();
-        }
-		
-		
-		
-        System.out.println();
-        System.out.println();
-		
-		
-		
-		
-		String queryStringContactInfo = 
-                "PREFIX mv: <http://eccenca.com/mobivoc/> " +
-                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " + 
-                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
-                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
-                "PREFIX skos: <http://www.w3.org/2004/02/skos/core#> " +
-                "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
-                "PREFIX vcard: <http://www.w3.org/2006/vcard/ns#> " +
-        		"SELECT ?fsNumber ?tel ?url  " +
-                "WHERE { " +
-        		"    ?fuelStation a mv:FuelStation . " +
-        		"    ?fuelStation mv:fillingStationNumber ?fsNumber . " +
-        		"    ?fuelStation vcard:tel ?tel . " +
-        		"    ?fuelStation vcard:url ?url . " +
-        		"}";
-		
-		
-		Query queryContactInfo = QueryFactory.create(queryStringContactInfo);
-        QueryExecution qexec3 = QueryExecutionFactory.create(queryContactInfo, model);
-        
-        try {
-            ResultSet results = qexec3.execSelect();
-            while ( results.hasNext() ) {
-                QuerySolution soln = results.nextSolution();
-                Literal fsNumber = soln.getLiteral("fsNumber");
-                Literal tel = soln.getLiteral("tel");
-                Literal url = soln.getLiteral("url");
-                
-                System.out.println("ID: " +  fsNumber + ", Tel: " + tel + ", URL: " + 
-                		url 
-                		 );
-            }
-        } finally {
-            qexec3.close();
-        }
-		
-		
-		
-		
-		
-		String queryStringFillingStationHeight = 
-                "PREFIX mv: <http://eccenca.com/mobivoc/> " +
-                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " + 
-                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
-                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
-                "PREFIX skos: <http://www.w3.org/2004/02/skos/core#> " +
-                "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
-                "PREFIX vcard: <http://www.w3.org/2006/vcard/ns#> " +
-        		"SELECT ?fsNumber ?fsHeight ?oName ?cName ?locality ?pCode ?region ?sAddress ?tel ?url ?longtitute ?latitute " +
-                "WHERE { " +
-        		"    ?fuelStation a mv:FuelStation . " +
-        		"    ?fuelStation mv:fillingStationHeight ?fsHeight . " +
-        		"}";
-		
-		
-		
-		
-		System.out.println();
-		System.out.println();
-		
-		
-		
-		
-		
-		String queryString3 = 
-				"PREFIX lgdo: <http://linkedgeodata.org/ontology/> " +
-				"PREFIX ogc: <http://www.opengis.net/ont/geosparql#> " +
-				"PREFIX geom: <http://geovocab.org/geometry#> " +
-				"PREFIX bif: <http://www.openlinksw.com/schemas/bif#> " +
-				"SELECT DISTINCT ?petrolStationObject ?operator " + 
-				"WHERE { " + 
-					"SERVICE <http://linkedgeodata.org/vsparql> " +
-					"{ " +
-						"?petrolStationObject a lgdo:FuelStation ;" +
-								 "geom:geometry [ ogc:asWKT ?g ] ;" +
-								 "lgdo:operator ?operator ." +
-						"Filter(bif:st_intersects (?g, bif:st_point (7.09943, 50.74637), 0.01))" + 
-					"}" +
-				"} LIMIT 10";
-					
-		Query query4 = QueryFactory.create(queryString3);
-        QueryExecution qexec4 = QueryExecutionFactory.create(query4, model);
-        
-        Resource petrolStationObj = null;
-        String res = "null";
-        
-        try {
-            ResultSet results2 = qexec4.execSelect();
-            while ( results2.hasNext() ) {
-                QuerySolution soln = results2.nextSolution();
-                petrolStationObj = soln.getResource("petrolStationObject");
-                Literal operator = soln.getLiteral("operator");
-                
-                 res = petrolStationObj.toString();
-                
-                
-                System.out.println("PetrolStation: " + petrolStationObj + "Operator: " +  ", " + operator);
-            }
-        }finally {
-        	qexec4.close();
-        }
-       
-        String queryStation =
-        					"PREFIX lgdo: <http://linkedgeodata.org/ontology/> " + 
-        					"SELECT DISTINCT ?address ?operator " +
-        					  "WHERE { " + 
-        					  		//"SERVICE <http://linkedgeodata.org/vsparql> " + 
-        					  		"{ " +
-        					  			"{ <" + res + "> lgdo:addr%3Astreet ?address } " +
-        					  			"{ <" + res + "> lgdo:operator ?operator } " +
-        					  		"} " + 	
-        					  "}" ;
-        
-        Model model2 = ModelFactory.createDefaultModel();
-        
-        Query query6 = QueryFactory.create(queryStation);
-        QueryExecution qexec6 = QueryExecutionFactory.sparqlService("http://linkedgeodata.org/vsparql", query6);
-
-        ResultSet results6 = qexec6.execSelect();
-        //ResultSetFormatter.out(System.out, results, query);      
-        
-        
-        
-        Property hasTime = model.createProperty("http://linkedgeodata.org/ontology/addr%3Astreet");
-        
-        //Query query5 = QueryFactory.create(queryStation);
-        //QueryExecution qexec5 = QueryExecutionFactory.create(query5, model2);
-        
-        try {
-            //ResultSet results2 = qexec5.execSelect();
-            while ( results6.hasNext() ) {
-                QuerySolution soln = results6.nextSolution();
-                Literal address = soln.getLiteral("address");
-                Literal operator = soln.getLiteral("operator");
-               
-                //model2.createStatement(petrolStationObj, hasTime, "Bonner");
-                model2.add(petrolStationObj, hasTime, "Bonner");
-                
-                System.out.println("address: " + address + "Operator: " +  ", " + operator);
-            }
-        }finally {
-        	qexec6.close();
-        }
-        
-        
-        FileWriter out = null;
-        try {
-          // XML format - long and verbose
-          //out = new FileWriter( "mymodel.xml" );
-          //m.write( out, "RDF/XML-ABBREV" );
-
-          // OR Turtle format - compact and more readable
-          // use this variant if you're not sure which to use!
-          out = new FileWriter( "/Users/umut/Desktop/mymodel3.ttl" );
-          model2.write( out, "Turtle" );
-        }
-        catch(Exception e) {
-          System.out.println("Error");
-          }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        System.out.println("asdasdasdasdadsasdAddress: sdadasasdasd");
-
-		
-		Query query = QueryFactory.create(queryString2);
-        QueryExecution qexec = QueryExecutionFactory.create(query, model);
-        
-        try {
-            ResultSet results = qexec.execSelect();
-            while ( results.hasNext() ) {
-                QuerySolution soln = results.nextSolution();
-                Literal fsNumber = soln.getLiteral("fsNumber");
-                Literal fsHeight = soln.getLiteral("fsHeight");
-                Literal oName = soln.getLiteral("oName");
-                Literal cName = soln.getLiteral("cName");
-                Literal locality = soln.getLiteral("locality");
-                Literal pCode = soln.getLiteral("pCode");
-                Literal region = soln.getLiteral("region");
-                Literal sAddress = soln.getLiteral("sAddress");
-                Literal tel = soln.getLiteral("tel");
-                Literal url = soln.getLiteral("url");
-       
-                Literal longtitute = soln.getLiteral("longtitute");
-                Literal latitute = soln.getLiteral("latitute");
-                
-                System.out.println(longtitute + " , " + latitute + " ," +
-                		fsNumber + " ," + fsHeight + " ," + oName + " ," + cName + " ," + 
-                		locality + " ," + pCode + " ," + region + " ," + sAddress + " ," + 
-                		tel + " ," + url );
-                
-                FillingStation fillStation = new FillingStation();
-                fillStation.setCountryName(cName.toString());
-                fillStation.setFillingStationHeight(fsHeight.toString());
-                fillStation.setFillingStationNumber(fsNumber.toString());
-                fillStation.setLat(latitute.toString());
-                fillStation.setLocality(locality.toString());
-                fillStation.setLong(longtitute.toString());
-                fillStation.setOrganizationName(oName.toString());
-                fillStation.setPostalCode(pCode.toString());
-                fillStation.setRegion(region.toString());
-                fillStation.setStreetAddress(sAddress.toString());
-                fillStation.setTel(tel.toString());
-                fillStation.setURL(url.toString());
-                
-                
-                fillingStation.add(fillStation);
-                
-            }
-        } finally {
-            qexec.close();
-        }
-		
-		
-		*/
 		
 		return fillingStation;
 	}
@@ -431,12 +65,11 @@ public class MobivocDAO implements IMobivocDAO {
 		return null;
 	}
 
-	public void createFillingStationInstances() {
+	public void createFillingStationInstances(String longitude, String latitude) {
 		// TODO Auto-generated method stub
 		
-Model model2 = ModelFactory.createDefaultModel();
+		Model model2 = ModelFactory.createDefaultModel();
 
-		
 		String linkedGeoDataQuery = 
 				"PREFIX lgdo: <http://linkedgeodata.org/ontology/> " +
 						"PREFIX ogc: <http://www.opengis.net/ont/geosparql#> " +
@@ -446,8 +79,8 @@ Model model2 = ModelFactory.createDefaultModel();
 						"WHERE { " + 
 								"?petrolStationObject a lgdo:FuelStation ;" +
 										 "geom:geometry [ ogc:asWKT ?g ] ;" +
-								"Filter(bif:st_intersects (?g, bif:st_point (7.098207, 50.737430), 0.1))" + 
-						"} LIMIT 5";
+								"Filter(bif:st_intersects (?g, bif:st_point (" + longitude + ", " +  latitude + "), 0.1))" + 
+						"} LIMIT 10";
 		
 		
 		
@@ -477,30 +110,139 @@ Model model2 = ModelFactory.createDefaultModel();
                 	while ( results2.hasNext() ) {
                 		QuerySolution soln2 = results2.nextSolution();
                 		Resource propertyResource = soln2.getResource("property");
+                		Literal literalPart = null;
+                		Resource resourcePart;
                 		Property property = model2.createProperty(propertyResource.toString());
-            			
+                	                		
+                		//System.out.println("Property: " + property.toString());
+                		
+                		if(soln2.get("hasValue").isLiteral()){
+                			literalPart = soln2.getLiteral("hasValue");
+                			//System.out.println("Literal: " + literalPart.toString() );
+                			
+                		}
+                		else{
+                			resourcePart= soln2.getResource("hasValue");
+                			//System.out.println("Resource: " + resourcePart.toString() );
+                		}
+                		
+                		if(propertyResource.toString().equals("http://www.w3.org/2000/01/rdf-schema#label") ){
+                			System.out.println("IM HERERERERERERER" + literalPart.toString());
+                			model2.add(petrolStationObject, property, literalPart);
+                		}
+                		
+                		
+                		//System.out.println(propertyResource.toString());
                 		
                 		try{
                 			
+                			//System.out.println("Im here");
                 			
                 			//Property property = model2.createProperty(propertyResource.toString());
                 			Property property2 = model2.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type");
                 			Property property3 = model2.createProperty("http://eccenca.com/mobivoc/hasOffer");
+                			
+                			//System.out.println("Im here2");
+                			
                 			Property property4 = model2.createProperty("http://eccenca.com/mobivoc/fillingStationNumber");
                 			Property property5 = model2.createProperty("http://eccenca.com/mobivoc/fillingStationHeight");
                 			Property property6 = model2.createProperty("http://eccenca.com/mobivoc/hasParkingFacility");
                 			Property property7 = model2.createProperty("http://eccenca.com/mobivoc/hasWashingFacility");
                 		
+                			Property property8 = model2.createProperty("http://eccenca.com/mobivoc/hasShoppingFacility");
+                			Property property9 = model2.createProperty("http://eccenca.com/mobivoc/hasWCFacility");
+                    		
+                			//System.out.println("Im here3");
                 			
-                			Literal literal = soln2.getLiteral("hasValue");
+                			//Literal a = model.createLiteral("Yes");
+                			
+                			Literal literal = model2.createLiteral("Yes");
+                			Literal literal2 = model2.createLiteral("10");
+                			
+                			
+                			//Literal literal = soln2.getLiteral("Yes");
+                			//Literal literal2 = soln2.getLiteral("10");
+                			
+                			System.out.println("Im here4");
+                			
                 			Resource resource = model2.createResource("http://eccenca.com/mobivoc/FuelStation");
                 			Resource resource2 = model2.createResource("http://eccenca.com/mobivoc/Adblue");
+                			Resource resource3 = model2.createResource("http://eccenca.com/mobivoc/Autogas");
+                			Resource resource4 = model2.createResource("http://eccenca.com/mobivoc/Biodiesel");
+                			Resource resource5 = model2.createResource("http://eccenca.com/mobivoc/CompressedNaturalGas");
+                			Resource resource6 = model2.createResource("http://eccenca.com/mobivoc/DieselFuel");
+                			Resource resource7 = model2.createResource("http://eccenca.com/mobivoc/E85");
+                			Resource resource8 = model2.createResource("http://eccenca.com/mobivoc/Ethanol");
+                			Resource resource9 = model2.createResource("http://eccenca.com/mobivoc/ExcelliumDiesel");
+                			Resource resource10 = model2.createResource("http://eccenca.com/mobivoc/ExcelliumSuperPlus");
+                			Resource resource11 = model2.createResource("http://eccenca.com/mobivoc/Hydrogen");
+                			Resource resource12 = model2.createResource("http://eccenca.com/mobivoc/LiquidGas");
+                			Resource resource13 = model2.createResource("http://eccenca.com/mobivoc/LKWDiesel");
+                			Resource resource14 = model2.createResource("http://eccenca.com/mobivoc/MaxxMotionDiesel");
+                			Resource resource15 = model2.createResource("http://eccenca.com/mobivoc/MaxxMotionSuper100");
+                			Resource resource16 = model2.createResource("http://eccenca.com/mobivoc/Methane");
+                			Resource resource17 = model2.createResource("http://eccenca.com/mobivoc/Petrol");
+                			Resource resource18 = model2.createResource("http://eccenca.com/mobivoc/Super(E5)");
+                			Resource resource19 = model2.createResource("http://eccenca.com/mobivoc/Super(E10)");
+                			Resource resource20 = model2.createResource("http://eccenca.com/mobivoc/SuperDiesel");
+                			Resource resource21 = model2.createResource("http://eccenca.com/mobivoc/SuperDiesel");
+                			Resource resource22 = model2.createResource("http://eccenca.com/mobivoc/UltimateDiesel");
+                			Resource resource23 = model2.createResource("http://eccenca.com/mobivoc/UltimateSuper");
+                			Resource resource24 = model2.createResource("http://eccenca.com/mobivoc/VPowerDiesel");
+                			Resource resource25 = model2.createResource("http://eccenca.com/mobivoc/VPowerRacing");
                 			
+
+                			//System.out.println("Im here5");
                 			
                     		
-                    		model2.add(petrolStationObject, property, literal);
+                    		//model2.add(petrolStationObject, property, literal);
+                    		
+                    		//System.out.println("Im here6");
+                    		
                     		model2.add(petrolStationObject, property2, resource);
+                    		
                     		model2.add(petrolStationObject, property3, resource2);
+                    		model2.add(petrolStationObject, property3, resource3);
+                    		model2.add(petrolStationObject, property3, resource4);
+                    		model2.add(petrolStationObject, property3, resource5);
+                    		model2.add(petrolStationObject, property3, resource6);
+                    		model2.add(petrolStationObject, property3, resource7);
+                    		model2.add(petrolStationObject, property3, resource8);
+                    		model2.add(petrolStationObject, property3, resource9);
+                    		model2.add(petrolStationObject, property3, resource10);
+                    		model2.add(petrolStationObject, property3, resource11);
+                    		model2.add(petrolStationObject, property3, resource12);
+                    		model2.add(petrolStationObject, property3, resource13);
+                    		model2.add(petrolStationObject, property3, resource14);
+                    		model2.add(petrolStationObject, property3, resource15);
+                    		model2.add(petrolStationObject, property3, resource16);
+                    		model2.add(petrolStationObject, property3, resource17);
+                    		model2.add(petrolStationObject, property3, resource18);
+                    		model2.add(petrolStationObject, property3, resource19);
+                    		model2.add(petrolStationObject, property3, resource20);
+                    		model2.add(petrolStationObject, property3, resource21);
+                    		model2.add(petrolStationObject, property3, resource22);
+                    		model2.add(petrolStationObject, property3, resource23);
+                    		model2.add(petrolStationObject, property3, resource24);
+                    		model2.add(petrolStationObject, property3, resource25);
+                    		
+                    		
+                    		//System.out.println("Im here7");
+                    		
+                    		model2.add(petrolStationObject, property4, literal2);
+                    		
+                    		model2.add(petrolStationObject, property5, literal2);
+                    		
+                    		model2.add(petrolStationObject, property6, literal);
+                    		
+                    		model2.add(petrolStationObject, property7, literal);
+                    		
+                    		model2.add(petrolStationObject, property8, literal);
+                    		
+                    		model2.add(petrolStationObject, property9, literal);
+                    		
+                    		//System.out.println("Im here8");
+                			
                     		
                 		}
                 		catch(Exception e){
@@ -530,13 +272,145 @@ Model model2 = ModelFactory.createDefaultModel();
 
             // OR Turtle format - compact and more readable
             // use this variant if you're not sure which to use!
-            out = new FileWriter( "/Users/umut/Desktop/mymodel3_1.ttl" );
+            //out = new FileWriter( "/Users/umut/Desktop/mymodel3_1.ttl" );
+        	out = new FileWriter( "/Users/umut/Documents/workspace/eclipse_git_enterprise/Mobivoc/src/main/resources/mymodel3_1.ttl" );
+        	
             model2.write( out, "Turtle" );
           }
           catch(Exception e) {
             System.out.println("Error");
             }
 	
+	}
+	
+	public String getAllFs(String fillingStationChoice, String fuelChoice, String parkingChoice,
+			String wcChoice, String shoppingChoice, String washingChoice, String heightChoice, String wheelChairChoice){
+		
+		String resultString = null;
+		
+		StringBuilder result = new StringBuilder();
+		
+		Gson gson = new Gson();
+		JSONObject mainObj = new JSONObject();
+		JSONObject feature = new JSONObject();
+		
+		ArrayList mainList = new ArrayList();
+		
+		//ArrayList<JSONObject<ArrayList>> mainList = new ArrayList<ArrayList<JSONObject>>();
+		
+		ArrayList mainObjArray = new ArrayList();
+		
+		ArrayList aProjects = new ArrayList();
+		JSONObject oJsonInner = new JSONObject();
+		
+		//JSONArray aProjects = new JSONArray();
+
+		
+		String queryString = 
+                "PREFIX mv: <http://eccenca.com/mobivoc/> " +
+                "PREFIX owl: <http://www.w3.org/2002/07/owl#> " + 
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+                "PREFIX skos: <http://www.w3.org/2004/02/skos/core#> " +
+                "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> " +
+                "PREFIX vcard: <http://www.w3.org/2006/vcard/ns#> " +
+                
+                "SELECT ?fuelstation " + 
+                "WHERE { { ?fuelstation a mv:FuelStation. } }" ;
+                					
+                
+		Query queryFillingStation = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(queryFillingStation, model);
+        
+        try {
+            ResultSet results = qexec.execSelect();
+            while ( results.hasNext() ) {
+            	aProjects = new ArrayList();
+                QuerySolution soln = results.next();
+                Resource fuelStationObject = soln.getResource("fuelstation");
+                
+                String petrolStationObjectRes = fuelStationObject.toString();
+                
+                //System.out.println(petrolStationObjectRes);
+                
+                //result.append(petrolStationObjectRes);
+                resultString += petrolStationObjectRes; 
+                
+                
+                
+                //oJsonInner.put("Resource: ", petrolStationObjectRes);
+               
+               
+                String queryStation =
+    					"SELECT ?property ?hasValue " +
+    					  "WHERE { " + 
+    					  			"{ <" + fuelStationObject + "> ?property ?hasValue } " +		
+    					  "}" ;
+    
+                Query query2 = QueryFactory.create(queryStation);
+                QueryExecution qexec2 = QueryExecutionFactory.create(query2, model);
+                
+                int counter = 0;
+                
+                try{
+                	ResultSet results2 = qexec2.execSelect();
+                	while ( results2.hasNext() ) {
+                		oJsonInner = new JSONObject();
+                		feature = new JSONObject();
+                		//System.out.println("Counter: " + counter++);
+                		QuerySolution soln2 = results2.next();
+                		Resource propertyResource = soln2.getResource("property");
+                		
+                		
+                		oJsonInner.put("Property", propertyResource);
+                		
+                		resultString += propertyResource + "\t ";
+            			
+                		
+                		if(soln2.get("hasValue").isLiteral()){
+                			Literal literal = soln2.getLiteral("hasValue");	
+                			oJsonInner.put("Literal", literal);
+                		}else if(soln2.get("hasValue").isURIResource()){
+                			Resource resource = soln2.getResource("hasValue");
+                			oJsonInner.put("Resource", resource);
+                		}
+                		
+                		feature.put("Feature", oJsonInner);
+                		aProjects.add(feature);
+                		//aProjects.add(oJsonInner);
+                	}	
+                	//aProjects.add(oJsonInner);
+	            }
+                catch(Exception e){
+                	
+                }
+           
+                mainObj.put("FillingStation", aProjects);
+                mainObjArray.add(mainObj);
+                
+                //aProjects.add(oJsonInner);
+                
+                
+                
+                
+            }
+            
+        } finally {
+            qexec.close();
+        }
+		
+        JSONObject mainObj2 = new JSONObject();
+        
+        mainObj2.put("FillingStationList: ", mainObjArray);
+		
+		ArrayList mainList2 = new ArrayList();
+		
+		mainList2.add(mainObj2);
+        
+        System.out.println("Result");
+		//return mainList2.toString();
+		return mainObjArray.toString();
+        //return resultString;
 	}
 	
 	

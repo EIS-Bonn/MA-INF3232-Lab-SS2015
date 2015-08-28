@@ -61,6 +61,20 @@ mv:hasWashingFacility
 	rdfs:domain mv:FillingStation ;
 	rdfs:range rdfs:Literal .
 
+mv:hasShoppingFacility
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicate whether Filling Station has Shopping Facility or not" ;
+	rdfs:label "has shopping facility" ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+
+mv:hasWCFacility
+	a rdf:Property, owl:DatatypeProperty ;
+	rdfs:comment "Indicate whether Filling Station has WC Facility or not" ;
+	rdfs:label "has WC facility" ;
+	rdfs:domain mv:FillingStation ;
+	rdfs:range rdfs:Literal .
+
 
 
 # Individuals

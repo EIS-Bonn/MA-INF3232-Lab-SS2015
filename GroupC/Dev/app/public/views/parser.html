@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <div class="row">
+  	<div class="col-xs-12">
+  		<h5>Please wait while getting information about the ontology ... </h5>
+		<p>Parsing ontology from file {{latest}}</p>		
+		<p>Ontology URI: {{parser.header.uri}}</p>
+		<h2>VOWL metrics:</h2>
+  	</div>
+  </div>
+
+  <div class="row" data-ng-if="parser" ng-repeat="(key, value) in parser.metrics">
+  	<!-- AXIOMS -->
+    <div class="col-xs-3" ng-if="key === 'axiomCount'">Axioms count</div>
+    <div class="col-xs-9" ng-if="key === 'axiomCount'">{{value}}</div>
+    <!-- CLASS -->
+    <div class="col-xs-3" ng-if="key === 'classCount'">Class count</div>
+    <div class="col-xs-9" ng-if="key === 'classCount'">{{value}}</div>
+    <!-- DATATYPE -->
+    <div class="col-xs-3" ng-if="key === 'datatypeCount'">Datatype count</div>
+    <div class="col-xs-9" ng-if="key === 'datatypeCount'">{{value}}</div>
+    <!-- DATATYPE PROPERTY -->
+    <div class="col-xs-3" ng-if="key === 'datatypePropertyCount'">Datatype property count</div>
+    <div class="col-xs-9" ng-if="key === 'datatypePropertyCount'">{{value}}</div>
+    <!-- INDIVIDUAL -->
+    <div class="col-xs-3" ng-if="key === 'individualCount'">Individual count</div>
+    <div class="col-xs-9" ng-if="key === 'individualCount'">{{value}}</div>
+    <!-- OBJECT PROPERTY -->
+    <div class="col-xs-3" ng-if="key === 'objectPropertyCount'">Object count</div>
+    <div class="col-xs-9" ng-if="key === 'objectPropertyCount'">{{value}}</div>
+    <!-- PROPERTY COUNT-->
+    <div class="col-xs-3" ng-if="key === 'propertyCount'">Axioms count</div>
+    <div class="col-xs-9" ng-if="key === 'propertyCount'">{{value}}</div>
+  </div>
+
+  <div class="row" ng-if="metrics">
+	  	<div class="col-xs-12">
+	  		<h2 ng-if="metrics">Additional metrics: </h2>			
+	  	</div>
+  </div>
+
+  	<div class="row" ng-repeat="metric in metrics">
+	  	<div class="col-xs-3" ng-if="metric.name === 'blank'">Blank node count</div>
+	    <div class="col-xs-9" ng-if="metric.name === 'blank'">{{metric.value}}</div>
+
+	    <div class="col-xs-3" ng-if="metric.name === 'literals'">Literals count</div>
+	    <div class="col-xs-9" ng-if="metric.name === 'literals'">{{metric.value}}</div>
+    </div>
+  
+  </div>
+
+	
+		
+</div>

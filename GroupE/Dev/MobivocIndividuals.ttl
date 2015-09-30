@@ -1,0 +1,2445 @@
+<http://linkedgeodata.org/triplify/way174696187>
+        a       <http://geovocab.org/spatial#Feature> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way174696187> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Tankstelle Sistig" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way174696187> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "Shell" ;   
+        <http://linkedgeodata.org/ontology/changeset>
+                "17823869"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3A1_25>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3A1_50>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiodiesel>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae10>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae85>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Aelectricity>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel:GTL_diesel>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:cng>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_100>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                false ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Heizöl Sistig GmbH" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                false ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user524500> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-09-13T22:33:31"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way167094877>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way167094877> ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way167094877> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "11877864"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user55687> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-06-12T21:08:38"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way22381889>
+        a       <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way22381889> ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way22381889> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "15357081"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user45243> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-03-13T23:11:53"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way43532541>
+        a       <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way43532541> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way43532541> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9677109"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:cng>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_100>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/source>
+                "Yahoo!Sat;Bing" ;
+        <http://linkedgeodata.org/ontology/version>
+                "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user7426> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-10-28T16:39:07"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way44783864>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way44783864> ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way44783864> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12969742"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user133419> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-09-03T18:23:08"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node1425249925>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Node> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node1425249925> ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node1425249925> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9518514"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fixme>
+                "name, richtiges Gebäude" ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.676224&long=7.1711307#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user290680> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-10-10T18:50:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0676223900000004E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1711305E0 .
+
+<http://linkedgeodata.org/triplify/node495123014>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Node> , <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node495123014> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral Autocenter" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node495123014> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "409" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Königswinterer Straße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53227> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "8245403"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.724342&long=7.1528444#point> ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "Mo-Sa 06:00-24:00; Su 08:00-24:00" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user116044> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-05-25T16:50:26"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0724341100000004E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.152844300000001E0 .
+
+<http://linkedgeodata.org/triplify/way152286995>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way152286995> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "HEM" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way152286995> ;
+        <http://linkedgeodata.org/ontology/area>
+                true ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "10815375"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "HEM Tankstelle" ;
+        <http://linkedgeodata.org/ontology/surveillance>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user62187> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-02-28T03:46:39"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way170354497>
+        a       <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Building> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way170354497> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Total" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way170354497> ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "8" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Ubierstraße" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12132579"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Eric Floret" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user55687> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-07-06T19:05:44"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "+49 228 36 32 98" .
+
+<http://linkedgeodata.org/triplify/way33806957>
+        a       <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/meta/Way> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way33806957> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way33806957> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "92" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Endenicher Straße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53115> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "19320750"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3Aadblue>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiodiesel>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiogas>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae85>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Aelectricity>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ahydrogen>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Asvo>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:cng>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_100>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                false ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/source>
+                "local_knowledge" ;
+        <http://linkedgeodata.org/ontology/url>
+                "www.shell.de" ;
+        <http://linkedgeodata.org/ontology/version>
+                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user212553> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-12-07T12:11:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/fax>
+                "+49228694197" ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "+49228696110" .
+
+<http://linkedgeodata.org/triplify/way119908482>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://geovocab.org/spatial#Feature> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Building> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way119908482> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Witter" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way119908482> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Alfter" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "521" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Hauptstraße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53347> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "15252851"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "Mo-Fr 06:30-20:30; Sa,Su 08:00-19:00" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user6390> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-03-04T23:50:44"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "0228 643972" .
+
+<http://linkedgeodata.org/triplify/way107167692>
+        a       <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Building> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/FuelStation> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way107167692> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way107167692> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12496174"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user290680> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-07-26T11:21:51"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node448078576>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Node> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node448078576> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "star" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node448078576> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "8322332"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.793747&long=7.1660352#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user39966> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-06-02T19:31:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0793748400000005E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1660354E0 .
+
+<http://linkedgeodata.org/triplify/node778457842>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Shop> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/NotAShop> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Node> , <http://linkedgeodata.org/ontology/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node778457842> ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node778457842> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "17132228"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.734413&long=7.1321759#point> ;
+        <http://linkedgeodata.org/ontology/note>
+                "LPG fuel vending machine" ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Independent" ;
+        <http://linkedgeodata.org/ontology/payment%3Aaccount_cards>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/payment:debit_cards>
+                true ;
+        <http://linkedgeodata.org/ontology/version>
+                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user72802> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-07-29T00:44:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.07344146E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.132176E0 .
+
+<http://linkedgeodata.org/triplify/way113979259>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Way> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way113979259> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way113979259> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "8212998"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user237277> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-05-22T09:27:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way37777812>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way37777812> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "SVG" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way37777812> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "7" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Potsdamer Platz" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53119> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "JET" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "16923310"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:cng>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "SVG Nordrhein eG" ;
+        <http://linkedgeodata.org/ontology/source>
+                "local_knowledge" ;
+        <http://linkedgeodata.org/ontology/version>
+                "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user577895> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-07-12T11:00:27"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://www.svg.de/> ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "+49 228 654851" .
+
+<http://linkedgeodata.org/triplify/way279273028>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/meta/Way> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way279273028> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Esso" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way279273028> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "22116885"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Esso" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user11985> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-05-04T03:32:01"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way54135306>
+        a       <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way54135306> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bft Tankstelle" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way54135306> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "157" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Endenicher Straße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53115> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "14903127"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiodiesel>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiogas>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae85>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Aelectricity>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ahydrogen>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Asvo>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel:cng>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/source>
+                "Yahoo!Sat" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user13413> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-02-03T22:52:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/fax>
+                "0228 7668981" ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "0228 94499141" .
+
+<http://linkedgeodata.org/triplify/node732711937>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Node> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node732711937> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "OBI Markt" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node732711937> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Alfter" ;
+        <http://linkedgeodata.org/ontology/addr%3Asuburb>
+                "Oedekoven" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53347> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "13200799"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:cng>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.715942&long=7.028481#point> ;
+        <http://linkedgeodata.org/ontology/source>
+                "http://www.gas-tankstellen.de" ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user6390> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-09-21T22:41:53"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0715941300000004E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.028481E0 .
+
+<http://linkedgeodata.org/triplify/way37029314>
+        a       <http://linkedgeodata.org/meta/Way> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way37029314> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Esso" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way37029314> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "455" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Kölnstraße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53117> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "16985179"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Esso" ;
+        <http://linkedgeodata.org/ontology/version>
+                "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user346838> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-07-17T12:20:05"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way245731902>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way245731902> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way245731902> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "71" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Hohe Straße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53119> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "18847084"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/source>
+                "*;Aerowest" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user184969> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-11-12T01:50:45"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node253846363>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Node> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node253846363> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node253846363> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "102-110" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Römerstraße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53111> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "11169951"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.746574&long=7.0996094#point> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user290680> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-03-31T22:29:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.07465738E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.0996093E0 .
+
+<http://linkedgeodata.org/triplify/node441911973>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Node> , <http://geovocab.org/spatial#Feature> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node441911973> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Total" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node441911973> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "11551753"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.702755&long=7.1160889#point> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Total" ;
+        <http://linkedgeodata.org/ontology/version>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user55687> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-05-09T20:10:42"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.07027555E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.116088700000001E0 .
+
+<http://linkedgeodata.org/triplify/way109413972>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way109413972> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mundorf-Tank" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way109413972> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Troisdorf" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "2" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Echternacher Straße" ;
+        <http://linkedgeodata.org/ontology/addr%3Asuburb>
+                "Spich" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53842> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "15857784"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:cng>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user237277> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-04-25T10:06:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node732717149>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Node> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node732717149> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Auto Greuel GmbH & Co KG" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node732717149> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn-Buschdorf" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "5" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Christian-Lassen-Straße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53117> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "10780768"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.752781&long=7.0588899#point> ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "Mo-Fr 07:30-18:00; Sa 09:00-13:00" ;
+        <http://linkedgeodata.org/ontology/source>
+                "http://www.gas-tankstellen.de" ;
+        <http://linkedgeodata.org/ontology/version>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user346838> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-02-24T19:00:09"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.075278E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.058890000000001E0 .
+
+<http://linkedgeodata.org/triplify/way98732912>
+        a       <http://linkedgeodata.org/ontology/Building> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way98732912> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Tankstelle Heiden" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way98732912> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "BP" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "7235985"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user237277> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-02-09T14:18:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node253837605>
+        a       <http://linkedgeodata.org/meta/Node> , <http://linkedgeodata.org/ontology/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node253837605> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Total" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node253837605> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9137274"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.738312&long=7.1012592#point> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Total" ;
+        <http://linkedgeodata.org/ontology/version>
+                "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user49785> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-08-27T14:15:07"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.07383108E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1012591E0 .
+
+<http://linkedgeodata.org/triplify/way164000216>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way164000216> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Esso" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way164000216> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12830780"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae10>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Esso" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                false ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user133419> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-08-23T12:10:53"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node262904176>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Node> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node262904176> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node262904176> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12158612"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.807121&long=7.1301098#point> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/surveillance>
+                "outdoor" ;
+        <http://linkedgeodata.org/ontology/version>
+                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user237277> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-07-09T09:42:30"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0807123100000005E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1301097E0 .
+
+<http://linkedgeodata.org/triplify/node32941627>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Node> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node32941627> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Esso" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node32941627> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "3474972"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.709393&long=7.0547748#point> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Esso" ;
+        <http://linkedgeodata.org/ontology/version>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user5657> ;
+        <http://purl.org/dc/terms/modified>
+                "2009-12-28T20:28:58"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.07093932E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.0547746E0 .
+
+<http://linkedgeodata.org/triplify/way39758834>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/Building> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way39758834> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ED" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way39758834> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "12" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Lievelingsweg" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53119> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "19203415"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/operator>
+                "ED" ;
+        <http://linkedgeodata.org/ontology/version>
+                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user212553> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-12-01T01:49:32"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way56322426>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way56322426> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way56322426> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Troisdorf" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "15" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Mülheimer Straße" ;
+        <http://linkedgeodata.org/ontology/addr%3Asuburb>
+                "Mitte" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53840> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "13821702"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/source>
+                "HiRes aerial imagery" ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user237277> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-11-10T15:49:43"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node301880497>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Node> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node301880497> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Toom" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node301880497> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9447804"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.742783&long=7.1580143#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user290680> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-10-02T17:57:48"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.074278210000001E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.158014100000001E0 .
+
+<http://linkedgeodata.org/triplify/way165026128>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://geovocab.org/spatial#Feature> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way165026128> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way165026128> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "100" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Königswinterer Straße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53227> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "11706274"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/source>
+                "Yahoo!Sat" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user49785> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-05-26T14:46:15"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way43410667>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way43410667> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Agip" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way43410667> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9677109"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiodiesel>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae10>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/fuel%3Aethanol>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/source>
+                "Yahoo!Sat;Bing" ;
+        <http://linkedgeodata.org/ontology/version>
+                "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user7426> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-10-28T16:39:06"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way106973334>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way106973334> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way106973334> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "20" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Im Wingert" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53115> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "7749529"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "Mo-Fr 06:00-22:00; Sa 07:00-22:00; Su 08:00-22:00" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user49785> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-04-03T02:20:55"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way221600257>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way221600257> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Total" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way221600257> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "19890561"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Total" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user49785> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-01-08T22:35:38"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node252436906>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Node> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node252436906> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bft" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node252436906> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "22332653"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.783306&long=7.168303#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user577693> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-05-14T14:33:07"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.07833065E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1683032E0 .
+
+<http://linkedgeodata.org/triplify/way41644605>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Shop> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/Kiosk> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way41644605> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way41644605> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Königswinter" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "2" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Im Mühlenbruch" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53639> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "16094903"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Thomas Schwarz" ;
+        <http://linkedgeodata.org/ontology/version>
+                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user13413> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-05-12T14:39:44"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way183822693>
+        a       <http://geovocab.org/spatial#Feature> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Kiosk> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/Shop> , <http://linkedgeodata.org/meta/Way> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way183822693> ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way183822693> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "Independent" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "13344192"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Zimmermann" ;
+        <http://linkedgeodata.org/ontology/source>
+                "aerowest" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                false ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user149451> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-10-03T10:32:31"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way37777829>
+        a       <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/Building> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/FuelStation> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment>
+                "Aral Store" ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way37777829> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way37777829> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "2" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Potsdamer Platz" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53119> ;
+        <http://linkedgeodata.org/ontology/atm>
+                true ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9689798"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_100>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/source>
+                "local_knowledge" ;
+        <http://linkedgeodata.org/ontology/version>
+                "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user49785> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-10-30T02:08:19"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://www.aral.de/> ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "+49 228 7668731" .
+
+<http://linkedgeodata.org/triplify/node1430404138>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/meta/Node> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/NotAShop> , <http://linkedgeodata.org/ontology/Shop> , <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node1430404138> ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node1430404138> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "Tankpool24" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9273876"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.818298&long=7.1238856#point> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Tankpool24" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user39966> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-09-11T20:47:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0818296800000006E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1238858E0 .
+
+<http://linkedgeodata.org/triplify/node301880150>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Node> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node301880150> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mundorf Tank" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node301880150> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9333068"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.797985&long=7.0524578#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user39966> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-09-18T16:00:07"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0797983300000006E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.052458000000001E0 .
+
+<http://linkedgeodata.org/triplify/way114132167>
+        a       <http://linkedgeodata.org/ontology/Shop> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way114132167> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell Station" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way114132167> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Troisdorf" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ainterpolation>
+                "2a" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Larstraße" ;
+        <http://linkedgeodata.org/ontology/addr%3Asuburb>
+                "Sieglar" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53844> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "20725274"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/layer>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Mesut Bozkaya" ;
+        <http://linkedgeodata.org/ontology/source>
+                "HiRes aerial imagery" ;
+        <http://linkedgeodata.org/ontology/version>
+                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user290680> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-02-23T03:20:43"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/fax>
+                "02241 / 41958" ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "02241 / 404598" .
+
+<http://linkedgeodata.org/triplify/way45997043>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/Building> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way45997043> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Total" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way45997043> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "200" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Konrad-Adenauer-Damm" ;
+        <http://linkedgeodata.org/ontology/brand>
+                "Total" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12118761"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user133419> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-07-05T12:14:45"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way50801414>
+        a       <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/meta/Way> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way50801414> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "SB-Tank Scherer" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way50801414> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "11802622"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Scherer" ;
+        <http://linkedgeodata.org/ontology/source>
+                "local_knowledge" ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user290680> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-06-05T10:59:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way135228582>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way135228582> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Jet" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way135228582> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "19320750"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/source>
+                "Bing" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user212553> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-12-07T12:11:31"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way95909127>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/Kiosk> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Shop> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way95909127> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "TC Bad Godesberg" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way95909127> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "8980198"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/source>
+                "Bing" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user62187> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-08-10T22:15:29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way44842570>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/meta/Way> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way44842570> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way44842570> ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "171" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Koblenzer Straße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53177> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "13179164"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/version>
+                "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user290680> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-09-20T09:01:18"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way136081420>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/Building> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way136081420> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Westfalen" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way136081420> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "3" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Reichsstraße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53125> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "22064130"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/source>
+                "Bing" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user290680> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-05-01T15:35:28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way93574729>
+        a       <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Kiosk> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Shop> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way93574729> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Zimmermann" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way93574729> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "Independent" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "13344192"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Zimmermann" ;
+        <http://linkedgeodata.org/ontology/source>
+                "aerowest" ;
+        <http://linkedgeodata.org/ontology/version>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                false ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user149451> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-10-03T10:32:34"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way132661867>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way132661867> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Westfalen" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way132661867> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bornheim" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "1" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Alexander-Bell-Straße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53332> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9506046"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae85>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/fuel:HGV_diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "24/7" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Westfalen" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user149451> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-10-08T21:32:06"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://www.westfalen-tankstellen.de/kraftstoff-und-co/tankstellenfinder/assenmacher/> .
+
+<http://linkedgeodata.org/triplify/way50855011>
+        a       <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Kiosk> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Shop> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way50855011> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Esso" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way50855011> ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Sankt Augustiner Straße" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "17113687"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/contact%3Aphone>
+                "+49 228 476790" ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Esso" ;
+        <http://linkedgeodata.org/ontology/source>
+                "Yahoo!Sat" ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user289483> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-07-27T15:10:20"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node472229391>
+        a       <http://linkedgeodata.org/meta/Node> , <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node472229391> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Tankstelle Schumacher" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node472229391> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9499106"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.753963&long=7.0135021#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user290680> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-10-08T20:51:25"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.07539627E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.0135022000000005E0 .
+
+<http://linkedgeodata.org/triplify/way170167051>
+        a       <http://geovocab.org/spatial#Feature> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way170167051> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way170167051> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "131" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Godesberger Allee" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53175> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12115401"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user55687> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-07-04T23:56:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://www.aral.de/> .
+
+<http://linkedgeodata.org/triplify/way27026909>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way27026909> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Mundorf" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way27026909> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Troisdorf" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "4" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Hertzstraße" ;
+        <http://linkedgeodata.org/ontology/addr%3Asuburb>
+                "Bergheim" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53844> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "13907349"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "Mo-Su 00:00-23:59" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Mundorf" ;
+        <http://linkedgeodata.org/ontology/version>
+                "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user39966> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-11-17T17:17:39"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://www.tanken-und-mehr.de> .
+
+<http://linkedgeodata.org/triplify/node2380932975>
+        a       <http://linkedgeodata.org/meta/Node> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node2380932975> ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node2380932975> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "16909828"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.745716&long=7.1241899#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user228841> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-07-11T10:14:34"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0745715700000005E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1241900000000005E0 .
+
+<http://linkedgeodata.org/triplify/node732712634>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/meta/Node> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node732712634> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Heinrich Ludwig GmbH" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node732712634> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Sankt Augustin" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "4" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Kölnstraße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53757> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "9560228"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:cng>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.766224&long=7.1757936#point> ;
+        <http://linkedgeodata.org/ontology/source>
+                "http://www.gas-tankstellen.de" ;
+        <http://linkedgeodata.org/ontology/version>
+                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                false ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user92274> ;
+        <http://purl.org/dc/terms/modified>
+                "2011-10-15T04:07:28"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.07662234E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1757936E0 .
+
+<http://linkedgeodata.org/triplify/node618726917>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Node> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node618726917> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node618726917> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "10292472"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3A1_25>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/fuel%3A1_50>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_100>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.810242&long=7.157558#point> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/version>
+                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user237277> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-01-04T17:11:54"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.08102436E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1575582E0 .
+
+<http://linkedgeodata.org/triplify/way123640462>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way123640462> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Knauber" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way123640462> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "19204294"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user212553> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-12-01T04:53:56"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way169995219>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://geovocab.org/spatial#Feature> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way169995219> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way169995219> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "50" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Rochusstraße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53123> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "19567014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user1851521> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-12-21T15:38:02"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way38845006>
+        a       <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way38845006> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way38845006> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12995227"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/layer>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user133419> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-09-05T14:11:57"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way246392873>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way246392873> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way246392873> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "18925810"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3Abiogas>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae10>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae85>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/fuel%3Aelectricity>
+                "no" ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                false ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user184969> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-11-16T02:20:07"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way170076568>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way170076568> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "JET" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way170076568> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "339" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Rochusstraße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53123> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "15742991"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user6390> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-04-16T00:06:53"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way88747811>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way88747811> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way88747811> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "181" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Reuterstraße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53113> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12453782"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Shell" ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user49785> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-07-23T19:22:22"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node410583732>
+        a       <http://linkedgeodata.org/meta/Node> , <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node410583732> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Tankstelle Heinrichs" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node410583732> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "bft" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "16288633"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3A1_25>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.728306&long=7.0206757#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user1175418> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-05-26T09:45:26"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0728306700000005E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.020675600000001E0 .
+
+<http://linkedgeodata.org/triplify/way170503998>
+        a       <http://linkedgeodata.org/meta/Way> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way170503998> ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way170503998> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12143436"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user55687> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-07-07T21:41:52"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/way170167050>
+        a       <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way170167050> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way170167050> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12115401"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Aral" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user55687> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-07-04T23:56:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://www.aral.de/> .
+
+<http://linkedgeodata.org/triplify/node251978810>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/meta/Node> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node251978810> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "star" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node251978810> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "19134269"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.809856&long=7.0385413#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user39966> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-11-26T22:04:10"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.08098571E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.038541100000001E0 .
+
+<http://linkedgeodata.org/triplify/node617027858>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/meta/Node> , <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node617027858> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "BFT" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node617027858> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "18944721"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.696705&long=7.0815153#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user338759> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-11-17T00:26:54"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.06967033E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.0815155E0 .
+
+<http://linkedgeodata.org/triplify/way170354498>
+        a       <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way170354498> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Total" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way170354498> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "12132579"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Eric Floret" ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user55687> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-07-06T19:05:44"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "+49 228 36 32 98" .
+
+<http://linkedgeodata.org/triplify/node2349925700>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/meta/Node> , <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node2349925700> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Shell" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node2349925700> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "16595753"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.726181&long=7.0674143#point> ;
+        <http://linkedgeodata.org/ontology/version>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user594600> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-06-17T22:44:04"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.072618000000001E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.0674143E0 .
+
+<http://linkedgeodata.org/triplify/way170503936>
+        a       <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/Building> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://linkedgeodata.org/ontology/Amenity> , <http://geovocab.org/spatial#Feature> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way170503936> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way170503936> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Bonn" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "195" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Friesdorfer Straße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53175> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "18560400"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/version>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user184969> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-10-27T04:10:18"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://linkedgeodata.org/triplify/node471781824>
+        a       <http://linkedgeodata.org/ontology/Amenity> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/ontology/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/meta/Node> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node471781824> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "LPG" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node471781824> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "5172158"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:lpg>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                false ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                false ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.694813&long=7.1405063#point> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "OBI" ;
+        <http://linkedgeodata.org/ontology/version>
+                "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user293774> ;
+        <http://purl.org/dc/terms/modified>
+                "2010-07-09T11:19:41"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.06948111E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.1405064000000005E0 .
+
+<http://linkedgeodata.org/triplify/node254355928>
+        a       <http://linkedgeodata.org/ontology/FuelStation> , <http://eccenca.com/mobivoc/FuelStation> , <http://linkedgeodata.org/meta/Node> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/node254355928> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Esso" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/node254355928> ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "11210864"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_98>
+                true ;
+        <http://linkedgeodata.org/ontology/gadmSameAs>
+                <http://gadm.geovocab.org/services/withinRegion?lat=50.772537&long=7.1892228#point> ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Esso" ;
+        <http://linkedgeodata.org/ontology/version>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/wheelchair>
+                true ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user290680> ;
+        <http://purl.org/dc/terms/modified>
+                "2012-04-07T11:46:42"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                5.0772535700000006E1 ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                7.189222600000001E0 .
+
+<http://linkedgeodata.org/triplify/way127970977>
+        a       <http://linkedgeodata.org/meta/Way> , <http://linkedgeodata.org/ontology/UnclassifiedBuilding> , <http://eccenca.com/mobivoc/FuelStation> , <http://geovocab.org/spatial#Feature> , <http://linkedgeodata.org/ontology/Amenity> , <http://linkedgeodata.org/ontology/FuelStation> , <http://linkedgeodata.org/ontology/Building> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://linkedgeodata.org/triplify/meta/way127970977> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "HIT Tankstelle" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/Adblue> ;
+        <http://geovocab.org/geometry#geometry>
+                <http://linkedgeodata.org/geometry/way127970977> ;
+        <http://linkedgeodata.org/ontology/addr%3Acity>
+                "Troisdorf" ;
+        <http://linkedgeodata.org/ontology/addr%3Acountry>
+                "DE" ;
+        <http://linkedgeodata.org/ontology/addr%3Ahousenumber>
+                "101" ;
+        <http://linkedgeodata.org/ontology/addr%3Astreet>
+                "Spicher Straße" ;
+        <http://linkedgeodata.org/ontology/addr/postcode>
+                <53844> ;
+        <http://linkedgeodata.org/ontology/brand>
+                "HIT Tankstelle" ;
+        <http://linkedgeodata.org/ontology/changeset>
+                "15275539"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://linkedgeodata.org/ontology/fuel%3Ae10>
+                "yes" ;
+        <http://linkedgeodata.org/ontology/fuel:diesel>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_91>
+                true ;
+        <http://linkedgeodata.org/ontology/fuel:octane_95>
+                true ;
+        <http://linkedgeodata.org/ontology/opening_hours>
+                "Mo-Sa 08:00-21:00" ;
+        <http://linkedgeodata.org/ontology/operator>
+                "Mundorf" ;
+        <http://linkedgeodata.org/ontology/version>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://purl.org/dc/terms/contributor>
+                <http://linkedgeodata.org/triplify/user45243> ;
+        <http://purl.org/dc/terms/modified>
+                "2013-03-06T21:46:27"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://www.tanken-und-mehr.de> ;
+        <http://xmlns.com/foaf/0.1/phone>
+                "+492241 - 47385" .

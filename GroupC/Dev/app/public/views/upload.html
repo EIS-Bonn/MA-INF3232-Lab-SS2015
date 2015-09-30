@@ -1,0 +1,53 @@
+<div class="container-fluid" >
+
+<div class="row">
+    <div class="col-xs-12">
+            <h3 class="list-group-item-heading">Ontology upload</h3>
+            <p>Please upload an ontology from your local PC. After uploading you will be able to visualize it. Alternatively, you can upload an Ontology from an URL.
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <div class="list-group">            
+            <div ng-click="(showLocalUpload = 1) && (showURLUpload = 0)" class="list-group-item">From local</div>
+            <div ng-click="(showURLUpload = 1) && (showLocalUpload = 0)"  class="list-group-item">From URL</div>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <div class="upload-section">
+                
+                <div ng-show="showLocalUpload == 1">
+                    <!-- local file upload -->                                
+                    <input nv-file-select="" uploader="uploader" type="file" value="fileuploader" name="localFileUpload" required>            
+                </div>
+                <div ng-show="showURLUpload == 1">
+                    <form name="urlUploadForm" ng-controller="uploadCtrl">
+                        <!-- Remote file upload -->                
+                        <input type="url" name="urlinput" ng-model="url.text" required>      
+                        <input type="submit" id="" ng-click="parseURL(url.text)" value="Get file"/>
+                    </form>
+                </div>
+
+                <div id="fileuploader" ng-show="(showURLUpload == 1) || ( showLocalUpload == 1)">
+                    <div id="uploadfile">
+                        <div>
+                            Upload progress:
+                            <div class="progress" style="">
+                                <div style="width: 0%;" class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+                            </div>
+                        </div>
+                        <button disabled="disabled" type="button" class="btn btn-success btn-s" ng-click="uploader.uploadAll()" ng-disabled="!uploader.getNotUploadedItems().length">
+                            <span class="glyphicon glyphicon-upload"></span> Upload 
+                        </button>
+                        <button disabled="disabled" type="button" class="btn btn-danger btn-s" ng-click="uploader.clearQueue()" ng-disabled="!uploader.queue.length">
+                            <span class="glyphicon glyphicon-trash"></span> Remove
+                        </button>
+                    </div>
+                </div>
+        </div><!-- /.upload-section -->  
+     </div>
+</div>
+
+
+
+</div><!-- /.container-fluid -->                

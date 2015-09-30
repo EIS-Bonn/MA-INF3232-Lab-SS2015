@@ -1,0 +1,22 @@
+   <div class="col-md-12" class="container-fluid">    
+        <div role="tabpanel" ng-controller="partitionCtrl">
+                    <!-- bootstrap model tablist -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" ng-repeat="tab in graphs" ng-click="selectTab($index)" ng-class="{'active':selectedGraph == $index}">
+                            <a data-target="#tab" aria-controls="home" role="tab" data-toggle="tab">Graph {{tab.id}} <span ng-click="deleteTab($index)" class="glyphicon glyphicon-remove"></span></a>
+                        </li>
+                        <li role="presentation" ng-click="addTab()">
+                            <a aria-controls="home" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-plus"></span></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="tab">
+                            <h1>Graph {{graphs[selectedGraph].id}}</h1>
+                            <h3>Content: {{graphs[selectedGraph].content}}</h3>
+                            <button type="button" class="btn btn-success btn-s" >
+                                    <span class="glyphicon glyphicon-upload"></span> Export 
+                                </button>
+                        </div>
+                    </div>
+        </div>
+</div>

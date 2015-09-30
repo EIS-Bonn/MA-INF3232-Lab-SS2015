@@ -1,0 +1,16 @@
+Fuel Type
+<hr>
+<select  ng-model="fuelTypeSelected" ng-change="changedValueFuelType(fuelTypeSelected)"
+         data-ng-options="fuelType as fuelType.name for fuelType in fuelTypes">
+        <option value="">Select FuelType</option>
+</select>
+
+<hr>
+Fuel Type Property
+<hr>
+<select  ng-model="fuelTypePropertySelected" ng-change="changedValueFuelTypeProperty(fuelTypePropertySelected)"
+         data-ng-options="fuelTypeProperty as fuelTypeProperty.name for fuelTypeProperty in fuelTypeProperties">
+    <option value="">Select FuelType Property</option>
+</select>
+
+{{my}}

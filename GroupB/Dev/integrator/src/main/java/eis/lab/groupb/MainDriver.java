@@ -129,7 +129,6 @@ JTextArea txtAreaInputQuery = new JTextArea();
 JPanel panelOutputAnalysis = new JPanel();
 JLabel lblOutputAnalysis = new JLabel("Results");
 JScrollPane scrOutputAnalysis = new JScrollPane();
-JButton btnSaveToFile = new JButton("Save to file");
 JTextField txtFileNameToSave;
 
 /*Spark Initialization*/
@@ -543,11 +542,11 @@ END ANALYSIS PART
 	{
 		frmBigDataIntegrator = new JFrame();
 		frmBigDataIntegrator.setTitle("llama Big Data Integration & Analysis");
-		frmBigDataIntegrator.setBounds(100, 100, 629, 710);
+		frmBigDataIntegrator.setBounds(100, 100, 629, 680);
 		frmBigDataIntegrator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmBigDataIntegrator.getContentPane().setLayout(null);
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		tabbedPane.setBounds(12, 12, 601, 660);
+		tabbedPane.setBounds(12, 12, 601, 640);
 		frmBigDataIntegrator.getContentPane().add(tabbedPane);
 		JPanel pTabIntegration = new JPanel();
 		tabbedPane.addTab("Data Integration", null, pTabIntegration, null);
@@ -1276,7 +1275,7 @@ END ANALYSIS PART
 					pCasing.add(lblCaseColumnValues);
 					pFormating.setBackground(Color.WHITE);
 					
-					tabsIntegration.addTab("Formating", null, pFormating, null);
+					tabsIntegration.addTab("Formatting", null, pFormating, null);
 					pFormating.setLayout(null);
 					cbFormat.setBounds(12, 24, 222, 24);
 					
@@ -1734,65 +1733,198 @@ END ANALYSIS PART
 					{
 						public void actionPerformed(ActionEvent e) 
 						{
-							Date dateStart = new Date();
-							System.out.println("Start Run Integration time: " + dateFormat.format(dateStart));
-							if(load==1)
-							{
-								String textStr[] = taReadFile.getText().split("\\r?\\n");
-						
-								for (int i=0;i<textStr.length;i++)
+							
+								if(load==1)
 								{
-									if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("INPUTFILE"))
-				            	{
-				            		xinputfile = inputpath+textStr[i].substring(textStr[i].indexOf(" ")+1);	
-				            	}
-				            	
-				            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("OUTPUTFILE"))
-				            	{
-				            		xoutputfile = textStr[i].substring(textStr[i].indexOf(" ")+1);
-				            	}
-
-				            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("SEPARATOR"))
-				            	{
-				            		xseparator = textStr[i].substring(textStr[i].indexOf(" ")+1);
-				            	}
-
-				            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("PROJECTEDCOLUMNS"))
-				            	{
-				            		xprojectedcolumnsid = textStr[i].substring(textStr[i].indexOf(" ")+1);
-				            	}
-
-				            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("PROJECTEDNAMES"))
-				            	{
-				            		xprojectedcolumnsname = textStr[i].substring(textStr[i].indexOf(" ")+1);
-				            	}
-
-				            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("MERGE"))
-				            	{
-				            		xmergecolumns = textStr[i].substring(textStr[i].indexOf(" ")+1);
-				            	}
-
-				            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("SPLIT"))
-				            	{
-				            		xsplitcolumns = textStr[i].substring(textStr[i].indexOf(" ")+1);
-				            	}
-
-				            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("CASE"))
-				            	{
-				            		xcasingcolums = textStr[i].substring(textStr[i].indexOf(" ")+1);
-				            	}
-
-				            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("FORMATDATES"))
-				            	{
-				            		xformatingcolumns = textStr[i].substring(textStr[i].indexOf(" ")+1);
-				            	}
-
-				            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("RESTRICTION"))
-				            	{
-				            		xoperations = textStr[i].substring(textStr[i].indexOf(" ")+1);
-				            	}
+									String textStr[] = taReadFile.getText().split("\\r?\\n");
+							
+									for (int i=0;i<textStr.length;i++)
+									{
+										if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("INPUTFILE"))
+					            	{
+					            		xinputfile = inputpath+textStr[i].substring(textStr[i].indexOf(" ")+1);	
+					            	}
+					            	
+					            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("OUTPUTFILE"))
+					            	{
+					            		xoutputfile = textStr[i].substring(textStr[i].indexOf(" ")+1);
+					            	}
+	
+					            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("SEPARATOR"))
+					            	{
+					            		xseparator = textStr[i].substring(textStr[i].indexOf(" ")+1);
+					            	}
+	
+					            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("PROJECTEDCOLUMNS"))
+					            	{
+					            		xprojectedcolumnsid = textStr[i].substring(textStr[i].indexOf(" ")+1);
+					            	}
+	
+					            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("PROJECTEDNAMES"))
+					            	{
+					            		xprojectedcolumnsname = textStr[i].substring(textStr[i].indexOf(" ")+1);
+					            	}
+	
+					            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("MERGE"))
+					            	{
+					            		xmergecolumns = textStr[i].substring(textStr[i].indexOf(" ")+1);
+					            	}
+	
+					            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("SPLIT"))
+					            	{
+					            		xsplitcolumns = textStr[i].substring(textStr[i].indexOf(" ")+1);
+					            	}
+	
+					            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("CASE"))
+					            	{
+					            		xcasingcolums = textStr[i].substring(textStr[i].indexOf(" ")+1);
+					            	}
+	
+					            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("FORMATDATES"))
+					            	{
+					            		xformatingcolumns = textStr[i].substring(textStr[i].indexOf(" ")+1);
+					            	}
+	
+					            	if(textStr[i].substring(0,textStr[i].indexOf(' ')).toUpperCase().equals("RESTRICTION"))
+					            	{
+					            		xoperations = textStr[i].substring(textStr[i].indexOf(" ")+1);
+					            	}
+									}
+									
+									Job job;
+									try 
+									{
+										job = new Job();
+									
+																job.setJarByClass(MainDriver.class);
+																job.setJobName("Projection Job");
+																
+																Configuration conf=job.getConfiguration();
+					
+																conf.set("separator", xseparator);
+																conf.set("columns", xprojectedcolumnsid);
+																conf.set("namescolumns", xprojectedcolumnsname);
+																conf.set("mergecolumns", xmergecolumns);
+																conf.set("splitcolumns", xsplitcolumns);
+																conf.set("casingcolumns", xcasingcolums);
+																conf.set("formatingcolumns", xformatingcolumns);
+																conf.set("operations", xoperations);
+										
+																FileInputFormat.setInputPaths(job, new Path(xinputfile));
+																FileOutputFormat.setOutputPath(job, new Path(temppath));
+																
+																job.setMapperClass(ProjectionMapper.class);
+																job.setReducerClass(ProjectionReducer.class);
+	
+																job.setMapOutputKeyClass(Text.class);
+																job.setMapOutputValueClass(Text.class);
+																
+																job.setOutputKeyClass(Text.class);
+																job.setOutputValueClass(Text.class);
+																  
+																  try 
+																  {
+																	job.waitForCompletion(true);
+																} 
+																  catch (ClassNotFoundException e1) 
+																{
+																	// TODO Auto-generated catch block
+																	e1.printStackTrace();
+																} 
+																  catch (InterruptedException e1) 
+																{
+																	// TODO Auto-generated catch block
+																	e1.printStackTrace();
+																}
+									
+										
+									} catch (IOException e2) {
+										// TODO Auto-generated catch block
+										e2.printStackTrace();
+									}
+															
+									 FileSystem fs;
+										try 
+										{
+											fs = FileSystem.get(new URI(uri), new Configuration());
+											fs.mkdirs(new Path(outputpath));
+											fs.rename(new Path(temppath+"part-r-00000"), new Path(outputpath+xoutputfile));
+										}
+										        catch (IOException | URISyntaxException e1) 
+										        {
+											// TODO Auto-generated catch block
+											e1.printStackTrace();
+											} 	
+									RemoveFileHDFS(temppath);					
 								}
 								
+								else
+								{
+								
+								for(int i=0;i<listofJLists.size();i++)
+								{
+								int[] SelectedIndices = listofJLists.get(i).getSelectedIndices();
+										
+								String input="";
+								String ProjectedColumns="";
+								String ProjectedColumnsNames="";
+								String MergeColumns="empty";
+								String SplitColumns="empty";
+								String CasingColumns="empty";
+								String FormatingColumns="empty";
+								String SplitChar=tfChar.getText();
+								String Operations="empty";
+								
+								if(listOfOperations.isEmpty() == false)
+								{
+									Operations = "";
+									for(int j=0;j<listOfOperations.size();j++)
+									{
+										if(j==(listOfOperations.size()-1))
+											Operations = Operations+listOfOperations.get(j).get(0)+"|"+listOfOperations.get(j).get(1)+"|"+listOfOperations.get(j).get(2);
+										else
+											Operations = Operations+listOfOperations.get(j).get(0)+"|"+listOfOperations.get(j).get(1)+"|"+listOfOperations.get(j).get(2)+"|";
+									}	
+								}
+								
+								if(listOfSplitColumns.isEmpty() == false)
+								{
+									SplitColumns = listOfSplitColumns.get(0).get(0)+"|"+SplitChar;
+								}
+								
+								if(listOfFormatingColumns.isEmpty() == false)
+								{
+									FormatingColumns = listOfFormatingColumns.get(0).get(0)+"|"+listOfFormatingColumns.get(0).get(1);
+								}
+								
+								if(listOfCasingColumns.isEmpty() == false)
+								{
+									CasingColumns = listOfCasingColumns.get(0).get(0)+"|"+listOfCasingColumns.get(0).get(1);//+"|"+listOfCasingColumns.get(0).get(2);
+								}
+								
+								if(listOfMergeColumns.isEmpty() == false)
+								{
+									MergeColumns="";
+											MergeColumns = MergeColumns + listOfMergeColumns.get(0).get(0)+"|"+listOfMergeColumns.get(0).get(1)+"|"+listOfMergeColumns.get(0).get(2);
+								}
+								
+								for (int t=0;t<SelectedIndices.length;t++)
+								{
+									if(t<(SelectedIndices.length-1))
+									{
+									ProjectedColumns = ProjectedColumns+listOfSelectedColumns.get(SelectedIndices[t]).get(2)+"|";
+									ProjectedColumnsNames = ProjectedColumnsNames+listOfSelectedColumns.get(SelectedIndices[t]).get(3)+Separator;
+									
+									}
+									if(t==(SelectedIndices.length-1))
+									{
+										ProjectedColumns = ProjectedColumns+listOfSelectedColumns.get(SelectedIndices[t]).get(2);
+										ProjectedColumnsNames = ProjectedColumnsNames+listOfSelectedColumns.get(SelectedIndices[t]).get(3);
+									}
+									//Id,Id,Pos,Name,File
+									input = inputpath+listOfSelectedColumns.get(t).get(4);	
+								}
+							
 								Job job;
 								try 
 								{
@@ -1802,22 +1934,22 @@ END ANALYSIS PART
 															job.setJobName("Projection Job");
 															
 															Configuration conf=job.getConfiguration();
-				
-															conf.set("separator", xseparator);
-															conf.set("columns", xprojectedcolumnsid);
-															conf.set("namescolumns", xprojectedcolumnsname);
-															conf.set("mergecolumns", xmergecolumns);
-															conf.set("splitcolumns", xsplitcolumns);
-															conf.set("casingcolumns", xcasingcolums);
-															conf.set("formatingcolumns", xformatingcolumns);
-															conf.set("operations", xoperations);
+															
+															conf.set("separator", Separator);
+															conf.set("columns",ProjectedColumns);
+															conf.set("namescolumns",ProjectedColumnsNames);
+															conf.set("mergecolumns", MergeColumns);
+															conf.set("splitcolumns", SplitColumns);
+															conf.set("casingcolumns", CasingColumns);
+															conf.set("formatingcolumns", FormatingColumns);
+															conf.set("operations", Operations);
 									
-															FileInputFormat.setInputPaths(job, new Path(xinputfile));
+															FileInputFormat.setInputPaths(job, new Path(input));
 															FileOutputFormat.setOutputPath(job, new Path(temppath));
 															
 															job.setMapperClass(ProjectionMapper.class);
 															job.setReducerClass(ProjectionReducer.class);
-
+	
 															job.setMapOutputKeyClass(Text.class);
 															job.setMapOutputValueClass(Text.class);
 															
@@ -1848,222 +1980,89 @@ END ANALYSIS PART
 								 FileSystem fs;
 									try 
 									{
+										
 										fs = FileSystem.get(new URI(uri), new Configuration());
 										fs.mkdirs(new Path(outputpath));
-										fs.rename(new Path(temppath+"part-r-00000"), new Path(outputpath+xoutputfile));
+										fs.rename(new Path(temppath+"part-r-00000"), new Path(outputpath+listofJTextFields.get(i).getText()+".csv"));
 									}
 									        catch (IOException | URISyntaxException e1) 
 									        {
 										// TODO Auto-generated catch block
 										e1.printStackTrace();
 										} 	
-								RemoveFileHDFS(temppath);					
-							}
-							
-							else
-							{
-							
-							for(int i=0;i<listofJLists.size();i++)
-							{
-							int[] SelectedIndices = listofJLists.get(i).getSelectedIndices();
-									
-							String input="";
-							String ProjectedColumns="";
-							String ProjectedColumnsNames="";
-							String MergeColumns="empty";
-							String SplitColumns="empty";
-							String CasingColumns="empty";
-							String FormatingColumns="empty";
-							String SplitChar=tfChar.getText();
-							String Operations="empty";
-							
-							if(listOfOperations.isEmpty() == false)
-							{
-								Operations = "";
-								for(int j=0;j<listOfOperations.size();j++)
-								{
-									if(j==(listOfOperations.size()-1))
-										Operations = Operations+listOfOperations.get(j).get(0)+"|"+listOfOperations.get(j).get(1)+"|"+listOfOperations.get(j).get(2);
-									else
-										Operations = Operations+listOfOperations.get(j).get(0)+"|"+listOfOperations.get(j).get(1)+"|"+listOfOperations.get(j).get(2)+"|";
-								}	
-							}
-							
-							if(listOfSplitColumns.isEmpty() == false)
-							{
-								SplitColumns = listOfSplitColumns.get(0).get(0)+"|"+SplitChar;
-							}
-							
-							if(listOfFormatingColumns.isEmpty() == false)
-							{
-								FormatingColumns = listOfFormatingColumns.get(0).get(0)+"|"+listOfFormatingColumns.get(0).get(1);
-							}
-							
-							if(listOfCasingColumns.isEmpty() == false)
-							{
-								CasingColumns = listOfCasingColumns.get(0).get(0)+"|"+listOfCasingColumns.get(0).get(1);//+"|"+listOfCasingColumns.get(0).get(2);
-							}
-							
-							if(listOfMergeColumns.isEmpty() == false)
-							{
-								MergeColumns="";
-										MergeColumns = MergeColumns + listOfMergeColumns.get(0).get(0)+"|"+listOfMergeColumns.get(0).get(1)+"|"+listOfMergeColumns.get(0).get(2);
-							}
-							
-							for (int t=0;t<SelectedIndices.length;t++)
-							{
-								if(t<(SelectedIndices.length-1))
-								{
-								ProjectedColumns = ProjectedColumns+listOfSelectedColumns.get(SelectedIndices[t]).get(2)+"|";
-								ProjectedColumnsNames = ProjectedColumnsNames+listOfSelectedColumns.get(SelectedIndices[t]).get(3)+Separator;
+								RemoveFileHDFS(temppath);
 								
-								}
-								if(t==(SelectedIndices.length-1))
-								{
-									ProjectedColumns = ProjectedColumns+listOfSelectedColumns.get(SelectedIndices[t]).get(2);
-									ProjectedColumnsNames = ProjectedColumnsNames+listOfSelectedColumns.get(SelectedIndices[t]).get(3);
-								}
-								//Id,Id,Pos,Name,File
-								input = inputpath+listOfSelectedColumns.get(t).get(4);	
-							}
-						
-							Job job;
-							try 
-							{
-								job = new Job();
-							
-														job.setJarByClass(MainDriver.class);
-														job.setJobName("Projection Job");
-														
-														Configuration conf=job.getConfiguration();
-														
-														conf.set("separator", Separator);
-														conf.set("columns",ProjectedColumns);
-														conf.set("namescolumns",ProjectedColumnsNames);
-														conf.set("mergecolumns", MergeColumns);
-														conf.set("splitcolumns", SplitColumns);
-														conf.set("casingcolumns", CasingColumns);
-														conf.set("formatingcolumns", FormatingColumns);
-														conf.set("operations", Operations);
 								
-														FileInputFormat.setInputPaths(job, new Path(input));
-														FileOutputFormat.setOutputPath(job, new Path(temppath));
-														
-														job.setMapperClass(ProjectionMapper.class);
-														job.setReducerClass(ProjectionReducer.class);
-
-														job.setMapOutputKeyClass(Text.class);
-														job.setMapOutputValueClass(Text.class);
-														
-														job.setOutputKeyClass(Text.class);
-														job.setOutputValueClass(Text.class);
-														  
-														  try 
-														  {
-															job.waitForCompletion(true);
-														} 
-														  catch (ClassNotFoundException e1) 
-														{
-															// TODO Auto-generated catch block
-															e1.printStackTrace();
-														} 
-														  catch (InterruptedException e1) 
-														{
-															// TODO Auto-generated catch block
-															e1.printStackTrace();
-														}
-							
-								
-							} catch (IOException e2) {
-								// TODO Auto-generated catch block
-								e2.printStackTrace();
-							}
-													
-							 FileSystem fs;
-								try 
+								int dialogButton = JOptionPane.YES_NO_OPTION;
+								int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to save this work?", "Save", dialogButton);
+								if(dialogResult == 0) 
 								{
-									
-									fs = FileSystem.get(new URI(uri), new Configuration());
-									fs.mkdirs(new Path(outputpath));
-									fs.rename(new Path(temppath+"part-r-00000"), new Path(outputpath+listofJTextFields.get(i).getText()+".csv"));
-								}
-								        catch (IOException | URISyntaxException e1) 
+								
+								  JFileChooser fileChooser = new JFileChooser();
+									fileChooser.setDialogTitle("Specify a file to save");  
+									if (fileChooser.showSaveDialog(frmBigDataIntegrator) == JFileChooser.APPROVE_OPTION) 
+									{
+										File file = fileChooser.getSelectedFile();
+										String fileName = "Settings";
+								
+								        try 
 								        {
-									// TODO Auto-generated catch block
-									e1.printStackTrace();
-									} 	
-							RemoveFileHDFS(temppath);
-							
-							Date dateEnd = new Date();
-							System.out.println("End Integration time: " + dateFormat.format(dateEnd));
-							
-							int dialogButton = JOptionPane.YES_NO_OPTION;
-							int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to save this work?", "Save", dialogButton);
-							if(dialogResult == 0) 
-							{
-							
-							  JFileChooser fileChooser = new JFileChooser();
-								fileChooser.setDialogTitle("Specify a file to save");  
-								if (fileChooser.showSaveDialog(frmBigDataIntegrator) == JFileChooser.APPROVE_OPTION) 
+								            // Assume default encoding.
+								            FileWriter fileWriter =
+								                new FileWriter(file);
+	
+								            // Always wrap FileWriter in BufferedWriter.
+								            BufferedWriter bufferedWriter =
+								                new BufferedWriter(fileWriter);
+	
+								            // Note that write() does not automatically
+								            // append a newline character.
+								            
+								            //	input = inputpath+listOfSelectedColumns.get(t).get(4);	
+								            bufferedWriter.write("INPUTFILE "+listOfSelectedColumns.get(0).get(4));
+								            bufferedWriter.newLine();
+								            bufferedWriter.write("OUTPUTFILE "+listofJTextFields.get(i).getText()+".csv");
+								            bufferedWriter.newLine();
+								            bufferedWriter.write("SEPARATOR "+Separator);
+								            bufferedWriter.newLine();
+								            bufferedWriter.write("PROJECTEDCOLUMNS "+ProjectedColumns);
+								            bufferedWriter.newLine();
+								            bufferedWriter.write("PROJECTEDNAMES "+ProjectedColumnsNames);
+								            bufferedWriter.newLine();
+								            bufferedWriter.write("MERGE "+MergeColumns);
+								            bufferedWriter.newLine();
+								            bufferedWriter.write("SPLIT "+SplitColumns);
+								            bufferedWriter.newLine();
+								            bufferedWriter.write("CASE "+CasingColumns);
+								            bufferedWriter.newLine();
+								            bufferedWriter.write("FORMATDATES "+FormatingColumns);
+								            bufferedWriter.newLine();
+								            bufferedWriter.write("RESTRICTION "+Operations);
+								            bufferedWriter.newLine();
+								
+	
+								            // Always close files.
+								            bufferedWriter.close();
+								    
+								        } 
+								        
+								            catch(IOException ex) 
+						        {
+						             ex.printStackTrace();
+						        }								
+									}
+	
+								
+								} 
+								else 
 								{
-									File file = fileChooser.getSelectedFile();
-									String fileName = "Settings";
-							
-							        try 
-							        {
-							            // Assume default encoding.
-							            FileWriter fileWriter =
-							                new FileWriter(file);
-
-							            // Always wrap FileWriter in BufferedWriter.
-							            BufferedWriter bufferedWriter =
-							                new BufferedWriter(fileWriter);
-
-							            // Note that write() does not automatically
-							            // append a newline character.
-							            
-							            //	input = inputpath+listOfSelectedColumns.get(t).get(4);	
-							            bufferedWriter.write("INPUTFILE "+listOfSelectedColumns.get(0).get(4));
-							            bufferedWriter.newLine();
-							            bufferedWriter.write("OUTPUTFILE "+listofJTextFields.get(i).getText()+".csv");
-							            bufferedWriter.newLine();
-							            bufferedWriter.write("SEPARATOR "+Separator);
-							            bufferedWriter.newLine();
-							            bufferedWriter.write("PROJECTEDCOLUMNS "+ProjectedColumns);
-							            bufferedWriter.newLine();
-							            bufferedWriter.write("PROJECTEDNAMES "+ProjectedColumnsNames);
-							            bufferedWriter.newLine();
-							            bufferedWriter.write("MERGE "+MergeColumns);
-							            bufferedWriter.newLine();
-							            bufferedWriter.write("SPLIT "+SplitColumns);
-							            bufferedWriter.newLine();
-							            bufferedWriter.write("CASE "+CasingColumns);
-							            bufferedWriter.newLine();
-							            bufferedWriter.write("FORMATDATES "+FormatingColumns);
-							            bufferedWriter.newLine();
-							            bufferedWriter.write("RESTRICTION "+Operations);
-							            bufferedWriter.newLine();
-							
-
-							            // Always close files.
-							            bufferedWriter.close();
-							    
-							        } 
-							        
-							            catch(IOException ex) 
-					        {
-					             ex.printStackTrace();
-					        }								
+								} 
 								}
-
-							
-							} 
-							else 
-							{
-							} 
 							}
-						}
-						}
+								
+								
+							
+						}//end public void actionPerformed(ActionEvent e) 
 					});
 				
 			
@@ -2374,31 +2373,54 @@ END ANALYSIS PART
 		txtSeparatorAnalysis.setColumns(1);
 		
 		
-		panelFieldNames.setBounds(20, 155, 574, 110);
+		panelFieldNames.setBounds(20, 155, 574, 100);
 		pTabAnalysis.add(panelFieldNames);
 		panelFieldNames.setLayout(null);
 		panelFieldNames.setVisible(false);
 		
-		panelInputQuery.setBounds(10, 265, 574, 134);
+		panelInputQuery.setBounds(10, 255, 574, 153);
 		pTabAnalysis.add(panelInputQuery);
 		panelInputQuery.setLayout(null);
-		panelInputQuery.setVisible(false);
 		
 		JLabel lblInputQuery = new JLabel("Input Query");
-		lblInputQuery.setBounds(10, 10, 156, 15);
+		lblInputQuery.setBounds(10, 5, 156, 15);
 		panelInputQuery.add(lblInputQuery);
 		
 		JButton btnExecuteQuery = new JButton("Execute");
 		btnExecuteQuery.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try{
-					Date dateStart = new Date();
-					System.out.println("Start execute query time: " + dateFormat.format(dateStart));
-					results = fileForAnalysis.sqlContext().sql(txtAreaInputQuery.getText());
-					txtAreaOutputAnalysis.setText("Sample data\n" + results.showString(10));
-					panelOutputAnalysis.setVisible(true);
-					Date dateEnd = new Date();
-					System.out.println("End execute query time: " + dateFormat.format(dateEnd));
+					if(txtFileNameToSave.getText() == null || txtFileNameToSave.getText().trim().length()==0)
+						JOptionPane.showMessageDialog(frmBigDataIntegrator, "Please, specify a name for the file");
+					else{
+						panelOutputAnalysis.setVisible(false);
+//						Date dateStart = new Date();
+//						System.out.println("Start execute query time: " + dateFormat.format(dateStart));
+						results = fileForAnalysis.sqlContext().sql(txtAreaInputQuery.getText());
+						results.repartition(1).write().format("com.databricks.spark.csv").save(outputPathAnalysis + txtFileNameToSave.getText() + ".csv");
+						DataFrame partialResults = sqlContext.read().format("com.databricks.spark.csv").option("header", "true").option("delimiter", txtSeparatorAnalysis.getText()).load(outputPathAnalysis + txtFileNameToSave.getText() + ".csv");
+						txtAreaOutputAnalysis.setText("Sample data\n" + partialResults.showString(10));
+						panelOutputAnalysis.setVisible(true);
+//						Date dateEnd = new Date();
+//						System.out.println("End execute query time: " + dateFormat.format(dateEnd));
+						FileSystem fs;
+						String header = "";
+						int i = 1;
+						for(String s: results.schema().fieldNames()){
+							header = header + s;
+							if(i < results.schema().fieldNames().length)
+								header = header + ",";
+							i++;
+						}
+						fs = FileSystem.get(new URI(uri), new Configuration());
+						String src = outputPathAnalysis + txtFileNameToSave.getText() + ".csv" + "/part-00000";
+						String dest = outputPathAnalysis + txtFileNameToSave.getText() + ".csv1";
+						copyMergeWithHeader(fs, src, dest, true, new Configuration(), header);
+						RenameFileHDFS(dest, dest.substring(0, dest.length()-1));
+						txtFileNameToSave.setText(null);
+						
+					}
+					
 					
 				}catch(Exception ex){
 					ex.printStackTrace();
@@ -2408,73 +2430,42 @@ END ANALYSIS PART
 				}
 			}
 		});
-		btnExecuteQuery.setBounds(461, 105, 89, 23);
+		btnExecuteQuery.setBounds(461, 125, 89, 23);
 		panelInputQuery.add(btnExecuteQuery);
-		scrInputQuery.setBounds(10, 30, 540, 62);
+		scrInputQuery.setBounds(10, 20, 540, 100);
+		panelInputQuery.setVisible(false);
 		
 		panelInputQuery.add(scrInputQuery);
 		
 		scrInputQuery.setViewportView(txtAreaInputQuery);
-		panelOutputAnalysis.setBounds(10, 399, 574, 270);
+		
+		JLabel lblFileNameToSave = new JLabel("File Name:");
+		lblFileNameToSave.setBounds(10, 125, 84, 15);
+		panelInputQuery.add(lblFileNameToSave);
+		
+		txtFileNameToSave = new JTextField();
+		txtFileNameToSave.setBounds(85, 125, 210, 19);
+		panelInputQuery.add(txtFileNameToSave);
+		txtFileNameToSave.setColumns(10);
+		
+		JLabel lblCSVExtension = new JLabel(".csv");
+		lblCSVExtension.setBounds(295, 125, 70, 15);
+		panelInputQuery.add(lblCSVExtension);
+		panelOutputAnalysis.setBounds(10, 409, 574, 201);
+		panelOutputAnalysis.setVisible(false);
 		
 		pTabAnalysis.add(panelOutputAnalysis);
 		panelOutputAnalysis.setLayout(null);
 		lblOutputAnalysis.setBounds(10, 0, 70, 15);
 		
 		panelOutputAnalysis.add(lblOutputAnalysis);
-		scrOutputAnalysis.setBounds(10, 25, 540, 143);
-		panelOutputAnalysis.setVisible(false);
+		scrOutputAnalysis.setBounds(10, 15, 540, 180);
 		
 		panelOutputAnalysis.add(scrOutputAnalysis);
 		
 		
 		scrOutputAnalysis.setViewportView(txtAreaOutputAnalysis);
 		txtAreaOutputAnalysis.setEditable(false);
-		btnSaveToFile.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try{
-					
-					Date dateStart = new Date();
-					System.out.println("Start saving file time: " + dateFormat.format(dateStart));
-					FileSystem fs;
-					results.repartition(1).write().format("com.databricks.spark.csv").save(outputPathAnalysis + txtFileNameToSave.getText() + ".csv");
-					String header = "";
-					int i = 1;
-					for(String s: results.schema().fieldNames()){
-						header = header + s;
-						if(i < results.schema().fieldNames().length)
-							header = header + ",";
-						i++;
-					}
-					fs = FileSystem.get(new URI(uri), new Configuration());
-					String src = outputPathAnalysis + txtFileNameToSave.getText() + ".csv" + "/part-00000";
-					String dest = outputPathAnalysis + txtFileNameToSave.getText() + ".csv1";
-					copyMergeWithHeader(fs, src, dest, true, new Configuration(), header);
-					RenameFileHDFS(dest, dest.substring(0, dest.length()-1));
-					txtFileNameToSave.setText(null);
-					panelOutputAnalysis.setVisible(false);
-					Date dateEnd = new Date();
-					System.out.println("End saving file time: " + dateFormat.format(dateEnd));
-				}catch(Exception ex){
-					ex.printStackTrace();
-				}
-			}
-		});
-		btnSaveToFile.setBounds(433, 180, 117, 25);
-		panelOutputAnalysis.add(btnSaveToFile);
-		
-		txtFileNameToSave = new JTextField();
-		txtFileNameToSave.setBounds(90, 180, 162, 19);
-		panelOutputAnalysis.add(txtFileNameToSave);
-		txtFileNameToSave.setColumns(10);
-		
-		JLabel lblCSVExtension = new JLabel(".csv");
-		lblCSVExtension.setBounds(250, 180, 70, 15);
-		panelOutputAnalysis.add(lblCSVExtension);
-		
-		JLabel lblFileNameToSave = new JLabel("File Name:");
-		lblFileNameToSave.setBounds(10, 180, 84, 15);
-		panelOutputAnalysis.add(lblFileNameToSave);
 		
 		/************************************************
 		 * END ANALYSIS CODE

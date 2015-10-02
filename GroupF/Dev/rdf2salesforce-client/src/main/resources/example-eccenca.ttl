@@ -1,0 +1,100 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
+@prefix odette: <https://vocab.eccenca.com/odette/> .
+@prefix eccenca: <https://vocab.eccenca.com/mdm/> .
+
+eccenca:eccenca a odette:LegalHeadOffice;
+  odette:lastUpdate "2014-07-23T19:32:52"^^xsd:dateTime;
+  odette:logo <http://eccenca.com/static/img/logo-eccenca-darktext.png>;
+  odette:homepage <http://eccenca.com>;
+  odette:name "eccenca GmbH";
+  odette:emailAddress "contact@eccenca.com";
+  odette:address eccenca:address;
+  odette:telephoneNumber "+49 (0) 341 - 26 50 80 28";
+  odette:faxNumber "+49 (0) 341 - 26 48 93 05";
+  odette:vATRegistrationId "DE999999999";
+  odette:fiscalRegistrationId "1234";
+  odette:additionalLink <http://www.eccenca.com/de/impressum.html> ;
+  odette:standardFormContract <http://eccenca.com/agb.html> ;
+  odette:billingAddress eccenca:address;
+  odette:tradeName "eccenca" ;
+  odette:generalContact eccenca:brockmann, eccenca:stramp, eccenca:rpietzsch ;
+.
+
+<http://www.eccenca.com/de/impressum.html> a odette:Document;
+  rdfs:label "Impressum"@de  ;
+.
+
+# Addresses
+
+eccenca:address a odette:Address;
+  odette:street "Hainstr. 8";
+  odette:city "Leipzig";
+  odette:postCode "04109";
+  odette:countryCode "DE";
+.
+
+eccenca:stuttgart a odette:NonRegisteredEntity;
+  rdfs:label "Office Stuttgart";
+  odette:lastUpdate "2014-07-23T17:10:52"^^xsd:dateTime;
+  odette:telephoneNumber " +49 (0) 511 - 33 65 28-10";
+  odette:address eccenca:addressStuttgart;
+  odette:faxNumber "+49 (0) 511 - 33 65 28-99";
+  odette:directParent eccenca:eccenca;
+  odette:generalContact eccenca:brockmann;
+.
+
+eccenca:addressStuttgart a odette:Address;
+  odette:street "Meisenweg 35";
+  odette:city "Leinfelden-Echterdingen";
+  odette:postCode "70771";
+  odette:countryCode "DE";
+.
+
+eccenca:hannover a odette:NonRegisteredEntity;
+  rdfs:label "Office Hannover";
+  odette:lastUpdate "2014-07-23T17:10:52"^^xsd:dateTime;
+  odette:telephoneNumber "+49 (0) 511 - 33 65 28-0";
+  odette:address eccenca:addressHannover;
+  odette:faxNumber "+49 (0) 511 - 33 65 28-29";
+  odette:directParent eccenca:eccenca;
+  odette:generalContact eccenca:rpietzsch ;
+.
+
+eccenca:addressHannover a odette:Address;
+  odette:street "An der Breiten Wiese 9";
+  odette:city "Hannover";
+  odette:postCode "30625";
+  odette:countryCode "DE";
+.
+
+# People
+
+eccenca:brockmann a foaf:Person ;
+  foaf:givenName "Hans-Christian" ;
+  foaf:familyName "Brockmann" ;
+  foaf:depiction "http://www.eccenca.com/media/images/pages/picture-hans-christian-brockmann.jpg" ; 
+  odette:position "CFO" ;
+  odette:telephoneNumber "+49 511 33652810" ;
+  odette:emailAddress "brockmann@brox.de" 
+.
+
+eccenca:stramp a foaf:Person ;
+  foaf:title "Dr." ;
+  foaf:givenName "Sebastian" ;
+  foaf:familyName "Tramp" ;
+  foaf:depiction "https://secure.gravatar.com/avatar/deb4143437ff04d19978377056c0a0c2?s=60&d=identicon" ;
+  odette:position "Head of Development" ;
+  odette:telephoneNumber "+49 341 26508028" ;
+  odette:emailAddress "stramp@brox.de" 
+.
+
+eccenca:rpietzsch a foaf:Person ;
+  foaf:givenName "René" ;
+  foaf:familyName "Pietzsch" ;
+  foaf:depiction "https://secure.gravatar.com/avatar/b58ab8d07db013afc0fe44612ead351f?s=60&d=identicon" ;
+  odette:position "Product Manager" ;
+  odette:telephoneNumber "+49 341 26508028" ;
+  odette:emailAddress "rpietzsch@brox.de" 
+.

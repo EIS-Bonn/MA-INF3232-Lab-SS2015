@@ -24,26 +24,20 @@
         <header class="masthead">
           <div class="row">
             <div class="col-sm-12">                                   
-                    <h1 class="subheader"><span class="glyphicon glyphicon-education " aria-hidden="true"></span> Web based partition and ontology tool </h1>            
+                    <h1 class="subheader"><span><img src="css/images/logo.png" width="100" alt="logo"></span> Web-based partition and ontology tool </h1>            
             </div>
           </div>
            <!-- Navigation -->
-           <div class="row">
-                <div class="col-sm-12">
-                    <nav role="navigation">                                     
-                        <div class="menu">
-                          <ul>        
-                            <li><a href="#/"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>Homepage</a></li>                            
-                            <li><a href="#/upload"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span>Upload</a></li>
-                            <li><a href="#/parser"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>Parser</a></li>
-                            <li><a href="#/visualize"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Visualize</a></li>
-                            <li><a href="#/partition"><span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span>Partition</a></li>
-                            <li><a href="#/help"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Help</a></li>
-                          </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+            <nav class="navbar navbar-inverse" role="navigation" bs-navbar>                
+                    <ul class="nav navbar-nav">
+                        <li data-match-route="/$"><a href="#/"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>Homepage</a></li>
+                        <li data-match-route="/upload"><a href="#/upload"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span>Upload</a></li>
+                        <li data-match-route="/parser"><a href="#/parser"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>Parser</a></li>
+                        <li data-match-route="/visualize"><a href="#/visualize"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Visualize</a></li>
+                        <li data-match-route="/partition"><a href="#/partition"><span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span>Partition</a></li>
+                        <li data-match-route="/help"><a href="#/help"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>Help</a></li>
+                     </ul>                
+            </nav>
         </header>
     </div>
    

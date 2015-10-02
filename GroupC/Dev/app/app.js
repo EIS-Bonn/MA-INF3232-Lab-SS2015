@@ -56,8 +56,6 @@ var files = {
 }
 
 //see if we have some files already, if not, set a default
-//TODO
-
 var initFiles = function(cb) {
 
       http.get(files, function(response) {
@@ -280,7 +278,7 @@ function initEdges(){
     });
 
     //COUNTS, METRICS
-    if (parsedOntology !== ''){
+    //if (parsedOntology !== ''){
         ont.resetMetric();
         ont.addMetric("class", cl);
         ont.addMetric("individual", ind);
@@ -288,7 +286,7 @@ function initEdges(){
         ont.addMetric("literals", lit);
         ont.addMetric("dataprop", dp);
         ont.addMetric("objprop", op);
-    }
+    //}
 
 
     console.log("Class COUNT", cl);
@@ -713,6 +711,7 @@ app.get('/parser', function(req, res) {
                                   {
                                     parsedOntology = JSON.parse(stdout);                                    
                                     res.json(parsedOntology);
+                                    initEdges();  
                                   }                                  
                                   else
                                   {
@@ -726,6 +725,7 @@ app.get('/parser', function(req, res) {
                                                 fs.unlinkSync(javaOptions.cwd + fileName);
                                             }
                                         }); 
+                                        initEdges();
                                         res.json(parsedOntology);                                     
                                   }
                                 }

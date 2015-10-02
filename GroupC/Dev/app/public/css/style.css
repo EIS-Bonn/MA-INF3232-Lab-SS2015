@@ -19,13 +19,24 @@ nav li a:visited {
   color: #c3c3c3;
   text-transform: uppercase;
 }
-nav li a:hover {
-}
 
 nav li.active a,
 nav li.active a:visited {
   color: #00ccee;
 }
+
+.navbar-inverse {
+    margin-top: 10px;
+    min-height: 46px;
+    background-color: #6799FF;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  text-decoration: underline;  
+  background-color: #6799FF;  
+}
+
 /*modal*/
 
 .modal {
@@ -189,3 +200,42 @@ hr {
   cursor: pointer;
   text-decoration: underline;
 }
+/* homepage */
+
+.ontology-icon {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:url('images/owl.png');    
+    margin: 30px 0 15px;    
+    height: 266px;
+}
+
+.ontology-description {
+  text-align: center;
+}
+.ontology-link {
+  background-color: #F0F8F9;
+  width: 330px;
+  min-height: 145px;
+  float: left;
+  margin: 15px 15px 0 0px;
+}
+
+.ontology-link {
+  text-decoration: none !important;
+  color: #5e5e5e !important;
+}
+
+.ontology-link h2 {
+  text-align: center;    
+  padding: 10px 0 0 0;
+}
+
+.ontology-link a {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+.ontology-link:hover {  
+  background-color: #E0F0F4;
+} 

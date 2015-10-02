@@ -44,13 +44,13 @@
 
         $scope.parseURL = function(url) {
                          
-                         console.log('Parsgin' , url);
+                         console.log('Parsing' , url);
 
                          //async update the selected ontology
                         $http.post('/options', { 'url': url })
                              .success(function(data, status, headers, config) {
                                     //on success redirect to parser
-                                     // location.href = "#parser";
+                                     location.href = "#parser";
                                 })
 
                              .error(function(data, status, headers, config) {

@@ -5,6 +5,7 @@
   angular.module('angularApp.controllers')
     .controller('parserCtrl', ['$scope', '$http',  function($scope, $http) {
     	
+
     //get options
     $http.get('/options')
       				.success(function (data) {           					
@@ -12,22 +13,20 @@
         			});   
               
 
-    //get metrics
-
-    $http.get('/metrics')
-        .success(function (data) {       
-            $scope.metrics = data;     
-            console.log("METRICS", $scope.metrics);         
-        })            
-      .error(function(data) {
-                              //error handling
-                          $scope.metrics = data;     
-            console.log("METRICS", $scope.metrics);         
-                          console.log("Could not get metrics");
-                      });
-    
-               
-
+    //get metrics   
+      console.log("RDF metrics");
+      
+      $http.get('/metrics')
+          .success(function (data) {       
+              $scope.metrics = data;     
+              console.log("METRICS", $scope.metrics);         
+          })            
+        .error(function(data) {
+                                //error handling
+                            $scope.metrics = data;     
+                              console.log("METRICS", $scope.metrics);         
+                              console.log("Could not get metrics");
+          });
 
     //get parser result
     $http.get('/parser')

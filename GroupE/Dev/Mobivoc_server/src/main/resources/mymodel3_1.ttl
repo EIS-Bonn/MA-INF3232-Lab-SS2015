@@ -1,0 +1,18 @@
+<http://linkedgeodata.org/triplify/node268439305>
+        a       <http://eccenca.com/mobivoc/FuelStation> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Aral" ;
+        <http://eccenca.com/mobivoc/fillingStationHeight>
+                "10" ;
+        <http://eccenca.com/mobivoc/fillingStationNumber>
+                "10" ;
+        <http://eccenca.com/mobivoc/hasOffer>
+                <http://eccenca.com/mobivoc/DieselFuel> , <http://eccenca.com/mobivoc/ExcelliumSuperPlus> , <http://eccenca.com/mobivoc/UltimateSuper> , <http://eccenca.com/mobivoc/Autogas> , <http://eccenca.com/mobivoc/LKWDiesel> , <http://eccenca.com/mobivoc/Adblue> , <http://eccenca.com/mobivoc/Super(E5)> , <http://eccenca.com/mobivoc/LiquidGas> , <http://eccenca.com/mobivoc/VPowerRacing> , <http://eccenca.com/mobivoc/Biodiesel> , <http://eccenca.com/mobivoc/UltimateDiesel> , <http://eccenca.com/mobivoc/MaxxMotionDiesel> , <http://eccenca.com/mobivoc/CompressedNaturalGas> , <http://eccenca.com/mobivoc/SuperDiesel> , <http://eccenca.com/mobivoc/Super(E10)> , <http://eccenca.com/mobivoc/MaxxMotionSuper100> , <http://eccenca.com/mobivoc/Hydrogen> , <http://eccenca.com/mobivoc/ExcelliumDiesel> , <http://eccenca.com/mobivoc/Methane> , <http://eccenca.com/mobivoc/Petrol> , <http://eccenca.com/mobivoc/Ethanol> , <http://eccenca.com/mobivoc/E85> , <http://eccenca.com/mobivoc/VPowerDiesel> ;
+        <http://eccenca.com/mobivoc/hasParkingFacility>
+                "Yes" ;
+        <http://eccenca.com/mobivoc/hasShoppingFacility>
+                "Yes" ;
+        <http://eccenca.com/mobivoc/hasWCFacility>
+                "Yes" ;
+        <http://eccenca.com/mobivoc/hasWashingFacility>
+                "Yes" .

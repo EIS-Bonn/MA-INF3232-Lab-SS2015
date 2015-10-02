@@ -1,0 +1,7 @@
+hdfs://master:9000
+hdfs://master:9000/user/hduser/test/
+hdfs://master:9000/user/hduser/test/temp/
+hdfs://master:9000/user/hduser/test/output/
+local
+hdfs://master:9000/user/hduser/test/
+hdfs://master:9000/user/hduser/analysis/output/

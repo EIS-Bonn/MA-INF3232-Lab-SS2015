@@ -1,0 +1,48 @@
+<style>
+    div {
+        width: 500px;
+        height: 200px;
+
+
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        margin: auto;
+    }
+    h2{
+        color:red;
+    }
+</style>
+<div>
+Filling Station Type
+<hr>
+<select  ng-model="fillingStationTypeSelected" ng-change="changedValueFillingStation(fillingStationTypeSelected)"
+         data-ng-options="fillingStationType as fillingStationType.name for fillingStationType in fillingStationTypes">
+    <option value="">Select FillingStationType</option>
+</select>
+
+    <button ng-style="{'background-color':'#44c767', '-moz-border-radius':'28px',
+	'-webkit-border-radius':'28px',
+	'border-radius':'28px',
+	'border':'1px solid #18ab29',
+	'display':'inline-block',
+	'cursor':'pointer',
+	'color':'#ffffff',
+	'font-family':'Arial',
+	'font-size':'17px',
+	'padding':'16px 31px',
+	'text-decoration':'none',
+	'float':'right', 'clear':'both',
+	'text-shadow':'0px 1px 0px #2f6627'}" ng-click="handleClick();">NEXT</button>
+
+
+<br><br><br>
+    <h2> {{error}}</h2>
+    </div>
+
+
+
+<!--

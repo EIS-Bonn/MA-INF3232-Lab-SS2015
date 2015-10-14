@@ -1,42 +1,111 @@
+
+
+
 <h1>Location of F. Station</h1>
 
 <!--<h2>Result:{{restCaller}}</h2>
 
-<map zoom="11"
+  draggable="false"
+  dragging-cursor="move"
+  draggable="true"
+  draggable="true"
 
-     center="[40.74, -74.18]"
-     disable-default-u-i="true"
-     disable-double-click-zoom="true"
-     draggable="false"
-     draggable-cursor="help"
-     dragging-cursor="move"
-     keyboard-shortcuts="false"
-     max-zoom="12"
-     min-zoom="8"
-     tilt="45"
-     map-type-id="TERRAIN">
-
-    <marker
-            animation="Animation.BOUNCE"
-            draggable="true"
-            visible="true"
-            on-click="click()"
-            title="Click to zoom"
-            ></marker>
+  animation="Animation.BOUNCE"
 
 
-
-</map>
+    <info-window id="bar" position="{{lat}} ,{{long}}" visible="true">
+            <div ng-non-bindable>
+                <div id="siteNotice"></div>
+            </div>
+        </info-window>
 
 !-->
 
-<map center="[40.74, -74.18]">
+<div map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="{{googleMapsUrl}}">
+<map zoom="11"
+     center="{{lat_target}} ,{{long_target}}">
+
+    <marker position="{{lat_target}} ,{{long_target}}"
+            icon="img/target.png">
+    </marker>
+
+    <marker position="{{lat_current}} ,{{long_current}}"
+            icon="img/current.png">
+    </marker>
+
+    <directions
+            panel="directions-panel"
+            travel-mode="DRIVING"
+            origin="{{lat_dir_current}} ,{{long_dir_current}}"
+            destination="{{lat_dir_target}} ,{{long_dir_target}}">
+    </directions>
+
+</map>
+</div>
+
+<hr>
+<hr>
+<div ng-show="showWay">
+
+    Directions path length:
+    <hr>
+    {{map.directionsRenderers[0].directions.routes[0].overview_path.length}} meter
+
+</div>
+
+
+<button ng-style="{'background-color':'#44c767', '-moz-border-radius':'28px',
+	'-webkit-border-radius':'28px',
+	'border-radius':'28px',
+	'border':'1px solid #18ab29',
+	'display':'inline-block',
+	'cursor':'pointer',
+	'color':'#ffffff',
+	'font-family':'Arial',
+	'font-size':'17px',
+	'padding':'16px 31px',
+	'text-decoration':'none',
+	'float':'right', 'clear':'both',
+	'text-shadow':'0px 1px 0px #2f6627'}" ng-click="handleClick();">DISPLAY SHORTEST WAY</button>
+
+
+
+<!--            position="[40.76, -74.16]" !-->
+<!--center="[40.74, -74.18]"
+
+<map center="[{{latitude}}, {{longitude}}]">
     <marker
-            position="[40.76, -74.16]"
+
+            position="[{{latitude}}, {{longitude}}]"
             title="Hello Marker"
             animation="Animation.BOUNCE"
             draggable="true"
             visible="true"
-            icon="logo2.png"></marker>
+            icon="img/fs.png"></marker>
+
+
+
+
 </map>
 
+        <img style="position:absolute" src="https://maps.googleapis.com/maps/api/staticmap?center={{lat}},{{long}}&zoom=11&size=600x400">
+    <map style="width:600px; height: 400px"
+      init-event="init-map"
+      center="{{lat}} ,{{long}}"
+      zoom="11">
+
+        <marker
+                position="{{lat}} ,{{long}}"
+
+                >
+        </marker>
+
+
+      </map>
+
+
+<div id="map"></div>
+<div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+    <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+</div>
+!-->

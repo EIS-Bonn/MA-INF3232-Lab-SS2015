@@ -1,10 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+Location
+<hr>
+<select  ng-model="locationSelected" ng-change="changedValueLocation(locationSelected)"
+         data-ng-options="location as location.name for location in locations">
+    <option value="">Select Location</option>
+</select>
 
-</body>
-</html>
+<hr>
+Plug Type
+<!--{{type}} -->
+<hr>
+<select  ng-model="batteryTypeSelected" ng-change="changedValueBatteryType(batteryTypeSelected)"
+         data-ng-options="batteryType as batteryType.name for batteryType in batteryTypes">
+    <option value="">Select Plug Type</option>
+</select>
+<hr>
+Access Type
+<hr>
+<select  ng-model="accessTypeSelected" ng-change="changedValueAccessType(accessTypeSelected)"
+         data-ng-options="accessType as accessType.name for accessType in accessTypes">
+    <option value="">Select Access Type</option>
+</select>
+<hr>
+Identify Type
+<hr>
+<select  ng-model="identifyTypeSelected" ng-change="changedValueIdentifyType(identifyTypeSelected)"
+         data-ng-options="identifyType as identifyType.name for identifyType in identifyTypes">
+    <option value="">Select Identify Type</option>
+</select>
+<hr>
+Charge Type
+<hr>
+<select  ng-model="chargeTypeSelected" ng-change="changedValueChargeType(chargeTypeSelected)"
+         data-ng-options="chargeType as chargeType.name for chargeType in chargeTypes">
+    <option value="">Select Charge Type</option>
+</select>
+<hr>
+Booking Type
+<hr>
+<select  ng-model="bookingTypeSelected" ng-change="changedValueBookingType(bookingTypeSelected)"
+         data-ng-options="bookingType as bookingType.name for bookingType in bookingTypes">
+    <option value="">Select Booking Type</option>
+</select>
+<button ng-style="{'background-color':'#44c767', '-moz-border-radius':'28px',
+	'-webkit-border-radius':'28px',
+	'border-radius':'28px',
+	'border':'1px solid #18ab29',
+	'display':'inline-block',
+	'cursor':'pointer',
+	'color':'#ffffff',
+	'font-family':'Arial',
+	'font-size':'17px',
+	'padding':'16px 31px',
+	'text-decoration':'none',
+	'float':'right', 'clear':'both',
+	'text-shadow':'0px 1px 0px #2f6627'}" ng-click="handleClick();">SEARCH</button>

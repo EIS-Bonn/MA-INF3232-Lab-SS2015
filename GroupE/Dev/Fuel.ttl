@@ -3,7 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
+@prefix gr: <http://purl.org/goodrelations/v1#>.
 
 mv:Fuel
 	a rdfs:Class , owl:Class ;
@@ -112,7 +112,7 @@ mv:Methane
 	rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Methane> ;
 	rdfs:label "Compressed natural gas fuel"@en , "Erdgas"@de ;
 	skos:hiddenLabel "CNG"@en .
-
+	
 mv:Petrol
 	rdfs:subClassOf mv:Fuel ;
 	rdfs:comment "Transparent, petroleum-derived liquid that is used primarily as a fuel in internal combustion engines." ; 
@@ -289,6 +289,11 @@ mv:Cost
 	rdfs:domain mv:Fuel ;
 	rdfs:range rdfs:Integer .
 	
+mv:Currency
+	rdfs:subClassOf gr:PaymentMethod ;
+	rdfs:comment "Defines currency of payment method." ;
+	rdfs:label "Currency"@en, "Währung"@de .	
+	
 mv:Density
 	a rdf:Property , owl:DatatypeProperty ; 
 	rdfs:comment "Density of the fuel at 20 C" ; 
@@ -426,7 +431,12 @@ mv:OctaneNumber
 	rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Petroleum> ;
 	rdfs:domain mv:Petrol ; #aber auch CNG und LPG haben Oktanzahl (und Diesel theoretisch auch?), mehrere Oktanzahlarten
 	rdfs:range rdfs:Integer .
-
+	
+mv:Payment
+	rdfs:subClassOf gr:PaymentMethod ;
+	rdfs:comment "Defines  payment method." ;
+	rdfs:label "Payment"@en, "Zahlung"@de .
+	
 mv:Phosphate
 	a rdf:Property , owl:DatatypeProperty ; 
 	rdfs:comment "Phosphate amount of the fuel" ; 
@@ -515,3 +525,31 @@ mv:Zinc
 	rdfs:seeAlso <http://www.iso22241.org/> ;
 	rdfs:domain mv:Adblue ;
 	rdfs:range rdfs:Integer .
+	
+	
+# Individuals	
+	
+mv:Biodiesel
+	a mv:DieselFuel ;
+	mv:Payment "Cash" ;
+	mv:Cost "50";
+	mv:Currency "$";
+	mv:Lubricity "250g" ;
+	mv:Density "7328lb/gal".
+
+mv:ExcelliumSuperPlus
+	a mv:Fuel ;
+	mv:Payment "VISA" ;
+	mv:Cost "45";
+	mv:Currency "£";
+	mv:OctaneNumber"88".
+	
+mv:LiquidPetroleumGas
+	a mv:LiquidGas ;
+	mv:Payment "DirektDebit" ;
+	mv:Cost "150";
+	mv:Currency "€";
+	mv:ChemicalStructure "C3H8 and C4H10";
+	mv:FlashPoint "52 ºF".
+	
+	

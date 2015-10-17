@@ -447,7 +447,7 @@ input.btn-group {
 /*  ----------------------------------------------------------
 							VARIOUS ELEMENTS
 	---------------------------------------------------------- */
-
+/*
 canvas {
 	padding: 7px;
 
@@ -455,7 +455,7 @@ canvas {
 	border: none;
 
 	background-color: #f3f3f3; /* Default color: "Arctic" */
-}
+/*}*/
 
 figcaption {
 	font-size: 63%;

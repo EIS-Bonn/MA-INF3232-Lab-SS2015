@@ -1,0 +1,25 @@
+<div ng-show="loading">
+	<div modal-render="loading" tabindex="-1" role="dialog" class="modal fade ng-isolate-scope in" modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}"  modal-window="modal-window" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;">
+		<div class="modal-dialog modal-lg" ><div class="modal-content" modal-transclude="">	
+			
+	        <div class="modal-body ng-scope">
+	        	 
+	        	   <div id="alerts-container" ng-show="loading && !timeout">
+					      <div class="alert alert-info">
+					         Getting information about the ontology <img src="css/images/loader.gif" align="right" /> 
+					      </div>	
+  					</div>
+
+  					<div class="alert alert-danger" role="alert" ng-show="timeout">
+					  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+					  <span class="sr-only">Error:</span>
+					  Timeout. Please load another ontology.
+					  <a href="#upload"> <button class="btn btn-danger pull-right" ng-click="$hide()" style="margin-top: -5px;"> Retry </button></a>
+					</div>
+
+	        </div>
+			
+		</div>			
+	</div>
+</div>
+

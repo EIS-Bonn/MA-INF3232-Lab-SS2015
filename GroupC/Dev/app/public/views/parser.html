@@ -1,0 +1,109 @@
+<div class="container-fluid">
+
+    <div id="alerts-container" ng-show="loading && !timeout">
+                <div class="alert alert-info">
+                   Getting information about the ontology <img src="css/images/loader.gif" align="right" /> 
+                </div>  
+    </div>
+
+    <div class="alert alert-danger" role="alert" ng-show="timeout">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            Timeout. Please load another ontology.
+            <a href="#upload"> <button class="btn btn-danger pull-right" ng-click="$hide()" style="margin-top: -5px;"> Retry </button></a>
+    </div>
+
+
+  <table class="table table-bordered" ng-show="!loading">
+    <tr class="row" ng-show="latest">
+      <td>File </td>
+      <td>{{latest}}</td>
+    </tr>
+    <tr class="row">
+      <td>Ontology URI </td>
+      <td><a href="{{parser.header.uri}}" target="_blank">{{parser.header.uri}}</a></td>
+    </tr>
+  </table>
+
+<table class="table table-striped table-bordered" ng-show="!loading">
+    <tr class="row success" style="font-weight: bold;"><td colspan="2">VOWL</td></tr>
+    <tr class="row" ng-show="!parser"><td colspan="2">
+            <div class="alert alert-warning" role="alert">
+              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              <span class="sr-only">Error:</span>
+              Timeout parsing the ontology with VOWL. You can <i><b>continue</b></i> your work normally.
+              <a href="#upload"> <button class="btn btn-danger pull-right" ng-click="$hide()" style="margin-top: -5px;"> Upload</button></a>
+            </div>
+      </td>
+    </tr>
+
+          
+
+    <tr class="row" style="font-weight: bold;"><td>Name</td><td>Count</td></tr>    
+
+    <tr class="row" data-ng-if="parser" ng-repeat="(key, value) in parser.metrics">
+      <!-- AXIOMS -->
+      
+      <td class="col-xs-3" ng-if="key === 'axiomCount'">Axioms </td>
+      <td class="col-xs-8" ng-if="key === 'axiomCount'">{{value}}</td>
+      <!-- CLASS -->
+      
+      <td class="col-xs-3" ng-if="key === 'classCount'">Class </td>
+      <td class="col-xs-8" ng-if="key === 'classCount'">{{value}}</td>
+      <!-- DATATYPE -->
+      
+      <td class="col-xs-3" ng-if="key === 'datatypeCount'">Datatype </td>
+      <td class="col-xs-8" ng-if="key === 'datatypeCount'">{{value}}</td>
+      <!-- DATATYPE PROPERTY -->
+      
+      <td class="col-xs-3" ng-if="key === 'datatypePropertyCount'">Datatype property </td>
+      <td class="col-xs-8" ng-if="key === 'datatypePropertyCount'">{{value}}</td>
+      <!-- INtdIDUAL -->
+      
+      <td class="col-xs-3" ng-if="key === 'intdidualCount'">Intdidual </td>
+      <td class="col-xs-8" ng-if="key === 'intdidualCount'">{{value}}</td>
+      <!-- OBJECT PROPERTY -->      
+      <td class="col-xs-3" ng-if="key === 'objectPropertyCount'">Object </td>
+      <td class="col-xs-8" ng-if="key === 'objectPropertyCount'">{{value}}</td>
+      <!-- PROPERTY COUNT-->
+      
+      <td class="col-xs-3" ng-if="key === 'propertyCount'">Property </td>
+      <td class="col-xs-8" ng-if="key === 'propertyCount'">{{value}}</td>
+
+  </tr>
+    <tr class="row" ng-show="parser">
+      <td colspan="2">
+            <div class="alert alert-success" role="alert">
+              <span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+              <span class="sr-only">Success:</span>
+              Success parsing the ontology with VOWL.
+              <a href="#visualize"> <button class="btn btn-success pull-right" style="margin-top: -5px;"> Visualize</button></a>
+            </div>
+      </td>
+    </tr>
+
+  <tr class="row success" style="font-weight: bold;"><td colspan="2">Rdfstore</td></tr>
+
+  <tr class="row" ng-repeat="metric in metrics">
+        <td class="col-xs-3" ng-if="metric.name === 'blank'">Blank node </td>
+        <td class="col-xs-9" ng-if="metric.name === 'blank'">{{metric.value}}</td>
+
+        <td class="col-xs-3" ng-if="metric.name === 'literals'">Literals </td>
+        <td class="col-xs-9" ng-if="metric.name === 'literals'">{{metric.value}}</td>
+
+      </tr>
+
+  <tr class="row" ng-show="metrics">
+      <td colspan="2">
+            <div class="alert alert-success" role="alert">
+              <span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+              <span class="sr-only">Success:</span>
+              Success parsing the ontology with RDFStore. You can <i><b>visualize</b></i> the ontology now.
+              <a href="#visualize"> <button class="btn btn-success pull-right" style="margin-top: -5px;"> Visualize</button></a>
+            </div>
+      </td>
+    </tr>
+
+
+  </table>	
+</div>

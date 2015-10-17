@@ -1,0 +1,37 @@
+{
+  "name": "labEIS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/iulitaro/labEIS",
+  "authors": [
+    "Iulia Buga <ibuga@thinkful.com>"
+  ],
+  "description": "EIS lab",
+  "main": "app.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angularjs",
+    "bower",
+    "expressjs",
+    "mondogdb"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {    
+    "angular-route": "~1.2.23",    
+    "angular-resource": "~1.2.23",
+    "bootstrap": "~3.3.5",
+    "underscore": "^1.8.3",
+    "angular-bootstrap": "^0.13.4",
+    "angular-strap": "~2.3.3",
+    "angular-animate": "~1.4.6"
+  }
+}

@@ -1,0 +1,86 @@
+
+<div ng-app="angularApp" ng-controller="visualizeCtrl" class="main-vis">
+  <h3 class="list-group-item-heading">Ontology Visualization:</h3>
+  Ontology name: <i>{{ontName }}</i>
+  <div id="nodeJson" ng-hide="status == 0"></div>
+  <div id="edgeJson" ng-hide="status == 0"></div>
+
+  <br><br>
+  <!-- &nbsp;&nbsp;<button ng-click="changeNodeColor()">random color for random node</button>&nbsp;&nbsp; -->
+  <!-- &nbsp;&nbsp;<button ng-click="visualizeme()">Visualize</button>&nbsp;&nbsp; -->
+  <button type="button"  class="btn btn-success btn-s" ng-click="visualizeme()">Visualize "{{ontName}}" </button>
+  <br> 
+
+
+
+  <div id="main">
+
+    <div id="highlight">
+      <span >HIGHLIGHTS</span>
+      <hr>
+      <div id="rdfs">
+          <div><!-- class="squaredThree" -->
+            <input type="checkbox" value="None" id="cb-class" name="cb-class"  ng-click="highlights_vis('cb-class')"/>
+            <label for="cb-class">&nbsp;&nbsp;Classes ({{countClass}})</label>
+          </div>
+
+          <div ><!-- class="squaredThree" -->
+            <input type="checkbox" value="None" id="cb-property" name="cb-property" ng-click="highlights_vis('cb-property')"/>
+            <label for="cb-property">&nbsp;&nbsp;Properties ({{propertyCTR}})</label>
+          </div>
+          <div><!-- class="squaredThree" -->
+            <input type="checkbox" value="None" id="cb-data-property" name="cb-data-property" ng-click="highlights_vis('cb-data-property')"/>
+            <label for="cb-data-property">&nbsp;&nbsp;Dataproperties ({{datapropertyCTR}})</label>
+          </div>
+          <div><!-- class="squaredThree" -->
+            <input type="checkbox" value="None" id="cb-object-property" name="cb-object-property" ng-click="highlights_vis('cb-object-property')"/>
+            <label for="cb-object-property">&nbsp;&nbsp;Objectproperties ({{objpropertyCTR}})</label>
+          </div>
+
+          <div><!-- class="squaredThree" -->
+            <input type="checkbox" value="None" id="cb-individual" name="cb-individual" ng-click="highlights_vis('cb-individual')"/>
+            <label for="cb-individual">&nbsp;&nbsp;Individuals ({{individualCTR}})</label>
+          </div>
+      </div>
+
+      <div id="rdf">
+          <div><!-- class="squaredThree" -->
+            <input type="checkbox" value="None" id="cb-resource" name="cb-resource" ng-click="highlights_vis('cb-resource')"/>
+            <label for="cb-resource">&nbsp;&nbsp;Resources ({{resourceCTR}})</label>
+          </div>
+
+          <div><!-- class="squaredThree" -->
+            <input type="checkbox" value="None" id="cb-blanknode" name="cb-blanknode" ng-click="highlights_vis('cb-blanknode')"/>
+            <label for="cb-blanknode">&nbsp;&nbsp;Blank&nbsp;nodes ({{blankCTR}})</label>
+          </div>
+
+          <div><!-- class="squaredThree" -->
+            <input type="checkbox" value="None" id="cb-literal" name="cb-literal" ng-click="highlights_vis('cb-literal')"/>
+            <label for="cb-literal">&nbsp;&nbsp;Literals ({{literalCTR}})</label>
+          </div>
+      </div>
+
+
+    </div>
+
+    <div ng-app="angularApp" ng-controller="visualizeCtrl" id="visualization"></div>
+    <div id="network-popUp" style="float: left;">
+      <span id="operation">Node</span> <br>
+      <span id="hidden-id"></span>
+      <table style="margin:auto;">
+        <tr>
+          {{oprtType}}
+          <td>label</td><td><input id="node-label" value="" /></td>
+        </tr>
+      </table>
+      <button ng-click="saveEdit();">save</button>
+      <button ng-click="cancelEdit();">cancel</button>
+      <!-- <input type="button" value="cancel" id="cancelButton" /> -->
+    </div>
+
+  </div>
+
+
+
+
+</div>

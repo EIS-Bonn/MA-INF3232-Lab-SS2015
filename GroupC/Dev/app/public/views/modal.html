@@ -1,0 +1,17 @@
+<div>
+	<div modal-render="true" tabindex="-1" role="dialog" class="modal fade ng-isolate-scope in" modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}" ng-click="close($event)" modal-window="modal-window" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;">
+		<div class="modal-dialog modal-lg" ng-class="size ? 'modal-' + size : ''"><div class="modal-content" modal-transclude="">	
+			<div class="modal-header ng-scope">
+	            <h3 class="modal-title">Success</h3>
+	        </div>
+	        <div class="modal-body ng-scope">
+	        You can now parse the ontology or return to the page you were visiting.
+	        </div>
+			<div class="modal-footer ng-scope">
+				<a href="#parser"> <button class="btn btn-success ng-pristine ng-untouched ng-valid" ng-click="$hide()"> Parse </button></a>
+				<button class="btn" ng-click="$hide()"> OK </button>            
+	        </div>
+		</div>			
+	</div>
+</div>
+

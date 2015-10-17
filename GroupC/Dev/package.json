@@ -1,0 +1,39 @@
+{
+  "name": "web-based-ontology-partitioning",
+  "version": "0.0.0",
+  "description": "Web based partitioning ontology tool",
+  "main": "index.html",
+  "scripts": {
+     "start": "node ./app/bin/www",
+     "less": "lessc app/public/less/main.less > app/public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iulitaro/eisLab.git"
+  },
+  "keywords": [
+    "angularjs",
+    "mongoDB",
+    "NodeJS",
+    "bower",
+    "npm"
+  ],
+  "author": "IB, AA, IO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iulitaro/eisLab/issues"
+  },
+  "homepage": "https://github.com/iulitaro/eisLab",
+  "dependencies": {
+    "body-parser": "^1.12.4",    
+    "buffer-concat" :  "^0.0.1",    
+    "connect-busboy" : "^0.0.2",
+    "debug" : "^2.2.0",
+    "express" : "^4.13.3",
+    "glob" : "^4.13.3",
+    "rdfstore": "^0.9.7",
+    "morgan": "^1.6.1",
+    "request": "^2.60.0",
+    "underscore": "^1.8.3"
+  }
+}

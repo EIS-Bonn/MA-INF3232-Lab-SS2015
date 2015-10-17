@@ -1,0 +1,26 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+
+			<h1>Get started! </h1>			
+
+			<p>With the increasing use of ontologies in many branches of science and industry not only the number of available ontologies has increased considerably but also many widely used ontologies have reached a size that overburdens development and quality control procedures. It has been argued that the maintenance of large ontologies would be greatly facilitated by decomposing large ontologies into smaller modules  that cover certain subtopics of the ontology. To accomplish this, the “Web-based ontology analysis and partitioning tool”  is developed as an open platform web application. Its design allows for quickly uploading large ontologies and partitioning the ontologies into smaller modules.</p>
+			
+			<div>
+				<a href="#/upload" class="ontology-link">					
+					<h2> Upload </h2>					
+					<p class="ontology-description">Input as OWL file<br/>Get URL</p>	
+	        	</a>	      		
+		    </div>
+
+			<div ng-repeat="file in files | limitTo:3" ng-class="{active : isSelected(file)}" style="cursor: pointer;">					
+				<div href="#" class="ontology-link" ng-click="visualize(file)">										
+					<h2> Select </h2>			        			        
+					<div ng-click="visualize(file)" class="ontology-description">{{file}}</div>	            						
+	        	</div>	
+	        </div>	      		
+
+
+		</div>
+	</div><!-- /.col-sm-12 -->
+</div><!-- /.container-fluid -->

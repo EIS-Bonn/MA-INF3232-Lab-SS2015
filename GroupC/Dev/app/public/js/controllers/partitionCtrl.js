@@ -824,7 +824,7 @@
                   //console.log(partitionId +"-"+content);
 
                   var blob = new Blob([ content ], { type : 'text/plain' });
-                  var url = window.URL.createObjectURL(blob);//(window.URL || window.webkitURL).createObjectURL( blob );//
+                  var url =  window.URL.createObjectURL(blob);//(window.URL || window.webkitURL).createObjectURL( blob );//
 
                   //angular.element(document.querySelector('#myElement'))
                   document.getElementById("link-"+partitionId).href = url;

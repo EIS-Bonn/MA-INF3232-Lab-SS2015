@@ -1,10 +1,9 @@
    <div class="col-md-12" class="container-fluid">
-
-    <div id="alerts-container" ng-show="loading">
-                <div class="alert alert-info">
-                   Getting information about the ontology <img src="css/images/loader.gif" align="right" /> 
-                </div>  
-    </div>
+     <div id="alerts-container" ng-show="loading">
+                 <div class="alert alert-info">
+                    Getting information about the ontology <img src="css/images/loader.gif" align="right" />
+                 </div>
+     </div>
 
 
 
@@ -24,7 +23,7 @@
 
 
     <h3 class="list-group-item-heading">Ontology Partitioning:</h3>
-    Ontology name: <i>{{ontName }}</i>
+    Ontology name: <i>{{ontName}}</i>
 
 
 <br/>
@@ -68,7 +67,8 @@
                     </div>
                     <!-- <a download="content.txt" ng-href="{{ url }}">download</a> -->
 
-                    <a ng-click="selectTab($index)" ng-hide="selectedGraph != $index"  class="float: right" ng-attr-id="{{ 'link-' + tab.id }}" download="content{{tab.id}}.txt" ng-href="{{ url }}">download Graph {{tab.id}}</a>
+                    <a ng-click="selectTab($index)" ng-hide="selectedGraph != $index" download="{{ 'content-' + tab.id +'.txt' }}"  class="float: right" ng-attr-id="{{ 'link-' + tab.id }}" >download Graph {{tab.id}}</a>
+
 
                 </div>
 
@@ -84,17 +84,12 @@
                 <button ng-click="saveEdit();">save</button>
                 <button ng-click="cancelEdit();">cancel</button>
               </div>
-          <!-- End visualization -->
+
 
 
 
       </div>
-      <div style="width:100%;float:left">
-        <button type="button"  class="btn btn-success btn-s" style="float:left" >
-          <!-- ng-hide="selectedRange == 0" -->
-                <span class="glyphicon glyphicon-upload"></span> Export
-            </button>
-        </div>
+
 
 
 

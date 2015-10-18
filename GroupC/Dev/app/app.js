@@ -15,7 +15,7 @@ var http = require('http');
 var request = require("request"); //the request module, for http requests
 var fs = require('fs'); //Handle files
 var glob = require("glob");
-
+var filtered = 0;
 /*--- application settings ---*/
 
 /* 1. view engine setup -- optional; AngularJS is used */
@@ -281,6 +281,7 @@ function initEdges(){
     //COUNTS, METRICS
     //if (parsedOntology !== ''){
         ont.resetMetric();
+        ont.metrics=[];
         ont.addMetric("class", cl);
         ont.addMetric("individual", ind);
         ont.addMetric("blank", bn);
@@ -296,12 +297,41 @@ function initEdges(){
     console.log("Data property COUNT", dp);
     console.log("Object property COUNT", op);
 
+    //reset filter
     ont.filter = []; //reset filter
+    //filter
+    console.log("------------------------------------------------------------------");
+    console.log('filter content')
+    console.log("------------------------------------------------------------------");
+    
     //loop through triples and update the filter
     //this is the new edges
-    _.each(triplesArray, function (item) {
+
+     //filter out duplicates
+     /*
+      var filteredTriples = _.filter(triplesArray, function (item, index) {
+        for(index += 1; index < triplesArray.length; index += 1) {
+          if (_.isEqual(item, triplesArray[index])) {
+              return false;
+          }
+      }
+        return true;
+      });
+
+
+    _.each(filteredTriples, function (item) {
         ont.addFilter(item.from, item.to, item.label, item.arrows, item.filter);
     })
+  */
+      _.each(triplesArray, function (item) {
+        ont.addFilter(item.from, item.to, item.label, item.arrows, item.filter);
+    })
+
+    console.log("------------------------------------------------------------------");
+    console.log('filter content after update')
+    console.log("------------------------------------------------------------------");
+    
+
 }
 
 /*----------------------CONSTRUCTOR  --------------------*/
@@ -711,20 +741,23 @@ app.get('/parser', function(req, res) {
                                 if(error !== null)
                                 {
                                   console.log('There was an error parsing the ontology in VOWL2OWL ! ' + error); 
-                                  initEdges();                          
+                                  initEdges();              
                                 }
                                 else
                                 {
 
                                   console.log('Succes parsing the ontology using VOWL2OWL');                                  
-                                  if (body.url !=='')
+                                  //if there is a URL to be parsed
+                                  if (body.url !=="")
                                   {
-                                    parsedOntology = JSON.parse(stdout);                                    
-                                    res.json(parsedOntology);
-                                    initEdges();  
+                                    console.log("Parsing an URL with VOWL");
+                                    parsedOntology = JSON.parse(stdout);
+                                    initEdges();                                                                                                            
+                                    res.json(parsedOntology);                                     
                                   }                                  
                                   else
                                   {
+                                    console.log("Parsing local file with VOWL");
 
                                       parsedOntology = JSON.parse(fs.readFileSync(getFileName.split(".")[0]+".json", 'utf8'));
                                       
@@ -739,6 +772,7 @@ app.get('/parser', function(req, res) {
                                         res.json(parsedOntology);                                     
                                   }
                                 }
+
                             }); //-child      
                     }
                 });

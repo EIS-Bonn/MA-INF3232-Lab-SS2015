@@ -6,33 +6,34 @@
             <p>Please upload an ontology from your local PC. After uploading you will be able to visualize it. Alternatively, you can upload an Ontology from an URL.
     </div>
 </div>
+
 <div class="row">
     <div class="col-md-2">
         <div class="list-group">            
             <div ng-click="(showLocalUpload = 1) && (showURLUpload = 0)" class="list-group-item">From local</div>
-            <div ng-click="(showURLUpload = 1) && (showLocalUpload = 0)"  class="list-group-item">From URL</div>            
+            <div ng-click="(showURLUpload = 1) && (showLocalUpload = 0)"  class="list-group-item">From URL</div>
         </div>
     </div>
     <div class="col-md-10">
+
         <div class="upload-section">
-                
+                 
                 <div ng-show="showLocalUpload == 1">
-                    <!-- local file upload -->                     
-                    <span class="btn btn-default ">           
+                    <!-- local file upload -->                                
                     <input nv-file-select="" uploader="uploader" type="file" value="fileuploader" name="localFileUpload" required>            
-                    </span>
                 </div>
+                
                 <div ng-show="showURLUpload == 1">
+                    <p> Example: http://dbpedia.org/resource/Tim_Berners-Lee</p>
                     <form name="urlUploadForm" ng-controller="uploadCtrl">
-                        <!-- Remote file upload -->          
-                        <span class="btn btn-default ">                                         
-                        <input type="url" name="urlinput" required>                              
+                        <!-- Remote file upload -->                
+                        <input type="url" name="urlinput" ng-model="url.text" required>      
                         <input type="submit" id="" ng-click="parseURL(url.text)" value="Get file"/>
-                        </span>
                     </form>
+                
                 </div>
 
-                <div id="fileuploader" ng-show="(showURLUpload == 1) || ( showLocalUpload == 1) || ( showTriplesUpload == 1 )">
+                <div id="fileuploader" ng-show="(showURLUpload == 1) || ( showLocalUpload == 1)">
                     <div id="uploadfile">
                         <div>
                             Upload progress:
@@ -54,4 +55,4 @@
 
 
 
-</div><!-- /.container-fluid -->                
+</div><!-- /.container-fluid -->   

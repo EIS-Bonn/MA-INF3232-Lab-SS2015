@@ -1,0 +1,17 @@
+frontend:
+  build: linda-vis-fe
+  links:
+   - backend
+  ports:
+   - "4200:4200"
+backend:
+  build: linda-vis-be
+  links:
+   - store
+  ports:
+   - "3002:3002"
+store:
+  build: store
+  ports:
+   - "8890:8890"
+

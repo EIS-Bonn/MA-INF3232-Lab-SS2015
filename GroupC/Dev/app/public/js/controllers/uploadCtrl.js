@@ -28,12 +28,13 @@
                          
                          $scope.selected = file;
                          //console.log('sel set=',$scope.selected);
-
+                        
                          //async update the selected ontology
                         $http.post('/options', { 'fileName': $scope.selected })
                              .success(function(data, status, headers, config) {
                                     //on success redirect to parser
                                       location.href = "#parser";
+                                      // $scope.loading = false;   
                                 })
 
                              .error(function(data, status, headers, config) {
@@ -42,15 +43,16 @@
                           });
             };   
 
+
         $scope.parseURL = function(url) {
                          
-                         console.log('Parsing' , url);
-                         
+                         console.log('Parsgin' , url);
+                         location.href = "#parser";    
                          //async update the selected ontology
                         $http.post('/options', { 'url': url })
                              .success(function(data, status, headers, config) {
                                     //on success redirect to parser
-                                     location.href = "#parser";
+                                                                   
                                 })
 
                              .error(function(data, status, headers, config) {

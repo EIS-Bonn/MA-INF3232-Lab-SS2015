@@ -4,8 +4,7 @@
 
   angular.module('angularApp.controllers')
     .controller('partitionCtrl', ['$scope','$http', '$timeout',
-	      function ($scope,$http, $timeout) {
-
+	      function ($scope,$http,$timeout) {
 
           // $scope.content = 'file content for example';
           // var blob = new Blob([ $scope.content ], { type : 'text/plain' });
@@ -19,11 +18,12 @@
           $http.get('/options').success(function (data) {
                           $scope.ontName = data.ontologyName; //only get latest uploaded file
                     });
+          $http.get("/options").success(function(data) {
+            $scope.nameSpace = data.ontologyNamespace;
+            document.getElementById('nameSpace').innerHTML= $scope.nameSpace ;
+          });
 
-        $http.get("/options").success(function(data) {
-          $scope.nameSpace = data.ontologyNamespace;
-          document.getElementById('nameSpace').innerHTML= $scope.nameSpace ;
-        });
+
 
           /**
            * Tabs funcs
@@ -48,8 +48,6 @@
                 $scope.selectedGraph = index;
             }
             $scope.changeTab = function(){
-
-              console.log("changin tab");
               var requestNo = $scope.selectedRange;
               var tabNo = $scope.graphs.length;
               var diffNo = 0;
@@ -78,6 +76,7 @@
             document.getElementById('nodeJson').innerHTML= JSON.stringify($scope.allNodes) ;
           });
 
+
         //TEST
         // var nodes_array = [
         //  {"id":"Alice","label":"Alice"},
@@ -102,15 +101,16 @@
 
 
           $scope.graph_partitioning = function (){ //if buildTabs=0 create tabs otherwise just call clusters numbers
+              $scope.loading = true;
+              //trigger timeout after 3 minutes
+              $timeout(function() {
+                              console.log('timeout fired');
+                              //$scope.timeout = true;
+                              $scope.loading = false;
+              }, 3000);
 
 
-          $scope.loading = true;
 
-          $timeout(function() {                      
-                    console.log('timeout fired');
-                        $scope.loading = false;   
-                          }, 3000);   
-    
 
             var nodesDiv = document.getElementById('nodeJson').innerHTML;
             var nodesObj= JSON.parse(nodesDiv);//convert to object
@@ -156,11 +156,14 @@
            //get all concepts
            ////////////
            $scope.classesNodes = [];
+            $scope.noneClassesNodes = [];
            edgesObj.forEach(function( data ) {
               data.filter.forEach(function(filterdata) {
                  // if(filterdata==newCheckboxName){
+                 //console.log(data.from+" is "+filterdata);
+                 var class_ele = [data.from];
                     if(filterdata=="class"){
-                      var class_ele = [data.from];
+
                      if( $scope.classesNodes.indexOf(class_ele[0]) == -1)
                      {
                         $scope.classesNodes.push(class_ele);
@@ -172,20 +175,26 @@
 
              });
 
+
              //heeeeeere
 
-            console.log($scope.classesNodes.length);
+            //console.log($scope.classesNodes.length);
 
            ////////////
            //loop edges
            ////////////
+
            edgesObj.forEach(function( data ) {
+
              //from edges
               var dataFrom = data.to;//vice versa
               var dataTo = data.from;//vice versa
               var data_label = data.label;
 
               var set_weight = 1;// weight of other relations
+
+
+
 
               //remove prefix of the relationship
               var data_label = data_label.replace("rdf:", "");
@@ -209,9 +218,9 @@
             //////////////
             // 1: normalize weights
             // 2: build grapgh linked list
-            // 3: get non class node
+            // 3:
             ////////////
-            $scope.noneClassesNodes = [];
+
             nodesObj.forEach(function( data ) {
               var sum_outgoing_weights = 0 ;
               var normalized_weight;
@@ -220,9 +229,20 @@
               var parent = [vertex_rel];
               var childs = [];
 
-              if( $scope.classesNodes.indexOf(data.id) == -1){
-                $scope.noneClassesNodes.push([data.id]);
-              }
+
+              var class_ele2 = [vertex_rel];
+
+
+                if( $scope.classesNodes.indexOf(class_ele2[0]) == -1)
+                {
+                  if( $scope.noneClassesNodes.indexOf(class_ele2[0]) == -1)
+                  {
+                    $scope.noneClassesNodes.push(class_ele2[0]);
+                  }
+
+                   //console.log(class_ele);
+                }
+
 
 
               //add up all outgoing weights for current vertex
@@ -248,6 +268,12 @@
              });
            //console.log(weight_matrix[9].node_From + " " + weight_matrix[9].node_To + " " + weight_matrix[9].norm_weight);
 
+           // to get all nodes that are not classes
+           for(var nonc=0; nonc< $scope.classesNodes.length; nonc++){
+             var nele = $scope.classesNodes[nonc][0];
+             //console.log("noneClassesNodes: "+ $scope.noneClassesNodes.indexOf(nele));
+             $scope.noneClassesNodes.splice($scope.noneClassesNodes.indexOf(nele), 1);
+           }
           //  console.log($scope.classesNodes);
           //  console.log($scope.noneClassesNodes);
 
@@ -307,7 +333,6 @@
 
 
              //console.log(class_visited.length);
-
 
              function get_path(source, target, graph_linkedList){
                  var queue_path = [source];//add source as the first element in the array
@@ -412,7 +437,7 @@
                   var maxS = -2;
                   for(var i=0; i< x-1; i++){
                    for(var j=i+1; j < x; j++){
-                    //console.log(i+","+j);
+                    //console.log(x+": "+i+","+j);
                      var combined_module = [];
                      var first_part = [];
                      var second_part = [];
@@ -456,14 +481,14 @@
                //console.log("->"+maxS);
 
 
-               for(var part=0;part<final_modules.length; part++){
-                 var getPartEle = [];
-                 for(var ele=0; ele<final_modules[part].length; ele++){
-                   getPartEle.push({id:final_modules[part][ele],label:final_modules[part][ele]});
-                 }
-                 $scope.partitioning_nodes.push(getPartEle);
-                 console.log(getPartEle);
-               }
+              //  for(var part=0;part<final_modules.length; part++){
+              //    var getPartEle = [];
+              //    for(var ele=0; ele<final_modules[part].length; ele++){
+              //      getPartEle.push({id:final_modules[part][ele],label:final_modules[part][ele]});
+              //    }
+              //    $scope.partitioning_nodes.push(getPartEle);
+              //    console.log(getPartEle);
+              //  }
 
                return final_modules;
            }//end Function
@@ -477,15 +502,139 @@
            var pr_modules = [];
            pr_modules = $scope.agglomerative_algo();
 
-          //  console.log($scope.partitioning_nodes.length);
-          //  console.log($scope.selectedRange );
+          // console.log("nodesObj.length");
+          // console.log(nodesObj.length);
+          // console.log($scope.classesNodes.length);
+          // console.log($scope.noneClassesNodes.length);
+
+            //var set_all_module = pr_modules;
+            if($scope.classesNodes.length > 20 || nodesObj.length>20){
+              for(var c=0; c< $scope.noneClassesNodes.length; c++){
+                var module_no = add_nonClass(pr_modules,$scope.noneClassesNodes[c]);
+                //console.log($scope.noneClassesNodes[c] + ": " +module_no);
+                if(module_no >-1){
+                  pr_modules[module_no].push($scope.noneClassesNodes[c]);
+                }
+
+              }
+            }
+
+            var set_all_module = pr_modules;
+            for(var part=0;part<set_all_module.length; part++){
+              var getPartEle = [];
+              for(var ele=0; ele<set_all_module[part].length; ele++){
+                getPartEle.push({id:set_all_module[part][ele],label:set_all_module[part][ele]});
+              }
+              $scope.partitioning_nodes.push(getPartEle);
+              console.log(getPartEle);
+            }
 
 
-           if(pr_modules.length != $scope.selectedRange ){
-             //$scope.status = $scope.status + 1;
-             alert("The minimum of partitioning is: " + pr_modules.length);
-           }
-             $scope.visualizeme();
+            $scope.visualizeme();
+
+           function add_nonClass(modules_parts, thisNode){
+
+             var last_score = 2;
+             var module_number = -1;
+
+             var final_avg_p = 0;
+
+             for(var t=0; t<modules_parts.length; t++){
+               var sum_ele_ai = 0;//old
+               var mod_avg = 0;//old
+
+               var max_path_out = 0;
+               var count_path_out = 0;
+               var size_path_out = 0;
+               var avg_path_out = 0;
+
+               var max_path_in = 0;
+               var count_path_in = 0;
+               var size_path_in = 0;
+               var avg_path_in = 0;
+
+               var path_out = [];
+               var path_in = [];
+               var avg_in_out = 0
+
+
+
+               for(var ti=0; ti< modules_parts[t].length; ti++){
+
+                 path_in = get_path( modules_parts[t][ti], thisNode, graph_linkedList);
+                 if(path_in.length > 0){
+                   count_path_in = count_path_in + 1;
+                 }
+                 size_path_in = path_in.length;
+
+                 path_out = get_path( thisNode, modules_parts[t][ti], graph_linkedList);
+                 if(path_out.length > 0){
+                   count_path_out = count_path_out + 1;
+                 }
+                 size_path_out = path_out.length;
+
+
+                 if(size_path_in > max_path_in){
+                   max_path_in = size_path_in;
+                 }
+                 if(size_path_out > max_path_out){
+                   max_path_out = size_path_out;
+                 }
+
+
+
+                //  var indx = nrwd_pairs.indexOf(thisNode+"<>"+modules_parts[t][ti]);
+                //  var indx_rev = nrwd_pairs.indexOf(modules_parts[t][ti]+"<>"+thisNode);
+                //  var pair_clossness = 0; // to compute clossness between pair vice versa
+                //   if(nrwd_pairs_val[indx] > 0 & nrwd_pairs_val[indx_rev] > 0){
+                //     pair_clossness = (nrwd_pairs_val[indx] + nrwd_pairs_val[indx_rev])/2;
+                //   }
+                //   else{
+                //     pair_clossness = nrwd_pairs_val[indx] + nrwd_pairs_val[indx_rev];
+                //   }
+                //  //pair_clossness = nrwd_pairs_val[indx];//to be del
+                //  sum_ele_ai = sum_ele_ai + pair_clossness;
+
+               }//end inner for
+
+
+               if (max_path_in>0){
+                 avg_path_in = max_path_in / count_path_in;//count_path_in / max_path_in;
+               }
+
+               if (max_path_out>0){
+                 avg_path_out = max_path_out / count_path_out;//count_path_out / max_path_out;
+               }
+
+               avg_in_out = (avg_path_in + avg_path_out)/2;
+
+               if(avg_in_out>final_avg_p){
+                 final_avg_p = avg_in_out;
+                 module_number = t;
+               }
+
+
+
+              //  mod_avg = sum_ele_ai / modules_parts[t].length;
+               //
+              //  if( mod_avg < last_score){
+              //    last_score = mod_avg;
+              //    module_number = t ;
+              //  }
+
+
+
+             }// end for
+
+             return module_number;
+
+           }// end function
+
+
+
+
+
+
 
 
           function func_scores(nrwd_matrix,other_modules){
@@ -499,7 +648,7 @@
 
 
             for(var m=0; m < other_modules.length; m++){
-              if(other_modules[m].length == 1){
+              if(other_modules[m].length <= 1){
                 m_score = 0;
               }
               else{
@@ -533,7 +682,7 @@
             var highest_avg_ele_bi = 0;
             for(var ele=0; ele<ele_module.length; ele++){
               if(ele_module[ele] != element){
-                //console.log(element+"<>"+ele_module[ele]);
+                //console.log(element+"<|>"+ele_module[ele]);
                 var indx = nrwd_pairs.indexOf(element+"<>"+ele_module[ele]);
                 var indx_rev = nrwd_pairs.indexOf(ele_module[ele]+"<>"+element);
                 var pair_clossness = 0; // to compute clossness between pair vice versa
@@ -606,12 +755,15 @@
             return s_i;
           }//end compute_ai
 
+      }// End $scope.graph_partitioning();
 
 
-
-
-
-          }// End $scope.graph_partitioning();
+      function blobToFile(theBlob, fileName){
+          //A Blob() is almost a File() - it's just missing the two properties below which we will add
+          theBlob.lastModifiedDate = new Date();
+          theBlob.name = fileName;
+          return theBlob;
+      }
 
           ///////////////////////////////////////////////
           //////////////to process nodes and edges then visualize the gragh
@@ -626,18 +778,13 @@
             $scope.edges = new vis.DataSet(edgesObj);
 
             if($scope.selectedRange == 1){
-              $scope.startVis(nodesObj,1);
+              $scope.startVis(nodesObj,1, edgesObj);
             }
             else{
               for(var i=0; i<$scope.partitioning_nodes.length; i++){
-                $scope.startVis($scope.partitioning_nodes[i],i+1);
+                $scope.startVis($scope.partitioning_nodes[i],i+1, edgesObj);
               }
             }
-
-
-
-
-            //$scope.graph_partitioning()
 
           }
 
@@ -650,33 +797,41 @@
           $scope.data;
           $scope.showlable;
 
-          // $scope.nodesArray = [
-          //  {"id":"Alice","label":"Alice"},
-          //   {"id":"Bob","label":"Bob"},
-          //   {"id":"Mary","label":"Mary"},
-          //    {"id":"Female","label":"Female"},
-          // // //  {"id":"hasChild","label":"hasChild"},
-          // // //  {"id":"_:7","label":"_:7"},
-          // // //  {"id":"_:17","label":"_:17"},
-          //    {"id":"Class","label":"Class"},
-          // {"id":"Person","label":"Person"},
-          //    {"id":"Male","label":"Male"}
-          //    ];
-
           $scope.nodes = new vis.DataSet($scope.nodesArray);
           $scope.edges = new vis.DataSet($scope.edgesArray);
 
           /**
            * calling vis lib & build graph
            */
-          $scope.startVis = function(partitionNodes, partitionId) {
+          $scope.startVis = function(partitionNodes, partitionId, edgesObj) {
+
                   // create a network
                   $scope.nodes = new vis.DataSet(partitionNodes);
+                  var myNS = document.getElementById('nameSpace').innerHTML;
+                //  $scope.ontNameSp = JSON.parse(myNS);//convert to object
+                  var content = "";
+                  //<http://example.org/#spiderman> <http://www.perceive.net/schemas/relationship/enemyOf> <http://example.org/#green-goblin> .
+                  var node_module_arr = [];
+                  partitionNodes.forEach(function( data2 ) {
+                    node_module_arr.push(data2.id);
+                  });
+                  edgesObj.forEach(function( data ) {
+                    if(node_module_arr.indexOf(data.to)>-1 && node_module_arr.indexOf(data.from)>-1){
+                      content = content + "<"+myNS+"#"+data.from+"> " + "<"+myNS+"#"+data.label+"> " + "<"+myNS+"#"+data.to+">.\n";
+                    }
+                  });
+
+                  //console.log(partitionId +"-"+content);
+
+                  var blob = new Blob([ content ], { type : 'text/plain' });
+                  var url =  window.URL.createObjectURL(blob);//(window.URL || window.webkitURL).createObjectURL( blob );//
+
+                  //angular.element(document.querySelector('#myElement'))
+                  document.getElementById("link-"+partitionId).href = url;
+                  var anchor = angular.element(document.getElementById("link-"+partitionId));
+                  anchor.download = "myfile"+partitionId+".txt";
 
 
-                  $scope.content = '" family-ontology#http://www.semanticweb.org/eislab/ontologies/2015/2 rdf:type#http://www.semanticweb.org/eislab/ontologies/2015/2 Ontology#http://www.semanticweb.org/eislab/ontologies/2015/2';
-                  var blob = new Blob([ $scope.content ], { type : 'text/plain' });
-                  $scope.url = window.URL.createObjectURL(blob);//(window.URL || window.webkitURL).createObjectURL( blob );
 
 
                   //$scope.nodes = new vis.DataSet(partitionNodes);
@@ -741,160 +896,18 @@
                         }
                       }
                     }
-
                   };
 
                   $scope.network = new vis.Network(container, $scope.data, options);
               }
 
-              //  alert(nodesGet);
-
 
 		}]).config(['$compileProvider',
-    function ($compileProvider) {
-        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|file|blob):/);
-}]);//function ($scope,$http)
+            function ($compileProvider) {
+                $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|file|blob):/);
+        }]);//function ($scope,$http)
+
+
 
 
 }());
-
-
-
-/********************************
- **********   JQuery  ***********
- ********************************/
-//  function avg_modules_scores (nrwd_matrix, other_modules){
-//
-//    //console.log(other_modules);
-//    var sum_all_scores = 0;
-//    var score_module = 0
-//    //var all_modules_arr = other_modules.slice(0);
-//    var showme = "";
-//    for(var xm=0; xm < other_modules.length; xm++){
-//      showme = showme+other_modules[xm]+"|";
-//    }
-// //  console.log(showme);
-//
-//    for(var m=0; m < other_modules.length; m++){//other_modules
-//
-//      var sum_silhouette = 0;
-//      //compute a(i)
-//      //console.log("current module: "+other_modules[m].length+"@"+other_modules[m]);
-//      if(other_modules[m].length>1){
-//          for ( var i =0; i< other_modules[m].length; i++){//other_modules[m]
-//            var silhouette_coefficient_i; // [ s(i) = a(i)-b(i) / max(a(i),b(i)) ]
-//            var a_vertex = 0; // a(i): the average similarity of (i)􏰅􏰅 to all other nodes within the same module
-//            var b_vertex = 0; // b(i): the highest average similarity of (i)􏰅 to nodes of other modules
-//            var max_a_b = 0; // max(a(i),b(i))
-//            var sil_in_module = 0; // sum of similarity for i to all nodes in the module
-//            var a_vertex_other = 0;
-//
-//          //compute a(i)
-//           for(var j=0; j<nrwd_matrix.length; j++){
-//             var isZero = 0;
-//
-//             if(other_modules[m][i] == nrwd_matrix[j].node_From){//other_modules[m][i]
-//               var to_node = nrwd_matrix[j].node_To;
-//
-//               if(other_modules[m].indexOf(to_node)>-1){
-//                 //isZero = nrwd_matrix[j].trans_Prob;
-//                 sil_in_module = sil_in_module + nrwd_matrix[j].trans_Prob;
-//               }
-//             }
-//
-//             if(other_modules[m][i] == nrwd_matrix[j].node_To){
-//               var From_node = nrwd_matrix[j].node_From;
-//               if(other_modules[m].indexOf(From_node)>-1){
-//                 //isZero = nrwd_matrix[j].trans_Prob;
-//                 sil_in_module = sil_in_module + nrwd_matrix[j].trans_Prob;
-//               }
-//             }
-//           }//end for to compute a(i)
-//
-//           a_vertex = sil_in_module;
-//           if(other_modules[m].length>1){
-//             a_vertex = sil_in_module / (other_modules[m].length-1);// a(i) is computed
-//           }
-//           if(other_modules[m].length == 1){
-//             a_vertex = 0;// a(i) is computed
-//           }
-//          //console.log("a("+other_modules[m][i]+"):"+a_vertex);
-//
-//           //compute b(i)
-//           //console.log(all_modules_arr.length);
-//           for(var y=0; y<(other_modules.length-1); y++){
-//             //check a(i) in the module other_modules[y]
-//             var sil_other_module = 0;
-//             if(other_modules[y].length>1){
-//               for(var z=0; z<other_modules[y].length; z++){
-//                 for(var x=0; x<nrwd_matrix.length; x++){
-//                   if(other_modules[m][i] == nrwd_matrix[x].node_From && other_modules[y][z] == nrwd_matrix[x].node_To){
-//                     sil_other_module = sil_other_module + nrwd_matrix[x].trans_Prob;
-//                     //console.log("other_modules[y][z]:"+other_modules[m][i]+"-"+ other_modules[y][z] + "-" + sil_other_module);
-//                   }
-//                   if(other_modules[m][i] == nrwd_matrix[x].node_To && other_modules[y][z] == nrwd_matrix[x].node_From){
-//                     sil_other_module = sil_other_module + nrwd_matrix[x].trans_Prob;
-//                     //console.log("other_modules[y][z]:"+other_modules[m][i]+"-"+ other_modules[y][z] + "-" + sil_other_module);
-//                   }
-//                 }//end for
-//               }//end for other module
-//
-//             }//end if greater
-//             else{
-//
-//             //  for(var z=0; z<other_modules[y].length; z++){
-//                 for(var x=0; x<nrwd_matrix.length; x++){
-//                   console.log("other_modules[m][i]"+other_modules[m][i] )
-//                   if(other_modules[m][i] == nrwd_matrix[x].node_From && other_modules[y] == nrwd_matrix[x].node_To){
-//                     sil_other_module = sil_other_module + nrwd_matrix[x].trans_Prob;
-//                     //console.log("other_modules[y][z]:"+other_modules[m][i]+"-"+ other_modules[y][z] + "-" + sil_other_module);
-//                   }
-//                   if(other_modules[m][i] == nrwd_matrix[x].node_To && other_modules[y] == nrwd_matrix[x].node_From){
-//                     sil_other_module = sil_other_module + nrwd_matrix[x].trans_Prob;
-//                     //console.log("other_modules[y][z]:"+other_modules[m][i]+"-"+ other_modules[y][z] + "-" + sil_other_module);
-//                   }
-//                 }//end for
-//             //  }//end for other module
-//
-//             }
-//
-//
-//
-//
-//             a_vertex_other = sil_other_module / (other_modules[y].length);
-//             if (a_vertex_other > b_vertex){
-//               b_vertex = a_vertex_other;
-//             }
-//            //console.log("b("+other_modules[m][i]+"):" + b_vertex);
-//           }//end for to compute b(i)
-//
-//
-//           max_a_b = b_vertex;
-//           if( a_vertex > b_vertex){
-//             max_a_b = a_vertex;
-//           }
-//           if(max_a_b==0){silhouette_coefficient_i = -1}// instead of showing NaN
-//           else{
-//             silhouette_coefficient_i = (a_vertex - b_vertex) / max_a_b; // #
-//           }
-//           //console.log("s("+other_modules[m][i]+"):" + silhouette_coefficient_i);
-//           sum_silhouette += silhouette_coefficient_i;
-//
-//
-//
-//
-//      }//end for loop
-//        //  console.log(other_modules[m].length);
-//
-//        score_module = sum_silhouette / other_modules[m].length;// score for module m
-//  }//end greater than one
-//
-//    //score_module = sum_silhouette / other_modules[m].length;// score for module m
-//    //console.log("score("+other_modules[m]+"):" + score_module);
-//    sum_all_scores = sum_all_scores + score_module;
-//    }// end for for all modules
-//    var avg_all_scores = sum_all_scores / other_modules.length;; // average of scores of all modules
-//    console.log("avg_all_scores:"+avg_all_scores);
-//    //console.log(avg_all_scores);
-//    return avg_all_scores;
-//  }// end function

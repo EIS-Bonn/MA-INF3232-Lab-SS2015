@@ -1,11 +1,3 @@
-<!--Filling Station Type
-<hr>
-<select  ng-model="fillingStationTypeSelected" ng-change="changedValueFillingStation(fillingStationTypeSelected)"
-         data-ng-options="fillingStationType as fillingStationType.name for fillingStationType in fillingStationTypes">
-    <option value="">Select FillingStationType</option>
-</select>
--->
-
 <hr>
 
 Location
@@ -17,25 +9,11 @@ Location
 
 <hr>
 Fuel Type
-<!--{{type}} -->
 <hr>
 <select  ng-model="fuelTypeSelected" ng-change="changedValueFuelType(fuelTypeSelected)"
          data-ng-options="fuelType as fuelType.name for fuelType in fuelTypes">
     <option value="">Select Fuel Type</option>
 </select>
-
-
-<!-- <hr ng-hide="fuelPropertyVisibility">
-
-{{fuelProperty}}
-
-<hr ng-hide="fuelPropertyVisibility">
-
-<select  ng-hide="fuelPropertyVisibility" ng-model="fuelTypeSelected" ng-change="changedValueFuelType(fuelTypeSelected)"
-		 data-ng-options="fuelType as fuelType.name for fuelType in fuelTypes">
-	<option value="">{{type}}</option>
-</select> !-->
-
 <hr>
 
 Parking Facility
@@ -44,7 +22,6 @@ Parking Facility
          data-ng-options="option as option.name for option in booleans">
     <option value="">Select Parking Facility</option>
 </select>
-
 
 <hr>
 
@@ -106,7 +83,3 @@ WheelChair
 	'text-decoration':'none',
 	'float':'right', 'clear':'both',
 	'text-shadow':'0px 1px 0px #2f6627'}" ng-click="handleClick();">SEARCH</button>
-<!--
-{{my}}
-{{coord}}
-!-->

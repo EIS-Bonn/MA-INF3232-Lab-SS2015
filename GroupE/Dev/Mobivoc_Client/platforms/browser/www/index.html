@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html ng-app="mobivocApp">
+<head>
+
+
+    <link rel="stylesheet" href="css/bootstrap-combined.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/evothings-app.css">
+    <meta name="viewport" content="initial-scale=1" />
+    <title>Hello World</title>
+
+</head>
+<body ng-controller="MainController">
+
+<header>
+    <button class="back" onclick="history.back()">
+        <img src="img/arrow-left.svg" />
+    </button>
+
+    <img ng-click="go()" class="logotype" src="img/logo2.png" alt="Evothings" />
+
+    <!--<button class="menu" onclick=""><img src="ui/images/menu.svg" /></button>-->
+</header>
+
+<!--
+    <header ng-controller="NavBarCtrl">
+        <div class="navbar navbar-inverse span12">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button class="btn btn-navbar" ng-click="isCollapsed = !isCollapsed"> <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button> <a class="brand" href="#">MobivocApp</a>
+
+                    <div class="nav-collapse" collapse="isCollapsed">
+                        <ul class="nav">
+                            <li><a href="#"><i class="icon-home icon-white"></i> Home</a>
+                            </li>
+                            <li><a href="#"><i class="icon-leaf icon-white"></i>Help</a>
+                            </li>
+                            <li><a href="#">?</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+-->
+    <div ng-view></div>
+
+
+<!--<script data-require="google-maps@*" data-semver="1.0.0" src="http://maps.google.com/maps/api/js?sensor=false" v=3.exp&sensor=false&libraries=places,drawing,geometry"></script>!-->
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/lib/angular.js"></script>
+    <script type="text/javascript" src="js/lib/angular-route.js"></script>
+    <script type="text/javascript" src="js/service/fsCordova.js"></script>
+    <script type="text/javascript" src="js/controller/mobivocApp.js"></script>
+    <script type="text/javascript" src="js/lib/ui-bootstrap-tpls-0.12.1.js"></script>
+    <script type="text/javascript" src="js/lib/angular-animate.js"></script>
+    <script type="text/javascript" src="js/lib/lodash.min.js"></script>
+    <script type="text/javascript" src="js/lib/ng-map.js"></script>
+    <script type="text/javascript" src="js/lib/angular-google-maps.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20&key=AIzaSyBM2S89PD2clh6wwZ4IE59zJrLYVCFblQU"></script>
+
+        <script type="text/javascript">
+
+</script>
+
+</body>
+</html>
+

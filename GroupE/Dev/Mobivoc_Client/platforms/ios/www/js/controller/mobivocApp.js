@@ -13,12 +13,15 @@ mobivocApp.run(function($document, $rootScope) {
 
     //screen.lockOrientation('landscape');
 
-    $rootScope.ipAddress = "http://172.20.10.3:8080/Mobivoc/";
+    $rootScope.ipAddress = "http://169.254.54.221:8080/Mobivoc/";
     $rootScope.global;
     $rootScope.label;
     $rootScope.dataset;
     $rootScope.longitude;
     $rootScope.latitude;
+
+    $rootScope.batteryData;
+
 });
 
 mobivocApp.config(function($routeProvider, $httpProvider){
@@ -39,6 +42,16 @@ mobivocApp.config(function($routeProvider, $httpProvider){
         .when('/fuelStation', {
             templateUrl : 'js/views/fuelStation.html',
             controller  : 'HomePageCtrl',
+            css: 'css/map.css'
+        })
+        .when('/batteryStation', {
+            templateUrl : 'js/views/batteryStation.html',
+            controller  : 'BatteryPageCtrl',
+            css: 'css/map.css'
+        })
+        .when('/batteryStationDetail', {
+            templateUrl : 'js/views/batteryStationDetail.html',
+            controller  : 'BatteryDetailCtrl',
             css: 'css/map.css'
         })
         .when('/map', {
@@ -140,6 +153,67 @@ mobivocApp.directive('helloWorld', function($compile, $timeout) {
     };
 });
 
+mobivocApp.controller('BatteryPageCtrl',
+    function($scope, $location, $http, $rootScope){
+
+        var ipAddress, locationChoice, batteryChoice, accessChoice, identifyChoice, chargeChoice, bookingChoice;
+        ipAddress = $rootScope.ipAddress;
+
+        $scope.locations=[{id:1,name:"Bonn"}]
+
+        $scope.batteryTypes=[{id:1,name:"ComboPlug"},{id:2,name:"CHAdeMOPlug"},{id:3,name:"EUDomesticPlug"},{id:3,name:"SchukoPlug"},{id:4,name:"Type1Plug"},{id:5,name:"Type2Plug"},
+            {id:6,name:"Type3Plug"}];
+
+        $scope.accessTypes=[{id:1,name:"BrandsCustomers"},{id:2,name:"CustomerOfPremise"},{id:3,name:"EmployeesOnly"},{id:4,name:"IdentifiedPerson"},{id:5,name:"ComboPlug"},
+            {id:6,name:"InhabitantsOnly"},{id:7,name:"OpenToAllUsers"}];
+
+        $scope.identifyTypes=[{id:1,name:"AccessCode"},{id:2,name:"BadgeHasToBeOrdered"},{id:3,name:"BadgeIsAvailable"},{id:4,name:"CreditCard"},
+            {id:5,name:"Key"},{id:6,name:"MobileApplication"},{id:7,name:"PhoneCall"},{id:8,name:"TextMessage"},{id:9,name:"None"},
+            {id:10,name:"Other"},];
+
+        $scope.chargeTypes=[{id:1,name:"FreeCharging"},{id:2,name:"PaidCharging"}];
+
+        $scope.bookingTypes=[{id:1,name:"Impossible"},{id:2,name:"Mandatory"}, {id:3,name:"Optional"}];
+
+        $scope.changedValueBatteryType = function(item){
+            batteryChoice = item.name;
+        }
+
+        $scope.changedValueLocation=function(item){
+            // $scope.itemList.push(item.name);
+
+            locationChoice = item.name;
+        }
+        $scope.changedValueAccessType = function(item){
+            accessChoice = item.name;
+        }
+        $scope.changedValueIdentifyType = function(item){
+            identifyChoice = item.name;
+        }
+        $scope.changedValueChargeType = function(item){
+            chargeChoice = item.name;
+        }
+        $scope.changedValueBookingType = function(item){
+            bookingChoice = item.name;
+        }
+
+        $scope.handleClick = function(){
+            $http.get(ipAddress+'batterystation?plugChoice=' + batteryChoice + '&accessChoice=' + accessChoice + '&identifyChoice=' +
+            identifyChoice + '&chargeChoice=' + chargeChoice + '&bookingChoice=' + bookingChoice)
+
+                .success(function (data, status, headers, config) {
+                    console.log("Success");
+
+                    $rootScope.batteryData = data;
+
+                })
+                .error(function (data, status, headers, config) {
+                // ...
+                    console.log("Error");
+                });
+        }
+    }
+)
 
 mobivocApp.controller('InitialPageCtrl',
     function($scope, $location){
@@ -178,6 +252,67 @@ mobivocApp.controller('InitialPageCtrl',
     }
 
 )
+
+mobivocApp.controller("BatteryDetailCtrl", 
+    function($scope, $rootScope){
+        var data = $rootScope.batteryData;
+        var i = 0, k = 0;
+        //console.log(obj.FillingStation[0].Feature.Property);
+
+        //console.log("Lenght: " + data.length);
+
+
+        while(data.FillingStationList[k]){
+            i = 0;
+            while (data.FillingStationList[k].FillingStation[i]) {
+
+                //console.log(obj.FillingStation[i].Feature.Property);
+                if (data.FillingStationList[k].FillingStation[i].Feature.Literal){
+                    //console.log("Im back " + data[k].FillingStation[i].Feature.Property + data[k].FillingStation[i].Feature.Literal);
+
+                    if(data.FillingStationList[k].FillingStation[i].Feature.Property == 'http://www.w3.org/2000/01/rdf-schema#label'){
+                        // console.log("TITLE = " + data.FillingStationList[k].FillingStation[i].Feature.Literal )
+                        titles.push(data.FillingStationList[k].FillingStation[i].Feature.Literal);
+                    }
+                    if(data.FillingStationList[k].FillingStation[i].Feature.Property == 'http://eccenca.com/mobivoc/fillingStationNumber'){
+                        // console.log("TITLE = " + data.FillingStationList[k].FillingStation[i].Feature.Literal )
+
+
+                        var id = data.FillingStationList[k].FillingStation[i].Feature.Literal;
+                        var id_temp = id.split("^");
+
+                        ids.push(id_temp[0]);
+                    }
+
+                }
+
+                //if (data[k].FillingStation[i].Feature.Resource)
+                //console.log(data[k].FillingStation[i].Feature.Property + obj.FillingStation[i].Feature.Resource);
+                i++;
+                console.log("I" + i);
+            }
+            console.log("K" + k);
+            k++;
+        }
+        //}
+
+        //);
+
+        //for (var i = 0; i < titles.length; i++) {
+        //  $scope.items.push({id: i, title: titles[i]});
+        //}
+
+        function setData() {
+            for (var m = 0; m < titles.length; m++) {
+                var titleName = titles[m];
+                var id = ids[m];
+                $scope.items.push({id: id, title: titleName});
+            }
+        }
+        $timeout(setData, 1500);
+
+    }
+);
 
 mobivocApp.controller('Result2Ctrl',
     function($scope, $location, $rootScope, $timeout) {

@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.mobivoc.app"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.mobivoc.app"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.mobivoc.app"
+        }
+    },
+    "dependent_plugins": {}
+}

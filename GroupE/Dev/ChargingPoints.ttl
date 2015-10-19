@@ -554,12 +554,14 @@ mv:ChargingPointA
 					 ];	
 	geo:long "7.103397" ;
 	geo:lat "50.738999" ;
-	mv:AccessType "OpenToAllUsers" ;
-	mv:IdentificationSystem "None" ;	
-	mv:ChargingPointFees "FreeCharging, PaidCharging" ;	
+	mv:AccessType mv:OpenToAllUsers ;
+	mv:IdentificationSystem mv:None ;	
+	mv:ChargingPointFees mv:FreeCharging ;
+	mv:ChargingPointFees mv:PaidCharging ;	
 	mv:HasParkingFacility "2 parking spaces for electric vehicles only" ;
-	mv:BookingType "Impossible" ;
-	mv:PlugType "SchukoPlug, Type2Plug" ;
+	mv:BookingType mv:Impossible ;
+	mv:PlugType mv:SchukoPlug ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Monday/Tuesday/Wednesday/Thursday from 00:00 to 01:00 and from 07:00 to 23:59, Friday/Saturday from 00:00 to 02:30 and from 07:00 to 23:59, Sunday from 00:00 to 01:00 and from 09:00 to 23:59" .
 					 
 mv:ChargingPointB
@@ -575,11 +577,11 @@ mv:ChargingPointB
 	geo:long "7.151704" ;
 	geo:lat "50.718117" ;
 	mv:AccessType "OpenToAllUsers" ;
-	mv:IdentificationSystem "Key" ;
-	mv:ChargingPointFees "FreeCharging" ;
+	mv:IdentificationSystem mv:Key ;
+	mv:ChargingPointFees mv:FreeCharging ;
 	mv:HasParkingFacility "2 parking spaces for electric vehicles only" ;
-	mv:BookingType "Optional" ;
-	mv:PlugType "Type2Plug" ;
+	mv:BookingType mv:Optional ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Open 24/24" .
 
 mv:ChargingPointC
@@ -597,17 +599,17 @@ mv:ChargingPointC
 	vcard:website "http://www.obi.de/de/maerkte/Bonn-Nord/index.html" ;	
 	geo:long "7.080653" ;
 	geo:lat "50.738228" ;
-	mv:AccessType "OpenToAllUsers" ;
-	mv:IdentificationSystem "None" ;
-	mv:ChargingPointFees "FreeCharging" ;
+	mv:AccessType mv:OpenToAllUsers ;
+	mv:IdentificationSystem mv:None ;
+	mv:ChargingPointFees mv:FreeCharging ;
 	mv:HasParkingFacility "1 parking space for electric vehicles only" ;
-	mv:BookingType "Impossible" ;
-	mv:PlugType "SchukoPlug" ;
+	mv:BookingType mv:Impossible ;
+	mv:PlugType mv:SchukoPlug ;
 	mv:openingHours "Monday to Saturday from 08:00 to 20:00" .
 	
 mv:ChargingPointD  
 	a mv:ChargingPoint ;
-	mv:ChargingPointName"Stadthausgarage - Bonn" ;
+	mv:ChargingPointName"Stadthaus Garage" ;
 	vcard:hasAddress [
 						vcard:country-name "Germany" ;
 						vcard:city "Bonn" ;
@@ -617,12 +619,12 @@ mv:ChargingPointD
 					 ];
 	geo:long "7.093778" ;
 	geo:lat "50.737613" ;
-	mv:AccessType "OpenToAllUsers" ;
-	mv:IdentificationSystem "None" ;
-	mv:ChargingPointFees "FreeCharging" ;
+	mv:AccessType mv:OpenToAllUsers ;
+	mv:IdentificationSystem mv:None ;
+	mv:ChargingPointFees mv:FreeCharging ;
 	mv:HasParkingFacility "1 parking space for electric vehicles only" ;
-	mv:BookingType "Impossible" ;
-	mv:PlugType "SchukoPlug" ;
+	mv:BookingType mv:Impossible ;
+	mv:PlugType mv:SchukoPlug ;
 	mv:openingHours "Open 24/24" .
 	
 mv:ChargingPointE  
@@ -638,10 +640,10 @@ mv:ChargingPointE
 					 ];
 	geo:long "7.140795" ;
 	geo:lat "50.695074" ;
-	mv:AccessType "OpenToAllUsers" ;
-	mv:IdentificationSystem "Other" ;
-	mv:hasPrice "PaidCharging" ;
-	mv:PlugType "SchukoPlug" .
+	mv:AccessType mv:OpenToAllUsers ;
+	mv:IdentificationSystem mv:Other ;
+	mv:hasPrice mv:PaidCharging ;
+	mv:PlugType mv:SchukoPlug .
 	
 mv:ChargingPointF  
 	a mv:ChargingPoint;
@@ -656,11 +658,16 @@ mv:ChargingPointF
 					 ];
 	geo:long "7.026320" ;
 	geo:lat "50.721710" ;
-	mv:AccessType "IdentifiedPerson" ;
-	mv:IdentificationSystem "TextMessage, PhoneCall, Other, MobileApplication" ;
-	mv:Payment "TextMessage, MobileApplication" ;
-	mv:ChargingPointFees "PaidCharging" ;
-	mv:PlugType "Type2Plug" ;
+	mv:AccessType mv:IdentifiedPerson ;
+	mv:IdentificationSystem mv:TextMessage ;
+	mv:IdentificationSystem mv:PhoneCall ;
+	mv:IdentificationSystem mv:Other ; 
+	mv:IdentificationSystem mv:MobileApplication ;
+	mv:IdentificationSystem mv:Payment ;
+	mv:IdentificationSystem mv:TextMessage ;
+	mv:Payment mv:MobileApplication ;
+	mv:ChargingPointFees mv:PaidCharging ;
+	mv:PlugType mv:Type2Plug ;
 	vcard:operator "RWE" ;
 	mv:openingHours "Open 24/24" .
 	
@@ -679,14 +686,15 @@ mv:ChargingPointG
 	geo:lat "50.757470" ;
 	vcard:website "http://www.rheinenergie.com/TankEn" ;
 	vcard:operator "Rheinenergie" ;
-	mv:IdentificationSystem "UndefinedIdentificationSystem" ;
-	mv:ChargingPointFees "FreeCharging" ;
-	mv:PlugType "SchukoPlug, Type2Plug" ;
+	mv:IdentificationSystem mv:UndefinedIdentificationSystem ;
+	mv:ChargingPointFees mv:FreeCharging ;
+	mv:PlugType mv:SchukoPlug ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Open 24/24" .
 
 mv:ChargingPointH  
 	a mv:ChargingPoint;
-	mv:ChargingPointName"TankE RheinEnergie Ladestation - Stadtbetrieb Bornheim Anstalt des öffentlichen Rechts" ;
+	mv:ChargingPointName"TankE RheinEnergie Ladestation" ;
 	vcard:hasAddress [
 						vcard:country-name "Germany" ;
 						vcard:city "Bornheim" ;
@@ -699,10 +707,11 @@ mv:ChargingPointH
 	geo:lat "50.767600" ;
 	vcard:owner "TankE RheinEnergie" ;
 	vcard:website "http://www.rheinenergie.com/de/unternehmensportal/technik_zukunft/elektromobilitaet_1/ladestationen/ladestationen_1.php" ;
-	mv:AccessType "OpenToAllUsers" ;
-	mv:IdentificationSystem "BadgeHasToBeOrdered" ;
-	mv:ChargingPointFees "PaidCharging" ;
-	mv:PlugType "SchukoPlug, Type2Plug" ;
+	mv:AccessType mv:OpenToAllUsers ;
+	mv:IdentificationSystem mv:BadgeHasToBeOrdered ;
+	mv:ChargingPointFees mv:PaidCharging ;
+	mv:PlugType mv:SchukoPlug ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Open 24/24" .
 	
 mv:ChargingPointI  
@@ -719,11 +728,15 @@ mv:ChargingPointI
 	geo:long "7.075870" ;
 	geo:lat "50.683040" ;
 	vcard:operator "RWE" ;
-	mv:AccessType "IdentifiedPerson" ;
-	mv:IdentificationSystem "TextMessage, PhoneCall, Other, MobileApplication" ;
-	mv:Payment "TextMessage, MobileApplication" ;
-	mv:ChargingPointFees "PaidCharging" ;
-	mv:PlugType "Type2Plug" ;
+	mv:AccessType mv:IdentifiedPerson ;
+	mv:IdentificationSystem mv:TextMessage ;
+	mv:IdentificationSystem mv:PhoneCall ;
+	mv:IdentificationSystem mv:Other ;
+	mv:IdentificationSystem mv:MobileApplication ;
+	mv:Payment mv:TextMessage ;
+	mv:Payment mv:MobileApplication ;
+	mv:ChargingPointFees mv:PaidCharging ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Open 24/24" .
 	
 mv:ChargingPointK  
@@ -740,11 +753,15 @@ mv:ChargingPointK
 	geo:long "7.218302" ;
 	geo:lat "50.802184" ;
 	vcard:operator "RWE" ;
-	mv:AccessType "IdentifiedPerson" ;
-	mv:IdentificationSystem "TextMessage, PhoneCall, Other, MobileApplication" ;
-	mv:Payment "TextMessage, MobileApplication" ;
-	mv:ChargingPointFees "PaidCharging" ;
-	mv:PlugType "Type2Plug" ;
+	mv:AccessType mv:IdentifiedPerson ;
+	mv:IdentificationSystem mv:TextMessage ;
+	mv:IdentificationSystem mv:PhoneCall ;
+	mv:IdentificationSystem mv:Other ;
+	mv:IdentificationSystem mv:MobileApplication ;
+	mv:Payment mv:TextMessage ;
+	mv:Payment mv:MobileApplication ;
+	mv:ChargingPointFees mv:PaidCharging ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Open 24/24" .
 	
 mv:ChargingPointL 
@@ -760,11 +777,15 @@ mv:ChargingPointL
 	geo:long "7.203024" ;
 	geo:lat "50.793180" ;
 	vcard:operator "RWE" ;
-	mv:AccessType "IdentifiedPerson" ;
-	mv:IdentificationSystem "TextMessage, PhoneCall, Other, MobileApplication" ;
-	mv:Payment "TextMessage, MobileApplication" ;
-	mv:ChargingPointFees "PaidCharging" ;
-	mv:PlugType "Type2Plug" ;
+	mv:AccessType mv:IdentifiedPerson ;
+	mv:IdentificationSystem mv:TextMessage ;
+	mv:IdentificationSystem mv:PhoneCall ;
+	mv:IdentificationSystem mv:Other ;
+	mv:IdentificationSystem mv:MobileApplication ;
+	mv:Payment mv:TextMessage ;
+	mv:Payment mv:MobileApplication ;
+	mv:ChargingPointFees mv:PaidCharging ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Open 24/24" .
 	
 mv:ChargingPointM  
@@ -781,11 +802,15 @@ mv:ChargingPointM
 	geo:long "7.205730" ;
 	geo:lat "50.793205" ;
 	vcard:operator "RWE" ;
-	mv:AccessType "IdentifiedPerson" ;
-	mv:IdentificationSystem "TextMessage, PhoneCall, Other, MobileApplication" ;
-	mv:Payment "TextMessage, MobileApplication" ;
-	mv:ChargingPointFees "PaidCharging" ;
-	mv:PlugType "Type2Plug" ;
+	mv:AccessType mv:IdentifiedPerson ;
+	mv:IdentificationSystem mv:TextMessage ;
+	mv:IdentificationSystem mv:PhoneCall ;
+	mv:IdentificationSystem mv:Other ;
+	mv:IdentificationSystem mv:MobileApplication ;
+	mv:Payment mv:TextMessage ;
+	mv:Payment mv:MobileApplication ;
+	mv:ChargingPointFees mv:PaidCharging ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Open 24/24" .
 	
 mv:ChargingPointN  
@@ -802,11 +827,15 @@ mv:ChargingPointN
 	geo:long "7.203999" ;
 	geo:lat "50.798530" ;
 	vcard:operator "RWE" ;
-	mv:AccessType "IdentifiedPerson" ;
-	mv:IdentificationSystem "TextMessage, PhoneCall, Other, MobileApplication" ;
-	mv:Payment "TextMessage, MobileApplication" ;
-	mv:ChargingPointFees "PaidCharging" ;
-	mv:PlugType "Type2Plug" ;
+	mv:AccessType mv:IdentifiedPerson ;
+	mv:IdentificationSystem mv:TextMessage ;
+	mv:IdentificationSystem mv:PhoneCall ;
+	mv:IdentificationSystem mv:Other ;
+	mv:IdentificationSystem mv:MobileApplication ;
+	mv:Payment mv:TextMessage ;
+	mv:Payment mv:MobileApplication ;
+	mv:ChargingPointFees mv:PaidCharging ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Open 24/24" .
 	
 mv:ChargingPointO  
@@ -822,11 +851,15 @@ mv:ChargingPointO
 	geo:long "7.205371" ;
 	geo:lat "50.797767" ;
 	vcard:operator "RWE" ;
-	mv:AccessType "IdentifiedPerson" ;
-	mv:IdentificationSystem "TextMessage, PhoneCall, Other, MobileApplication" ;
-	mv:Payment "TextMessage, MobileApplication" ;
-	mv:ChargingPointFees "PaidCharging" ;
-	mv:PlugType "Type2Plug" ;
+	mv:AccessType mv:IdentifiedPerson ;
+	mv:IdentificationSystem mv:TextMessage ;
+	mv:IdentificationSystem mv:PhoneCall ;
+	mv:IdentificationSystem mv:Other ;
+	mv:IdentificationSystem mv:MobileApplication ;
+	mv:Payment mv:TextMessage ;
+	mv:Payment mv:MobileApplication ;
+	mv:ChargingPointFees mv:PaidCharging ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Open 24/24" .
 	
 mv:ChargingPointP  
@@ -843,9 +876,13 @@ mv:ChargingPointP
 	geo:long "7.223880" ;
 	geo:lat "50.792406" ;
 	vcard:operator "RWE" ;
-	mv:AccessType "IdentifiedPerson" ;
-	mv:IdentificationSystem "TextMessage, PhoneCall, Other, MobileApplication" ;
-	mv:Payment "TextMessage, MobileApplication" ;
-	mv:ChargingPointFees "PaidCharging" ;
-	mv:PlugType "Type2Plug" ;
+	mv:AccessType mv:IdentifiedPerson ;
+	mv:IdentificationSystem mv:TextMessage ;
+	mv:IdentificationSystem mv:PhoneCall ; 
+	mv:IdentificationSystem mv:Other ;
+	mv:IdentificationSystem mv:MobileApplication ;
+	mv:Payment mv:TextMessage ;
+	mv:Payment mv:MobileApplication ;
+	mv:ChargingPointFees mv:PaidCharging ;
+	mv:PlugType mv:Type2Plug ;
 	mv:openingHours "Open 24/24" .
